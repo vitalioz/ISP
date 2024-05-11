@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>POST method</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>POST method</h1>
+
+<h2>Add record</h2>
+<form action="http://localhost:8091/clients/AddClients_Clients" method="post">
+   <p><input type="text" name="Client_ID" value = "123" >
+   <p><input type="text" name="Client2_ID" value = "456" >
+   <p><input type="submit" value="Send">
+</form>
+
+
+<h2>Edit status</h2>
+<form action="http://localhost:8091/clients/UpdateStatusClients_Clients" method="post">
+   <p><input type="text" name="ID" value = "7" >
+   <p><input type="text" name="Status" value = "1" >
+   <p><input type="submit" value="Send">
+</form>
+
+<h2>Delete record</h2>
+<form action="http://localhost:8091/clients/DeleteClients_Clients" method="post">
+   <p><input type="text" name="ID" value = "6" >
+   <p><input type="submit" value="Send">
+</form>
+
+</body>
+</html>

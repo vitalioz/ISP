@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolRandevou.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 0</value>
+  </metadata>
+  <data name="fgRandevouz.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:90;Caption:"Ημερ.ραντεβού";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	1{Width:750;Caption:"Περιγραφή";Style:"Margins:1, 0, 0, 0;TextAlign:LeftTop;TextEffect:Flat;TextDirection:Normal;Trimming:None;WordWrap:True;";StyleFixed:"TextAlign:CenterTop;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	</value>
+  </data>
+  <metadata name="toolNeeds.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1174, 17</value>
+  </metadata>
+  <metadata name="toolS1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1282, 17</value>
+  </metadata>
+  <data name="fgStep2.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:100;Caption:"Ημερ.ραντεβού";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	1{Width:730;Caption:"Περιγραφή";Style:"Margins:1, 0, 0, 0;TextAlign:LeftTop;TextEffect:Flat;TextDirection:Normal;Trimming:None;WordWrap:True;";StyleFixed:"TextAlign:CenterTop;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	</value>
+  </data>
+  <metadata name="toolS2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1368, 17</value>
+  </metadata>
+  <metadata name="toolS3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1454, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbAdd_S3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgStep3.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:80;Caption:"Ημερομηνία";}	1{Width:120;Caption:"Πάροχος";}	2{Width:130;Caption:"Υπηρεσία";}	3{Width:175;Caption:"Επενδ. Πολιτική";}	4{Width:160;Caption:"Πακέτο";Style:"TextAlign:LeftCenter;";}	5{Width:165;Caption:"Αρχείο";}	6{Width:30;Caption:"ID";Visible:False;}	7{Caption:"Provider_ID";Visible:False;}	8{Caption:"Service_ID";Visible:False;}	9{Caption:"InvestPolicy_ID";Visible:False;}	10{Caption:"Package_ID";Visible:False;}	11{Caption:"Contracts_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolS4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="tsbAdd_S4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgStep4.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:100;Caption:"Ημερ.ραντεβού";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	1{Width:730;Caption:"Περιγραφή";Style:"Margins:1, 0, 0, 0;TextAlign:LeftTop;TextEffect:Flat;TextDirection:Normal;Trimming:None;WordWrap:True;";StyleFixed:"TextAlign:CenterTop;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	</value>
+  </data>
+  <data name="fgStep5.ColumnInfo" xml:space="preserve">
+    <value>7,1,0,0,0,85,Columns:0{Width:176;Caption:"Έγγραφο";}	1{Width:32;}	2{Width:200;Caption:"Αρχείο";}	3{Width:420;Caption:"Παρατήρηση";Style:"TextAlign:LeftCenter;";}	4{Width:30;Caption:"ID";Visible:False;}	5{Width:51;Caption:"Doc_ID";Visible:False;}	6{Caption:"FullFIleName";Visible:False;}	</value>
+  </data>
+  <data name="fgStep6.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:100;Caption:"Ημερ.ραντεβού";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	1{Width:730;Caption:"Περιγραφή";Style:"Margins:1, 0, 0, 0;TextAlign:LeftTop;TextEffect:Flat;TextDirection:Normal;Trimming:None;WordWrap:True;";StyleFixed:"TextAlign:CenterTop;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	</value>
+  </data>
+  <metadata name="toolS6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>103, 56</value>
+  </metadata>
+  <data name="tsbAdd_S6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="toolS7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>189, 56</value>
+  </metadata>
+  <data name="tsbAdd_S7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgStep7.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:100;Caption:"Ημερ.ραντεβού";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	1{Width:730;Caption:"Περιγραφή";Style:"Margins:1, 0, 0, 0;TextAlign:LeftTop;TextEffect:Flat;TextDirection:Normal;Trimming:None;WordWrap:True;";StyleFixed:"TextAlign:CenterTop;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterTop;";}	</value>
+  </data>
+  <data name="fgPackages.ColumnInfo" xml:space="preserve">
+    <value>11,0,0,0,0,85,Columns:0{Width:220;Caption:"Σύμβαση";}	1{Width:120;Caption:"Κωδικός/Portfolio";Style:"TextAlign:LeftTop;";}	2{Width:120;Caption:"Υπηρεσία";Style:"TextAlign:LeftTop;ImageAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:150;Caption:"Παράμετρος";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:250;Caption:"Τιμή";Style:"TextAlign:LeftTop;";StyleFixed:"TextAlign:CenterCenter;";}	5{Caption:"ID";Visible:False;}	6{Caption:"User_ID";Visible:False;}	7{Caption:"CFP";Visible:False;}	8{Caption:"PackageVersion";Visible:False;}	9{Caption:"Contracts_Details_ID";Visible:False;}	10{Caption:"Contracts_Packages_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolPackages.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 56</value>
+  </metadata>
+  <metadata name="toolDocFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>561, 56</value>
+  </metadata>
+  <data name="fgDocFiles.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:90;Name:"DateIns";Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	1{Width:140;Name:"ContractCode";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	2{Width:270;Name:"DocType_Title";Caption:"Τύπος εγγράφου";}	3{Width:300;Name:"FileName";Caption:"Όνομα αρχείου";}	4{Width:55;Name:"OldFile";Caption:"Αρχείο";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	5{Width:64;Name:"ID";Caption:"ID";Visible:False;}	6{Name:"DocType_ID";Caption:"DocType_ID";Visible:False;}	7{Name:"DMS_Files_ID";Caption:"DMS_Files_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>680, 56</value>
+  </metadata>
+  <metadata name="toolAccounts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>786, 56</value>
+  </metadata>
+  <data name="fgBankAccounts.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:205;Name:"AccNumber";Caption:"Αρ.Λογαριασμού";Style:"TextAlign:LeftCenter;";}	1{Width:150;Name:"BankTitle";Caption:"Τράπεζα";}	2{Width:80;Name:"StartBalance";Caption:"Αρχ.Υπόλοιπο";}	3{Width:62;Name:"Currency";Caption:"Νόμισμα";}	4{Width:70;Name:"AccType";Caption:"Κοινός";}	5{Width:220;Name:"AccOwners";Caption:"Συνδικαιούχοι";}	6{Width:70;Name:"Status";Caption:"Κατάσταση";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	7{Width:30;Name:"ID";Caption:"ID";Visible:False;}	8{Name:"Bank_ID";Caption:"Bank_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolInfluenceCenters.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>909, 56</value>
+  </metadata>
+  <metadata name="toolDepedentsList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1073, 56</value>
+  </metadata>
+  <data name="fgInfluenceCenters.ColumnInfo" xml:space="preserve">
+    <value>4,0,0,0,0,85,Columns:0{Width:220;Caption:"Ονοματεπώνυμο";Style:"TextAlign:LeftCenter;";}	1{Width:580;Caption:"Σχόλιο";Style:"TextAlign:LeftCenter;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftCenter;";}	3{Width:50;Caption:"DependentClient_ID";Visible:False;Style:"TextAlign:LeftCenter;";}	</value>
+  </data>
+  <data name="fgDependentsList.ColumnInfo" xml:space="preserve">
+    <value>4,0,0,0,0,85,Columns:0{Width:220;Caption:"Ονοματεπώνυμο";Style:"TextAlign:LeftCenter;";}	1{Width:580;Caption:"Σχόλιο";Style:"TextAlign:LeftCenter;";}	2{Width:37;Caption:"ID";Visible:False;Style:"TextAlign:LeftCenter;";}	3{Width:50;Caption:"DependentClient_ID";Visible:False;Style:"TextAlign:LeftCenter;";}	</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1223, 56</value>
+  </metadata>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1328, 56</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>40</value>
+  </metadata>
+</root>

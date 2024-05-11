@@ -1,0 +1,79 @@
+﻿<title> Javascript - Hardware </title>
+
+<body>
+    <input type="button" value="Get IP">
+
+    <div class="row form-group">
+        <div class="col-lg-10">
+            <span id="xxx"></span><br />
+            <span id="yyy"></span><br />
+            <span id="zzz"></span><br />
+            <span id="ddd"></span><br />
+        </div>
+    </div>
+</body>
+
+
+
+
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    document.getElementById('xxx').innerHTML = JSON.stringify(getVideoCardInfo());
+
+    document.getElementById("yyy").innerHTML = navigator.userAgent;
+
+
+
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2021 12:00:00 UTC; path=/";
+
+    var x = document.cookie
+    document.getElementById("zzz").innerHTML = x;
+
+    GetIP();
+
+    function getVideoCardInfo() {
+        const gl = document.createElement('canvas').getContext('webgl');
+        if (!gl) {
+            return {
+                error: "no webgl",
+            };
+        }
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        return debugInfo ? {
+            vendor: gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL),
+            renderer: gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL),
+        } : {
+                error: "no WEBGL_debug_renderer_info",
+            };
+    }
+
+    function GetIP() {
+        /* Add "https://api.ipify.org?format=json" statement
+           this will communicate with the ipify servers in
+           order to retrieve the IP address $.getJSON will
+           load JSON-encoded data from the server using a
+           GET HTTP request */
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+                alert(data);
+                // Setting text of element P with id gfg
+                $("#ddd").innerHTML(data.ip);
+            })
+    }
+    function GetInformation() {
+        alert('111');
+        var locator = new ActiveXObject("WbemScripting.SWbemLocator");
+        alert('222');
+        var service = locator.ConnectServer(".");
+        var properties = service.ExecQuery("select * from Win32_Processor"); // CPU information
+        var value = "";
+        var e = new Enumerator(properties);
+        for (; !e.atEnd(); e.moveNext()) {
+            var p = e.item();
+            value += p.Name;
+        }
+        alert('999');
+        return value;
+    }
+</script>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolContract.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>987, 364</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPtVJNaxNRFM1PyE+Yn1AUXLjK0uWgDWQZwUUX
+        KsGFBEEcCkIwqBEpGiydsSo2kupsasdo7Yi2toh0sFZjG5JpiZo20/TpVOmH5njvm8BYahEXHji8+968
+        c+55l4n8F0zM+rhVWkHmdg29A/PoK1Yw8uIjOp/3xpvqBgrjLeilZbjNLXxZ34bwt6jexMVCGRndQenl
+        0p+NWHzPXoP3rQ3bAbQhQM0E5Np2BKprbZzrm8TIs8puE+68+r0NwwZiacCwALEBCVcAqet8JlAjk1PZ
+        JzsNJt6u4+FMS3ZmMV9mmFNAMhesbBZLC6oFdOsd8oVXocmdx018Ej9k1FgqiJ0zgS6qlR6BVI4iEFRN
+        IJlxMF/1cfTMcGiQvbskB6ZqgairJ6BCTJKYu9tlAUW1oSRsNDwfB+JXQ4PzN6s07W0ZPxDS5aSgJEFn
+        06Y9CaOqSauJRvMr9qmXQ4P8/RoWvU16eyBUEq5kbigwiKoOMTBQ0zbKlTq6TxihwejkZ1iOJwfEwmiC
+        BQ49yaW50J7Fh0xJw3IxbM3hwo2x0ICRHZzFgveTunYERK5lgo5YMxx8WPFw5Li+U8wYm66jNz+Naov+
+        Beqiao58N5NrPluoryJO0QeKU7sNGKPPazh9aRzGo/eYmVvEMk270fTlmzl2N3XW9xL/jv7iaxw7+wAH
+        E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="toolGeneralData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>762, 325</value>
+  </metadata>
+  <metadata name="toolPackage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>903, 325</value>
+  </metadata>
+  <data name="fgXM.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:21;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:250;Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	2{Width:54;}	</value>
+  </data>
+  <metadata name="toolXM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>873, 13</value>
+  </metadata>
+  <metadata name="ToolStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 364</value>
+  </metadata>
+  <metadata name="ToolStrip5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>124, 364</value>
+  </metadata>
+  <metadata name="ToolStrip6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>231, 364</value>
+  </metadata>
+  <metadata name="ToolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>338, 364</value>
+  </metadata>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>445, 364</value>
+  </metadata>
+  <metadata name="ToolStrip7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>552, 364</value>
+  </metadata>
+  <metadata name="ToolStrip8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>659, 364</value>
+  </metadata>
+  <metadata name="ToolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>766, 364</value>
+  </metadata>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>668, 325</value>
+  </metadata>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>668, 325</value>
+  </metadata>
+  <data name="fgKEMOwners.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:190;Name:"Fullname";Caption:"Ονοματεπώνυμο";Style:"TextAlign:LeftCenter;";}	1{Width:100;Name:"FirstnameFather";Caption:"Όνομα πατρός";Style:"TextAlign:LeftCenter;";}	2{Width:80;Name:"ADT";Caption:"ΑΔΤ";Style:"TextAlign:LeftCenter;";}	3{Width:80;Name:"Passport";Caption:"Διαβατήριο";}	4{Width:80;Name:"DOY";Caption:"ΔΟΥ";Style:"TextAlign:LeftCenter;";}	5{Width:80;Name:"AFM";Caption:"ΑΦΜ";Style:"TextAlign:LeftCenter;";}	6{Width:45;Name:"Master";Caption:"Master";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	7{Width:45;Name:"Order";Caption:"Εντολέας";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	8{Name:"ID";Caption:"ID";}	9{Name:"Client_ID";Caption:"Client_ID";}	10{Name:"DoB";Caption:"DoB";}	11{Name:"Special";Caption:"Special";}	</value>
+  </data>
+  <metadata name="toolGeneralData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>762, 325</value>
+  </metadata>
+  <metadata name="toolPackage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>903, 325</value>
+  </metadata>
+  <data name="tsbSave_Package.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIySURBVDhPrZLfS5NRGMfff6H7boIuuq2pMZyL1eAt11CW
+        DcOKsB9vpFmaLtNExco0av6CbIVLJ61Wk3BSkT/AFCkRZSpZmrmiJQ41xSaCwdfznL15XEUX0Reem5f3
+        8znnec4j/Zc8fxYGla91CS3eRTx0z6OpMYS7jmnU1X6B/VYA18snUVoyjsKCt8jLHcH5c36ouCQR2NUJ
+        1Nas4G9ZXlmFKbULh1Kf8lJxSfI+WeCCyopv6q+/h+DQ/DJ2WV5Ao1FgPegRAveDOS4oLfmq/h6dn/DH
+        4AJizD4UXJrCAUuzEDgbZrjgou2DiohshIcnQtgme5GTPYbkJKcQ1N8OckHW2REVi+RXuM8fxGaDG4oy
+        ALPZIQQ11Z+5QDk1oKJ/hjv7P2FTfCMOH3mFxMQ6IbhROYWOdrCnBI4dfwPr0V4+bRoY9UzXppMjcDdS
+        rC8hy3YhuFI2gTYf2A4Aza4f7N2/o/zaLB8qDYx6zszwr8P7k1thNFYIweXCMXgeAfedq2xxwjClZUeV
+        Jd2GtDNFETiJwfs8MBjKhMCWN8pgoLoqzE8miH1GjE7G4PsZjE7OQsm9ij2mFg7rdrug1xcJAa2l4w7W
+        r00Cgk/n38S7wBwC04u4UGxHrMHF4CbEJtyDLj5fCDIzhljfSxzeavRgyw4Zj9t64GvvQ0d3P3pfD2Kv
+        2QqNvgFxDN6urYdWmyMElJMnevh60obRktA701PRtGlg1DOdSkXwzrisaMG/RZLWAE60OMW5fNhvAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="ToolStrip9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1021, 325</value>
+  </metadata>
+  <metadata name="ToolStrip9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1021, 325</value>
+  </metadata>
+  <metadata name="toolDocs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1128, 325</value>
+  </metadata>
+  <metadata name="toolDocs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1128, 325</value>
+  </metadata>
+  <data name="fgDocs.ColumnInfo" xml:space="preserve">
+    <value>5,1,0,0,0,85,Columns:0{Width:176;Caption:"Έγγραφο";}	1{Width:32;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	2{Width:570;Caption:"Παρατήρηση";Style:"TextAlign:LeftCenter;";}	3{Width:30;Caption:"ID";Visible:False;}	4{Width:51;Caption:"Doc_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolMisc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1228, 325</value>
+  </metadata>
+  <metadata name="toolDocFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1326, 325</value>
+  </metadata>
+  <metadata name="toolMisc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1228, 325</value>
+  </metadata>
+  <data name="picDocFilesPath.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADmUlEQVRIS+2U60/TZxiG+QP2L2wf9sEv
+        y7IsmVsyNGNbYhZNEOYwfphOd4Bo2OZ0gtSJcogrKMWCLSJoKBSGhAECpYrl0GJLSynH1tVBRSq0wGzn
+        wgzQA9feskLCNnHHbB92J3ee501+ua/3eZL3F/O//lvytBUxoXzvV3Yp9xL95M/Ld9vInZyXCdikBKxp
+        BPpPETBnELB8wcOOVO5WH/lrkLlRA1OFb7I8nMyy9R3C1t2E+5JWHDLsxJ77IvbsWEZPvxL1q8Kbhbfg
+        kO/APWLc+AIRwPT5BMKDqSxbEgmbE1bqav/I/AHz5hP8aEkXNUfUDFEzmbdI8ImzPivxyQCPXNw4Cvil
+        vTe201J+kNbKMytuvngMR0Esd/O3MJbzHP0HnsIme5tHM67fBq0B+vcR7t6+5kDXDixVe1BXqRlxumjs
+        v8dV0xh6s43L5eWM1J8kNHyU8HgeXtVeIjnRyPVaBfia4pnI34y7NI77pVvp+zKOpgqFCJ7kI5UNqW4C
+        accE+y9bKG+zoVYrcLd9TNiVhUeVsgGgu4Up6S48JW/gVx8j6Kgk5FRwXZnJNz1WkmRamk1u7ow9wDnu
+        o+HWJPHSVrTqOm4o0gga0vBc3EckJxq5XqsTzFa+zsNrJ1j+oR78RdRWyTE7vSSpBml5ADrfMu3CGtEn
+        1Y2LKQZoupIn1iTBW5v+Oya4sBWfOoOQQ0GwT8ZXirOYe/qIV/RSPTCLxu5F4/Cu9PElFlQ1LVQXivfS
+        lcL9ssMbTDDQibvwADOlL+FvySM8WSFWlE9TdSYOx20SlUaUo360nkU6hBWij79g4OvWToyXPiFk/RyP
+        WG0kJxq5XnMmLdNndzEtHtv3DZkiXEnAlMW3zZ9Sc0WJ0ewksaibg+W3+PCSkW357TRqDJTlZjNUtpOg
+        8QiTKgmRnGjkeq0CvCVx+OuzxC+imGBvqoAcx9F8CFWxDFuPCaPBjk5nw3D9JkWSdIbPv4Uj7WnmapM3
+        BkQ0WPAuw0c34dfkE3SpCI2eXvOs/iSdlZ9xs0yOtqKAjqrDOEv348p+lvnG13DnbsJybvfjV7SqgZJD
+        jBW/z8JsP4seK0teC0szZgKzJtGbWLjXxeKkgcWpXhbcBlx1p3Cde4ElfQIjkmeY0NdtDIjI0dWAVZ4s
+        nBL14/qfz+0FyYxkPc/CUDJm2Ta+G+16MuSPSn+1AnthLDZ5HC5dzd8PiGhIdw1bR+M/E/4vKSbmJ2q1
+        UwCSxHllAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="toolDocFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1326, 325</value>
+  </metadata>
+  <data name="fgDocFiles.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:80;Name:"DateIns";Caption:"Ημερομηνία";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	1{Width:140;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	2{Width:240;Name:"DocType_Title";Caption:"Τύπος εγγράφου";}	3{Width:280;Name:"FileName";Caption:"Όνομα αρχείου";}	4{Width:55;Name:"OldFile";Caption:"Αρχείο";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	5{Width:64;Name:"ID";Caption:"ID";}	6{Name:"DocType_ID";Caption:"DocType_ID";}	7{Name:"DMS_File_ID";Caption:"DMS_File_ID";}	8{Name:"PD_Group_ID";Caption:"PD_Group_ID";}	</value>
+  </data>
+  <data name="fgInformings.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:80;Caption:"Ημερομηνία";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	1{Width:140;Caption:"Τρόπος Ενημέρωσεις";Style:"TextAlign:LeftCenter;";}	2{Width:200;Caption:"Θέμα";}	3{Width:260;Caption:"Περιγραφή";}	4{Width:100;Caption:"Αρχείο";}	5{Width:37;Caption:"AttachedFiles";}	6{Width:64;Caption:"ID";}	7{Caption:"Source_ID";}	8{Caption:"AttachedFiles";}	</value>
+  </data>
+  <metadata name="ToolStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 364</value>
+  </metadata>
+  <metadata name="ToolStrip5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>124, 364</value>
+  </metadata>
+  <data name="fgInvestIdees.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:80;Caption:"Κατάσταση";}	1{Width:50;Caption:"Αρ.ΕΠ";}	2{Width:80;Caption:"Ημερομηνία";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	3{Width:185;Caption:"Περιγραφή";}	4{Width:180;Caption:"Προϊόντα";}	5{Width:100;Caption:"Τρόπος Αποστολής";}	6{Width:80;Caption:"Ώρα Αποστολής";}	7{Width:60;Caption:"Ώρα Αποστολής απο Server";}	8{Caption:"Status";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>231, 364</value>
+  </metadata>
+  <metadata name="ToolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>338, 364</value>
+  </metadata>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>445, 364</value>
+  </metadata>
+  <data name="fgDateSums.ColumnInfo" xml:space="preserve">
+    <value>11,0,0,0,0,85,Columns:0{Width:75;Caption:"Ημερομηνία";}	1{Width:100;Caption:"Πάροχος";}	2{Width:120;Caption:"Κωδικός";Style:"TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"ImageAlign:CenterCenter;";}	3{Width:150;Caption:"Χαρτοφυλάκιο";Style:"TextAlign:LeftCenter;";}	4{Width:45;Caption:"Νόμισμα";}	5{Width:70;Caption:"Συνολική Αξία";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	6{Width:70;Caption:"Αξία τίτλων";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	7{Width:70;Caption:"Αξία Χρημάτων";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	8{Width:70;Caption:"InFlow";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	9{Width:70;Caption:"OutFlow";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	10{Width:64;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgDateCash.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:140;Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	1{Width:140;Caption:"Χαρτοφυλάκιο";Style:"TextAlign:LeftCenter;";}	2{Width:140;Caption:"Λογαριασμός";Style:"TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"ImageAlign:CenterCenter;";}	3{Width:50;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	4{Width:70;Caption:"Ποσό";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	5{Width:70;Caption:"Ποσό σε ΝΑ";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	6{Width:120;Caption:"Θεματοφύλακας";Style:"TextAlign:LeftCenter;";}	7{Width:40;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgDateAssets.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:100;Caption:"Κωδικός";Style:"TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"ImageAlign:CenterCenter;";}	1{Width:105;Caption:"Χαρτοφυλάκιο";Style:"TextAlign:LeftCenter;";}	2{Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	3{Width:140;Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";}	4{Width:70;Caption:"Ποσότητα";Style:"TextAlign:RightCenter;";}	5{Width:70;Caption:"Pending";Style:"TextAlign:RightCenter;";}	6{Width:70;Caption:"Τιμή";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	7{Width:50;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	8{Width:70;Caption:"Αξία Θέσης";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	9{Width:70;Caption:"Αξία σε ΝΑ";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	10{Caption:"Θεματοφύλακας";Style:"TextAlign:LeftCenter;";}	11{Width:64;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>552, 364</value>
+  </metadata>
+  <metadata name="ToolStrip8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>659, 364</value>
+  </metadata>
+  <data name="fgStatements.ColumnInfo" xml:space="preserve">
+    <value>13,0,0,0,0,85,Columns:0{Width:85;Caption:"Ημ.Συν/γης";Style:"TextAlign:LeftCenter;";}	1{Width:70;Caption:"Valeur";Style:"TextAlign:LeftCenter;";}	2{Width:58;Caption:"Αρ.Παρ.";Style:"TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"ImageAlign:CenterCenter;";}	3{Caption:"Αιτιολογία";}	4{Width:98;Caption:"Προϊον";}	5{Width:73;Caption:"Χρημ/ριο";}	6{Caption:"Τίτλος";}	7{Caption:"ISIN";}	8{Width:50;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	9{Width:70;Caption:"Χρέωση";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	10{Width:70;Caption:"Πίστωση";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	11{Caption:"Αρχείο Παραστατικού";}	12{Width:40;Caption:"ID";}	</value>
+  </data>
+  <data name="fgMovements.ColumnInfo" xml:space="preserve">
+    <value>14,0,0,0,0,85,Columns:0{Caption:"Ημ.Συν/γης";}	1{Caption:"Ημ.Εκκ/σης";}	2{Caption:"Αρ.Παρ/κου";}	3{Width:106;Caption:"Αιτιολογία";}	4{Caption:"Προϊον";}	5{Caption:"Χρημ/ριο";}	6{Caption:"Τίτλος";}	7{Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	8{Width:50;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	9{Width:70;Caption:"Ποσότητα";Style:"TextAlign:RightCenter;";}	10{Width:70;Caption:"Τιμή";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	11{Width:70;Caption:"Αξία";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";}	12{Width:230;Caption:"Αρχείο Παραστατικού";Style:"Format:""N2"";TextAlign:RightCenter;";}	13{Width:64;Caption:"ID";}	</value>
+  </data>
+  <data name="fgRepresents.ColumnInfo" xml:space="preserve">
+    <value>4,0,0,0,0,85,Columns:0{Width:300;Name:"Fullname";Caption:"Ονοματεπώνυμο";Style:"TextAlign:LeftTop;";}	1{Width:300;Name:"Properties";Caption:"Ιδιότητες";Style:"TextAlign:LeftTop;";}	2{Width:220;Name:"ADT";Caption:"Ταυτότητα";Style:"TextAlign:LeftTop;";}	3{Width:37;Name:"ID";Caption:"ID";Visible:False;Style:"TextAlign:LeftCenter;";}	</value>
+  </data>
+  <metadata name="ToolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>766, 364</value>
+  </metadata>
+  <metadata name="ToolStrip11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1107, 364</value>
+  </metadata>
+  <metadata name="ToolStrip11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1107, 364</value>
+  </metadata>
+  <data name="tsbAdd_Block.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgBlocks.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:100;Caption:"DateFrom";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	1{Width:100;Caption:"DateTo";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:31;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

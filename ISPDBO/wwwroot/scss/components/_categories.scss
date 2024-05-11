@@ -1,0 +1,118 @@
+.categories-page {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.categories-search {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+}
+
+.categories-lists {
+  .categories-list {
+    margin-bottom: 1rem;
+  }
+  .categories-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    color: $primary;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    display: block;
+    justify-content: space-between;
+    margin: 0 -1rem;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    li {
+      flex: 0 0 (100% / 3);
+      display: block;
+      padding: 0 1rem;
+      margin-bottom: 0.25rem;
+      a {
+        padding: 0.5rem 0.25rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+        position: relative;
+        color: $dark;
+        i {
+          font-size: 0.5rem;
+          margin-right: 0.5rem;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .no-results-found {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba($orange, 0.2);
+    text-align: center;
+    color: $dark;
+    border-radius: $border-radius-alternative;
+  }
+}
+
+.popular-categories {
+  .popular-categories-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    min-height: 280px;
+    border-radius: $border-radius-alternative;
+    margin-bottom: 30px;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius-alternative;
+      transition: all ease 0.3s;
+      background: linear-gradient(to top, rgba($primary, 1) 0%, rgba($primary, 0) 100%);
+      opacity: 0.5;
+    }
+    &:hover {
+      &:before {
+        background: linear-gradient(to top, rgba($primary, 1) 0%, rgba($primary, 0) 100%);
+        opacity: 0.75;
+      }
+    }
+  }
+  .popular-categories-item-title {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.nav-categories {
+  .nav-link {
+    background: $gray-200;
+    margin: 0 0.75rem 0 0;
+    padding: 0.75rem 1.5rem;
+    &.active {
+      background: $secondary;
+    }
+  }
+}

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23569148-61E2-4B30-A7CE-F1F52130333E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Transactions</RootNamespace>
+    <AssemblyName>Transactions</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20073.357, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="Core">
+      <HintPath>..\Core\bin\Debug\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsEntryPoint.cs" />
+    <Compile Include="frmClientInforming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientInforming.Designer.cs">
+      <DependentUpon>frmClientInforming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyFX.Designer.cs">
+      <DependentUpon>frmDailyFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyLL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyLL.Designer.cs">
+      <DependentUpon>frmDailyLL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySecurities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailySecurities.Designer.cs">
+      <DependentUpon>frmDailySecurities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDPMBuffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDPMBuffer.Designer.cs">
+      <DependentUpon>frmDPMBuffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDPMOrdersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDPMOrdersList.Designer.cs">
+      <DependentUpon>frmDPMOrdersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFXBasket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFXBasket.Designer.cs">
+      <DependentUpon>frmFXBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvestProposalsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvestProposalsList.Designer.cs">
+      <DependentUpon>frmInvestProposalsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLLSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLLSearch.Designer.cs">
+      <DependentUpon>frmLLSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderBasket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderBasket.Designer.cs">
+      <DependentUpon>frmOrderBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecuritiesCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecuritiesCheck.Designer.cs">
+      <DependentUpon>frmSecuritiesCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactionsCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactionsCheck.Designer.cs">
+      <DependentUpon>frmTransactionsCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfer.Designer.cs">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repCommandsInform.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repCommandsInform.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLombardLending.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLombardLending.Designer.cs">
+      <DependentUpon>ucLombardLending.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmClientInforming.resx">
+      <DependentUpon>frmClientInforming.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyFX.resx">
+      <DependentUpon>frmDailyFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyLL.resx">
+      <DependentUpon>frmDailyLL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailySecurities.resx">
+      <DependentUpon>frmDailySecurities.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDPMBuffer.resx">
+      <DependentUpon>frmDPMBuffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDPMOrdersList.resx">
+      <DependentUpon>frmDPMOrdersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFXBasket.resx">
+      <DependentUpon>frmFXBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvestProposalsList.resx">
+      <DependentUpon>frmInvestProposalsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLLSearch.resx">
+      <DependentUpon>frmLLSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderBasket.resx">
+      <DependentUpon>frmOrderBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecuritiesCheck.resx">
+      <DependentUpon>frmSecuritiesCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactionsCheck.resx">
+      <DependentUpon>frmTransactionsCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfer.resx">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="repCommandsInform.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repCommandsInform.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLombardLending.resx">
+      <DependentUpon>ucLombardLending.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form_magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xml_exports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evernote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pdf-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindFolder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailicon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="fgProvider.ColumnInfo" xml:space="preserve">
+    <value>29,0,0,0,0,85,Columns:0{Width:40;Name:"AA";Caption:"N";Style:"DataType:System.Int32;TextAlign:RightCenter;";}	1{Width:80;Name:"TradeDate";Caption:"Trade Date";Style:"BackColor:Transparent;TextAlign:GeneralCenter;";}	2{Width:60;Name:"TradeTime";Caption:"Trade Time";}	3{Width:80;Name:"ValueDate";Caption:"Value Date";Style:"BackColor:Transparent;TextAlign:GeneralCenter;";}	4{Width:70;Name:"Currency";Caption:"Trade Currency";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	5{Width:100;Name:"ISIN";Caption:" Counterparty description";}	6{Width:100;Name:"Code";Caption:"Security Code";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	7{Width:100;Name:"Description";Caption:"Security Description";Style:"BackColor:Transparent;";}	8{Width:130;Name:"Market";Caption:"Market";Style:"BackColor:Transparent;";}	9{Width:50;Name:"Sign";Caption:"Sign";}	10{Width:50;Name:"Quantity";Caption:"Quantity";Style:"BackColor:Transparent;";}	11{Width:70;Name:"Price";Caption:"Price";Style:"BackColor:Transparent;";}	12{Width:60;Name:"Accrued";Caption:"Accrued";}	13{Width:66;Name:"Commission";Caption:"Commission";Style:"Format:""N2"";BackColor:Transparent;TextAlign:RightCenter;";}	14{Width:60;Name:"Fee";Caption:"Fee";Style:"Format:""N2"";BackColor:Transparent;";}	15{Width:80;Name:"MarketFee";Caption:"MarketFee";Style:"BackColor:Transparent;";}	16{Width:80;Name:"Taxes";Caption:"Taxes";}	17{Width:80;Name:"Amount_SettleCurrency";Caption:"SettlementAmount";Style:"Format:""N2"";";}	18{Width:60;Name:"ExchangeRate";Caption:"ExchangeRate";}	19{Width:80;Name:"SettlementAmountCurr";Caption:"SettlementAmountCurr";}	20{Width:80;Name:"PlaceOfSettlement";Caption:"Place Of Settlement";Style:"BackColor:Transparent;";}	21{Width:150;Name:"ClientOrder_ID";Caption:"ClientOrder_ID";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	22{Width:70;Name:"SE_Code";Caption:"MIC Code";Style:"BackColor:Transparent;";}	23{Width:70;Name:"PSET";Caption:"PSET";Style:"BackColor:Transparent;";}	24{Name:"ID";Caption:"ID";}	25{Name:"SE_ID";Caption:"SE_ID";}	26{Name:"Depository_ID";Caption:"Depository_ID";}	27{Name:"SE_Code";Caption:"SE_Code";}	28{Name:"Depository_Code";Caption:"Depository_Code";}	</value>
+  </data>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>62,0,0,0,0,85,Columns:0{Width:30;Style:"DataType:System.Int32;TextAlign:RightCenter;";}	1{Width:60;Name:"BulkCommand";Caption:"Bulk N";Style:"TextAlign:LeftCenter;";}	2{Width:80;Name:"ClientFullName";Caption:"Εντολέας";Style:"TextAlign:LeftCenter;";}	3{Width:180;Name:"ContractTitle";Caption:"Σύμβαση";}	4{Width:80;Name:"Provider_Title";Caption:"Πάροχος";Style:"TextAlign:LeftCenter;";}	5{Width:80;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	6{Width:80;Name:"Portfolio";Caption:"Portfolio";Style:"TextAlign:LeftCenter;";}	7{Width:35;Name:"Aktion";Caption:"Πράξη";}	8{Width:60;Name:"Title";Caption:"Προϊον Τίτλος";}	9{Width:80;Name:"Reuters";Caption:"Προϊον Κωδικός Reuters";}	10{Width:80;Name:"ISIN";Caption:"Προϊον ISIN";}	11{Width:55;Name:"RealPrice";Caption:"Τιμή";Style:"Format:""N2"";TextAlign:GeneralCenter;";}	12{Width:60;Name:"RealQuantity";Caption:"Ποσότητα";Style:"Format:""N2"";TextAlign:RightCenter;";}	13{Width:60;Name:"RealAmount";Caption:"Αξία";Style:"Format:""N2"";TextAlign:RightCenter;";}	14{Width:50;Name:"Currency";Caption:"Νόμισμα";}	15{Width:55;Name:"Constant";Caption:"Διάρκεια";}	16{Width:60;Name:"SE_Code";Caption:"Χρηματ/ριο";}	17{Width:60;Caption:"Αποθετίριο";}	18{Width:150;Name:"Notes";Caption:"Παρατήρηση";Style:"TextAlign:LeftCenter;";}	19{Width:100;Name:"Sender_Name";Caption:"Διαβιβαστής";Style:"TextAlign:LeftCenter;";}	20{Width:100;Name:"Advisor_Name";Caption:"Advisor";Style:"TextAlign:LeftCenter;";}	21{Width:100;Name:"Diax_Name";Caption:"Διαχειριστής";}	22{Caption:"Υπηρεσίες";}	23{Caption:"Επενδ.Πολιτική";}	24{Caption:"Επενδ.Profile";}	25{Caption:"Επενδ.πρόταση";}	26{Caption:"Κίνδυνος";}	27{Caption:"MiFIID_2";}	28{Caption:"Χρημ.Εκτελ. Title";}	29{Caption:"Προτινόμενο απο ΕΕ";}	30{Width:50;Name:"FeesPercent";Caption:"%";}	31{Width:60;Caption:"Ποσό";}	32{Width:60;Caption:"Έκπτωση";}	33{Width:60;Caption:"Τελικό ποσό";}	37{Name:"ID";Caption:"ID";}	38{Name:"Client_ID";Caption:"Client_ID";}	39{Name:"Provider_ID";Caption:"Provider_ID";}	40{Name:"Status";Caption:"Status";}	41{Name:"Parent_ID";Caption:"Parent_ID";}	42{Name:"Styles";Caption:"Styles";}	43{Name:"Share_ID";Caption:"Share_ID";}	44{Name:"Contract_ID";Caption:"Contract_ID";}	45{Name:"Contract_Details_ID";Caption:"Contract_Details_ID";}	46{Name:"Contract_Packages_ID";Caption:"Contract_Packages_ID";}	47{Caption:"Check_FileName";}	48{Caption:"BusinessType_ID";}	49{Name:"Product_ID";Caption:"Product_ID";}	50{Name:"ProductCategory_ID";Caption:"ProductCategory_ID";}	51{Name:"SendCheck";Caption:"SendCheck";}	52{Caption:"Executor_Title";}	53{Caption:"ValueDate";}	54{Caption:"AccruedInterest";}	55{Caption:"FeesMisc";}	56{Caption:"Depository_Title";}	57{Caption:"QuantityMin";}	58{Caption:"QuantityStep";}	59{Caption:"ClientType";}	60{Caption:"Currency Rate";}	61{Caption:"Αξία σε EUR";}	</value>
+  </data>
+  <data name="fgCompare.ColumnInfo" xml:space="preserve">
+    <value>23,0,0,0,0,85,Columns:0{Width:25;Name:"Check";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:180;Name:"ClientOrder_ID";Caption:"Client Order ID";Style:"TextAlign:LeftCenter;";}	2{Width:100;Name:"Company";Caption:"Company";}	3{Width:75;Name:"ExecuteDate";Caption:"Ημερ.εκτέλεσης";}	4{Width:100;Name:"ISIN";Caption:"ISIN";}	5{Width:50;Name:"Aktion";Caption:"Πράξη";}	6{Width:60;Name:"Currency";Caption:"Νόμισμα";}	7{Width:70;Name:"Quantity";Caption:"Quantity";}	8{Width:70;Name:"Price";Caption:"Price";}	9{Width:70;Name:"SE_Code";Caption:"Χρηματ/ριο";}	10{Width:70;Name:"Depository";Caption:"Αποθετίριο";}	11{Width:70;Name:"Fee";Caption:"Fee";}	12{Width:70;Name:"MarketFee";Caption:"Market Fee";}	13{Width:70;Name:"Accrued";Caption:"Accrued";}	14{Width:70;Name:"Commission";Caption:"Commission";}	15{Name:"ID";Caption:"ID";}	16{Name:"Status";Caption:"Status of FinishAction";}	17{Name:"StyleFlag";Caption:"StyleFlag";}	18{Name:"TradeTime";Caption:"TradeTime";}	19{Name:"AktionDate";Caption:"AktionDate";}	20{Name:"SettlementDate";Caption:"SettlementDate";}	21{Name:"SE_ID";Caption:"SE_ID";}	22{Name:"Depository_ID";Caption:"Depository_ID";}	</value>
+  </data>
+  <data name="fgList2.ColumnInfo" xml:space="preserve">
+    <value>22,0,0,0,0,85,Columns:0{Width:25;Style:"DataType:System.Int32;TextAlign:RightCenter;";}	1{Width:35;Name:"Aktion";Caption:"Πράξη";}	2{Width:60;Name:"RealQuantity";Caption:"Ποσότητα";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	3{Width:60;Name:"RealPrice";Caption:"Τιμή";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	4{Width:60;Caption:"Fee";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	5{Width:60;Caption:"MarketFee";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	6{Width:60;Caption:"Accrued";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	7{Width:60;Caption:"Commission";Style:"Format:""N4"";DataType:System.Decimal;TextAlign:RightCenter;";}	8{Width:50;Name:"Currency";Caption:"Νόμισμα";}	9{Width:120;Name:"ContractTitle";Caption:"Σύμβαση";}	10{Width:80;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	11{Width:80;Name:"Portfolio";Caption:"Portfolio";Style:"TextAlign:LeftCenter;";}	12{Width:100;Name:"ClientFullName";Caption:"Εντολέας";Style:"TextAlign:LeftCenter;";}	13{Width:60;Name:"BulkCommand";Caption:"Bulk N";Style:"TextAlign:LeftCenter;";}	14{Width:60;Name:"Title";Caption:"Προϊον Τίτλος";}	15{Width:80;Name:"Reuters";Caption:"Προϊον Κωδικός Reuters";}	16{Width:80;Name:"ISIN";Caption:"Προϊον ISIN";}	17{Width:60;Name:"SE_Code";Caption:"Χρηματ/ριο";}	18{Width:70;Caption:"Ημερομηνία Εκτέλεσης";}	19{Width:150;Name:"Notes";Caption:"Παρατήρηση";Style:"TextAlign:LeftCenter;";}	20{Name:"ID";Caption:"ID";}	21{Name:"CommandType_ID";Caption:"CommandType_ID";}	</value>
+  </data>
+  <data name="fgProvider2.ColumnInfo" xml:space="preserve">
+    <value>27,0,0,0,0,85,Columns:0{Width:35;Caption:"ΑΑ";}	1{Width:30;Name:"Sign";Caption:"Sign";Style:"BackColor:Transparent;";}	2{Width:60;Name:"Quantity";Caption:"Quantity";Style:"ComboList:""Decimal"";DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	3{Width:60;Name:"Price";Caption:"Price";Style:"ComboList:""Decimal"";DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	4{Width:60;Name:"Fee";Caption:"Fee";Style:"DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	5{Width:60;Name:"MarketFee";Caption:"Market Fee";Style:"ComboList:""Decimal"";DataType:System.Decimal;TextAlign:RightCenter;";}	6{Width:60;Name:"Accrued";Caption:"Accrued";Style:"ComboList:""Decimal"";DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	7{Width:60;Name:"Commission";Caption:"Commission";Style:"ComboList:""Decimal"";DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	8{Width:60;Name:"Taxes";Caption:"Taxes";Style:"Format:""N"";ComboList:""Decimal"";";}	9{Width:60;Name:"Amount_TradeCurrency";Caption:"Settlement Amt in Trade Currency";Style:"DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	10{Width:60;Name:"ExchangeRate";Caption:"Exchange rate";Style:"DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	11{Width:60;Name:"mt_SettleCurrency";Caption:"Settlement Amt in Settle Currency";Style:"DataType:System.Decimal;BackColor:Transparent;TextAlign:RightCenter;";}	12{Width:80;Name:"PlaceSettlement";Caption:"Place Of Settlement";Style:"BackColor:Transparent;";}	13{Width:70;Name:"SE_Code";Caption:"Χρηματιστίριο";Style:"BackColor:Transparent;";}	14{Width:70;Name:"Depository_Code";Caption:"Αποθετίριο";Style:"BackColor:Transparent;";}	15{Width:65;Name:"TradeDate";Caption:"Trade Date";Style:"BackColor:Transparent;TextAlign:GeneralCenter;";}	16{Width:65;Name:"TradeTime";Caption:"Trade Time";}	17{Width:65;Name:"ValueDate";Caption:"Value Date";Style:"BackColor:Transparent;TextAlign:GeneralCenter;";}	18{Width:50;Name:"Currency";Caption:"Trade Currency";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	19{Width:100;Name:"ISIN";Caption:"ISIN";}	20{Width:90;Name:"Code";Caption:"Security Code";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	21{Width:140;Name:"Description";Caption:"Security Description";Style:"BackColor:Transparent;";}	22{Width:130;Name:"Market";Caption:"Market";Style:"BackColor:Transparent;";}	23{Width:150;Name:"ClientOrder_ID";Caption:"Client Order ID";Style:"BackColor:Transparent;";}	24{Name:"ID";Caption:"ID";Style:"BackColor:Transparent;";}	25{Name:"StockExchange_ID";Caption:"StockExchange_ID";}	26{Name:"Depositories_ID";Caption:"Depositories_ID";}	</value>
+  </data>
+  <data name="fgProvider2.StyleInfo" xml:space="preserve">
+    <value>Normal{Font:Microsoft Sans Serif, 8.25pt;}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	NewRow{}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{}	SelectedRowHeader{}	GrandTotal{BackColor:DimGray;ForeColor:White;}	Subtotal0{BackColor:Silver;ForeColor:Black;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	</value>
+  </data>
+  <metadata name="toolLeft2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <metadata name="toolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>332, 17</value>
+  </metadata>
+  <data name="fgFinish.ColumnInfo" xml:space="preserve">
+    <value>36,0,0,0,0,85,Columns:0{Width:25;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:35;Caption:"ΑΑ";}	2{Width:50;Name:"AA";Caption:"Εκτελούσα Επιχείρηση";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	3{Width:70;Name:"TradeDate";Caption:"Ημερομηνία Εκτέλεσης";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	4{Width:60;Name:"TradeTime";Caption:"Ωρα Εκτέλεσης";Style:"TextAlign:LeftCenter;";}	5{Width:70;Name:"SettlementDate";Caption:"Ημερομηνία Διακανονισμού";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	6{Width:70;Name:"Command_ID";Caption:"N";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	7{Width:45;Name:"Aktion";Caption:"Ενέργεια";Style:"TextAlign:LeftCenter;";}	8{Width:100;Name:"Code";Caption:"Κωδικός πελάτη";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	9{Width:100;Name:"Portfolio";Caption:"Portfolio";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	10{Width:130;Name:"ContractTitle";Caption:"Σύμβαση";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	11{Width:45;Name:"Product_ID";Caption:"Προϊον";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	12{Width:80;Name:"ISIN";Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	13{Width:100;Name:"Share_Title";Caption:"Τίτλος";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	14{Width:60;Name:"Quantity";Caption:"Ποσότητα";Style:"BackColor:Transparent;";}	15{Width:60;Name:"Price";Caption:"Τιμή εκτέλεσης";Style:"BackColor:Transparent;";}	16{Width:50;Name:"Currency";Caption:"Νόμισμα";}	17{Width:60;Name:"Accured";Caption:"Δεδουλευμένοι τόκοι";}	18{Width:60;Name:"MarketFee";Caption:"Market Fee";Style:"Format:""N2"";";}	19{Width:60;Name:"SE_Code";Caption:"Χρηματιστήριο";Style:"BackColor:Transparent;";}	20{Width:60;Name:"Depository_Code";Caption:"Αποθετήριο";}	21{Width:50;Name:"Currency";Caption:"Νομισμα διακανονισμού";}	22{Width:55;Name:"CurrencyRate";Caption:"Curr.Rate";}	23{Width:80;Name:"Notes";Caption:"Σχόλιο";Style:"BackColor:Transparent;";}	24{Width:60;Name:"Fee";Caption:"Fee";Style:"Format:""N2"";BackColor:Transparent;";}	25{Width:180;Name:"ClientOrder_ID";Caption:"ClientOrder_ID";Style:"BackColor:Transparent;TextAlign:LeftCenter;";}	26{Width:60;Name:"Commission";Caption:"Προμήθεια";Style:"BackColor:Transparent;";}	27{Width:50;Name:"ID";Caption:"ID";Style:"BackColor:Transparent;";}	28{Name:"Contract_ID";Caption:"Contract_ID";}	29{Name:"Contract_Details_ID";Caption:"Contract_Details_ID";}	30{Name:"Contract_Packages_ID";Caption:"Contract_Packages_ID";}	31{Name:"ShareCodes_ID";Caption:"ShareCodes_ID";}	32{Name:"Provider_ID";Caption:"Provider_ID";}	33{Name:"Depository_ID";Caption:"Depository_ID";}	34{Name:"Custodian_ID";Caption:"Custodian_ID";}	35{Name:"StockExchange_ID";Caption:"StockExchange_ID";}	</value>
+  </data>
+  <data name="fgOrdersID.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:179;Caption:"Λάθος Client Order ID";Style:"TextAlign:LeftCenter;";}	1{Caption:"Trade Date";Visible:False;}	2{Caption:"Action";Visible:False;}	3{Caption:"Market";Visible:False;}	4{Caption:"ISIN";Visible:False;}	5{Caption:"ProductTitle";Visible:False;}	6{Caption:"Quantity";Visible:False;}	7{Caption:"Price";Visible:False;}	8{Caption:"Currency";Visible:False;}	</value>
+  </data>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>227, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>50</value>
+  </metadata>
+</root>

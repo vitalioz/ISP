@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="account" xml:space="preserve">
+    <value>Κωδικός</value>
+  </data>
+  <data name="account_number" xml:space="preserve">
+    <value>Αριθμός Λογαριασμού</value>
+  </data>
+  <data name="account_subaccount" xml:space="preserve">
+    <value>Κωδικός / Υποκωδικός</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Ενεργός</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Διευθυνση</value>
+  </data>
+  <data name="address_and_contact_information" xml:space="preserve">
+    <value>Στοιχεία Διεύθυνσης και Επικοινωνίας</value>
+  </data>
+  <data name="address_and_contact_details" xml:space="preserve">
+    <value>Στοιχεία Διεύθυνσης και Επικοινωνίας</value>
+  </data>
+  <data name="address_street" xml:space="preserve">
+    <value>Διεύθυνση – Οδός</value>
+  </data>
+  <data name="advisor" xml:space="preserve">
+    <value>Σύμβουλος</value>
+  </data>
+  <data name="advisors" xml:space="preserve">
+    <value>Σύμβουλοι</value>
+  </data>
+  <data name="advisory" xml:space="preserve">
+    <value>Συμβουλευτική</value>
+  </data>
+  <data name="aggressive_growth" xml:space="preserve">
+    <value>Επιθετικής ανάπτυξης</value>
+  </data>
+  <data name="alerts" xml:space="preserve">
+    <value>Eιδοποιήσεις</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>Ολα</value>
+  </data>
+  <data name="all_orders" xml:space="preserve">
+    <value>Όλες Εντολές</value>
+  </data>
+  <data name="all_transactions" xml:space="preserve">
+    <value>Όλες Πράξεις</value>
+  </data>
+  <data name="amount" xml:space="preserve">
+    <value>Ποσό</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>Α</value>
+  </data>
+  <data name="balanced_growth" xml:space="preserve">
+    <value>Ισοροπης αναπτυξης</value>
+  </data>
+  <data name="bank" xml:space="preserve">
+    <value>Τράπεζα</value>
+  </data>
+  <data name="black_list" xml:space="preserve">
+    <value>Μαύρη λίστα</value>
+  </data>
+  <data name="bonds" xml:space="preserve">
+    <value>Ομόλογα</value>
+  </data>
+  <data name="branch" xml:space="preserve">
+    <value>Κατάστημα</value>
+  </data>
+  <data name="brokerage_and_intermediary" xml:space="preserve">
+    <value>Χρηματιστηριακή Διαμεσολάβηση</value>
+  </data>
+  <data name="brokerage_comissions_reports" xml:space="preserve">
+    <value>Reports προμηθειών διαμεσολάβησης</value>
+  </data>
+  <data name="brokerage_settlements" xml:space="preserve">
+    <value>Χρηματιστηριακός διακανονισμός</value>
+  </data>
+  <data name="bs" xml:space="preserve">
+    <value>ΑΠ</value>
+  </data>
+  <data name="b_s" xml:space="preserve">
+    <value>Α&amp;Π</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Ακύρωση</value>
+  </data>
+  <data name="investor_share" xml:space="preserve">
+    <value>Μερίδα</value>
+  </data>
+  <data name="certificate_Information" xml:space="preserve">
+    <value>Στοιχεία πιστοποιητικού</value>
+  </data>
+  <data name="checking" xml:space="preserve">
+    <value>Έλεγχος</value>
+  </data>
+  <data name="citizenship" xml:space="preserve">
+    <value>Υπηκοότητα</value>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>Πόλη</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Κατηγορία</value>
+  </data>
+  <data name="clear_filters" xml:space="preserve">
+    <value>Απαλοιφή κριτηρίων</value>
+  </data>
+  <data name="client" xml:space="preserve">
+    <value>Πελάτης</value>
+  </data>
+  <data name="clients_bank_accounts" xml:space="preserve">
+    <value>Σύνολο Τραπ. Λογαρ. του Πελάτη</value>
+  </data>
+  <data name="clients_list" xml:space="preserve">
+    <value>Λίστα Πελατών</value>
+  </data>
+  <data name="clients_search" xml:space="preserve">
+    <value>Αναζήτηση Πελατών</value>
+  </data>
+  <data name="clients_update" xml:space="preserve">
+    <value>Ενημέρωση Πελατών</value>
+  </data>
+  <data name="client_information" xml:space="preserve">
+    <value>Στοιχεία Πελάτη</value>
+  </data>
+  <data name="client_list" xml:space="preserve">
+    <value>Λίστα Πελάτη</value>
+  </data>
+  <data name="client_search" xml:space="preserve">
+    <value>Αναζήτηση Πελάτη</value>
+  </data>
+  <data name="client_updating" xml:space="preserve">
+    <value>Ενημέρωση Πελάτη</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>Κωδικός</value>
+  </data>
+  <data name="coment" xml:space="preserve">
+    <value>Παρατήρηση</value>
+  </data>
+  <data name="coments" xml:space="preserve">
+    <value>Παρατηρήσεις</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Σχόλιο</value>
+  </data>
+  <data name="commercial_management_accounting" xml:space="preserve">
+    <value>Εμπορική Διαχ. &amp; Γενική Λογιστική</value>
+  </data>
+  <data name="commission" xml:space="preserve">
+    <value>Προμήθεια</value>
+  </data>
+  <data name="commissions" xml:space="preserve">
+    <value>Προμήθειες</value>
+  </data>
+  <data name="commission_calculation" xml:space="preserve">
+    <value>Υπολογισμός Προμήθειας</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Εταιρεία</value>
+  </data>
+  <data name="companys_commission" xml:space="preserve">
+    <value>Προμήθεια Εταιρείας</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Κατάσταση</value>
+  </data>
+  <data name="connection_method" xml:space="preserve">
+    <value>Τρόπος Επικοινωνίας</value>
+  </data>
+  <data name="contact_details" xml:space="preserve">
+    <value>Στοιχεία Επικοινωνίας</value>
+  </data>
+  <data name="contact_information" xml:space="preserve">
+    <value>Στοιχεία Επικοινωνίας</value>
+  </data>
+  <data name="contracts" xml:space="preserve">
+    <value>Συμβάσεις</value>
+  </data>
+  <data name="contract_details" xml:space="preserve">
+    <value>Στοιχεια Συμβασεων</value>
+  </data>
+  <data name="countries" xml:space="preserve">
+    <value>Χώρες</value>
+  </data>
+  <data name="country" xml:space="preserve">
+    <value>Χώρα</value>
+  </data>
+  <data name="country_of_taxation" xml:space="preserve">
+    <value>Χώρα Φορολόγησης</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>Νόμισμα</value>
+  </data>
+  <data name="customer_information" xml:space="preserve">
+    <value>Στοιχεία Πελάτη</value>
+  </data>
+  <data name="data_changes" xml:space="preserve">
+    <value>Αλλαγές στοιχείων</value>
+  </data>
+  <data name="data_entry" xml:space="preserve">
+    <value>Εισαγωγή Δεδομένων</value>
+  </data>
+  <data name="data_initialisation" xml:space="preserve">
+    <value>Αρχικοποίηση δεδομένων</value>
+  </data>
+  <data name="date_" xml:space="preserve">
+    <value>Ημ/νία</value>
+  </data>
+  <data name="date_from" xml:space="preserve">
+    <value>Ημ/νία απο</value>
+  </data>
+  <data name="date_of_birth" xml:space="preserve">
+    <value>Ημερομηνία Γέννησης</value>
+  </data>
+  <data name="date_of_issuing" xml:space="preserve">
+    <value>Ημερομηνία Έκδοσης</value>
+  </data>
+  <data name="date_of_registration" xml:space="preserve">
+    <value>Ημερομηνία Καταχώρισης</value>
+  </data>
+  <data name="date_start_end" xml:space="preserve">
+    <value>Ημερομηνία Έναρξης / Λήξης</value>
+  </data>
+  <data name="derivatives" xml:space="preserve">
+    <value>Παράγωγα</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="digital_settlement_advice" xml:space="preserve">
+    <value>Ηλεκτρονικά πινακίδια</value>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>Έκπτωση</value>
+  </data>
+  <data name="discretionary_portfolio_management" xml:space="preserve">
+    <value>Διακριτική Διαχείριση Χαρτοφυλακίου</value>
+  </data>
+  <data name="dms" xml:space="preserve">
+    <value>DMS</value>
+  </data>
+  <data name="documentation" xml:space="preserve">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="documents" xml:space="preserve">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="document_type" xml:space="preserve">
+    <value>Τύπος εγγράφου</value>
+  </data>
+  <data name="doc_type_id" xml:space="preserve">
+    <value>Κωδικός τύπου εγγράφου</value>
+  </data>
+  <data name="execute_credit" xml:space="preserve">
+    <value>Εκτελ.Πιστ.</value>
+  </data>
+  <data name="equities" xml:space="preserve">
+    <value>Μετοχές</value>
+  </data>
+  <data name="etf" xml:space="preserve">
+    <value>ΔΑΚ</value>
+  </data>
+  <data name="execution" xml:space="preserve">
+    <value>Εκτέλεση</value>
+  </data>
+  <data name="execution_date" xml:space="preserve">
+    <value>Ημερομηνία Εκτέλεσης</value>
+  </data>
+  <data name="execution_date_from" xml:space="preserve">
+    <value>Ημερομηνία Εκτέλεσης απο</value>
+  </data>
+  <data name="percent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="exit_" xml:space="preserve">
+    <value>Έξοδος</value>
+  </data>
+  <data name="e_mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="facility_options" xml:space="preserve">
+    <value>Πακέτα Υπηρεσιών</value>
+  </data>
+  <data name="fathers_surname" xml:space="preserve">
+    <value>Επίθετο Πατέρα</value>
+  </data>
+  <data name="fax" xml:space="preserve">
+    <value>Φαξ</value>
+  </data>
+  <data name="female" xml:space="preserve">
+    <value>Θηλυκό</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>Αρχείο</value>
+  </data>
+  <data name="file_name" xml:space="preserve">
+    <value>Όνομα αρχείου</value>
+  </data>
+  <data name="filter" xml:space="preserve">
+    <value>Φίλτρο</value>
+  </data>
+  <data name="final" xml:space="preserve">
+    <value>Τελικό</value>
+  </data>
+  <data name="final_commission" xml:space="preserve">
+    <value>Τελική Προμήθεια</value>
+  </data>
+  <data name="fixed_advance" xml:space="preserve">
+    <value>Fixed Advance</value>
+  </data>
+  <data name="fixed_income" xml:space="preserve">
+    <value>Σταθερου εισοδηματος</value>
+  </data>
+  <data name="full_name" xml:space="preserve">
+    <value>Ονοματεπωνυμο</value>
+  </data>
+  <data name="general_information" xml:space="preserve">
+    <value>Γενικά Στοιχεία</value>
+  </data>
+  <data name="transfer_backlog_standing_orders" xml:space="preserve">
+    <value>Μεταφορά ανεκτέλεστων πάγιων εντολών</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>Βοήθεια</value>
+  </data>
+  <data name="hf_greek_products_of_fixed_income" xml:space="preserve">
+    <value>HF Ελληνικων Προιοντων Σταθερου Εισοδηματος</value>
+  </data>
+  <data name="hf_international_equities" xml:space="preserve">
+    <value>HF Διεθνης Μετοχες</value>
+  </data>
+  <data name="hf_international_fixed_income" xml:space="preserve">
+    <value>HF Διεθνους Σταθερου Εισοδηματος</value>
+  </data>
+  <data name="history" xml:space="preserve">
+    <value>Ιστορία</value>
+  </data>
+  <data name="id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="income_80_20" xml:space="preserve">
+    <value>Εισοδηματος 80/20</value>
+  </data>
+  <data name="indexes" xml:space="preserve">
+    <value>Eυρετήρια</value>
+  </data>
+  <data name="informing" xml:space="preserve">
+    <value>Ενημέρωση</value>
+  </data>
+  <data name="informing_ways" xml:space="preserve">
+    <value>Τρόπος Ενημέρωσης</value>
+  </data>
+  <data name="institutional" xml:space="preserve">
+    <value>Θεσμικός</value>
+  </data>
+  <data name="wrong_amount" xml:space="preserve">
+    <value>Λάθος ποσότητα</value>
+  </data>
+  <data name="investment_advices" xml:space="preserve">
+    <value>Επενδυτικές Συμβουλές</value>
+  </data>
+  <data name="investment_advise" xml:space="preserve">
+    <value>Επενδυτικές Συμβουλή</value>
+  </data>
+  <data name="investment_committees" xml:space="preserve">
+    <value>Επενδυτικές Επιτροπές</value>
+  </data>
+  <data name="investment_dvices" xml:space="preserve">
+    <value>Επενδυτικές Συμβουλές</value>
+  </data>
+  <data name="investment_policy" xml:space="preserve">
+    <value>Επενδυτική Πολιτική</value>
+  </data>
+  <data name="investment_proposals" xml:space="preserve">
+    <value>Επενδυτικές Προτάσεις</value>
+  </data>
+  <data name="isin" xml:space="preserve">
+    <value>ISIN</value>
+  </data>
+  <data name="issue" xml:space="preserve">
+    <value>Πρόβλημα</value>
+  </data>
+  <data name="issuing_authority" xml:space="preserve">
+    <value>Αρχή Έκδοσης</value>
+  </data>
+  <data name="joint" xml:space="preserve">
+    <value>Κοινός</value>
+  </data>
+  <data name="joint_owners" xml:space="preserve">
+    <value>Συνδικαιούχοι</value>
+  </data>
+  <data name="labels" xml:space="preserve">
+    <value>Ετικετες</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Γλώσσα</value>
+  </data>
+  <data name="legal_documentation" xml:space="preserve">
+    <value>Νομιμοποιητικά Έγγραφα</value>
+  </data>
+  <data name="legal_documents" xml:space="preserve">
+    <value>Νομιμοποιητικά Έγγραφα</value>
+  </data>
+  <data name="list_print" xml:space="preserve">
+    <value>Εκτύπωση Λίστας</value>
+  </data>
+  <data name="male" xml:space="preserve">
+    <value>Αρσενικό</value>
+  </data>
+  <data name="management" xml:space="preserve">
+    <value>Διαχείριση</value>
+  </data>
+  <data name="managment_fees_reports" xml:space="preserve">
+    <value>Reports εξόδων διαχείρισης</value>
+  </data>
+  <data name="managment_fees" xml:space="preserve">
+    <value>Έξοδα Διαχείρισης</value>
+  </data>
+  <data name="maximize" xml:space="preserve">
+    <value>Μεγιστοποίηση</value>
+  </data>
+  <data name="miscellaneous" xml:space="preserve">
+    <value>Διάφορα</value>
+  </data>
+  <data name="miscellaneous_lists" xml:space="preserve">
+    <value>Λίστα διαφόρων</value>
+  </data>
+  <data name="mobile" xml:space="preserve">
+    <value>Κινητό</value>
+  </data>
+  <data name="money_market" xml:space="preserve">
+    <value>Διαχειρισης Διαθεσιμων</value>
+  </data>
+  <data name="mothers_surname" xml:space="preserve">
+    <value>Επίθετο Μητέρας</value>
+  </data>
+  <data name="mutual_fund" xml:space="preserve">
+    <value>ΑΚ</value>
+  </data>
+  <data name="mutual_funds" xml:space="preserve">
+    <value>ΑΚ</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Όνομα</value>
+  </data>
+  <data name="nee" xml:space="preserve">
+    <value>Το Γένος</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Όχι</value>
+  </data>
+  <data name="note" xml:space="preserve">
+    <value>Παρατήρηση</value>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>Παρατηρήσεις</value>
+  </data>
+  <data name="not_checked" xml:space="preserve">
+    <value>Δεν ελέγχθηκε</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Αριθμός</value>
+  </data>
+  <data name="number_account" xml:space="preserve">
+    <value>Number Account</value>
+  </data>
+  <data name="only_active_clients" xml:space="preserve">
+    <value>Μονο Ενεργοι Πελατες</value>
+  </data>
+  <data name="only_executed_transactions" xml:space="preserve">
+    <value>Μόνο Εκτελεσμένες Πράξεις</value>
+  </data>
+  <data name="only_transmitted_transactions" xml:space="preserve">
+    <value>Μόνο Διαβιβασμένες Πράξεις</value>
+  </data>
+  <data name="only_unexecuted_transactions" xml:space="preserve">
+    <value>Μόνο Ανεκτέλεστες Πράξεις</value>
+  </data>
+  <data name="only_untransmitted_transactions" xml:space="preserve">
+    <value>Μόνο Αδιαβίβαστες Πράξεις</value>
+  </data>
+  <data name="options" xml:space="preserve">
+    <value>Επιλογές</value>
+  </data>
+  <data name="order" xml:space="preserve">
+    <value>Εντολή</value>
+  </data>
+  <data name="cash_account" xml:space="preserve">
+    <value>Λογαριασμός μετρητών</value>
+  </data>
+  <data name="orders_search" xml:space="preserve">
+    <value>Αναζήτηση Εντολών</value>
+  </data>
+  <data name="order_book" xml:space="preserve">
+    <value>Εντολόχαρτο</value>
+  </data>
+  <data name="order_cancelation" xml:space="preserve">
+    <value>Ακύρωση Εντολής</value>
+  </data>
+  <data name="order_execution" xml:space="preserve">
+    <value>Εκτέλεση Εντολής</value>
+  </data>
+  <data name="execute_debit" xml:space="preserve">
+    <value>Εκτελ.Χρεωσ.</value>
+  </data>
+  <data name="orders_transfer" xml:space="preserve">
+    <value>Μεταφορά Εντολών</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>Απο</value>
+  </data>
+  <data name="package" xml:space="preserve">
+    <value>Πακέτο</value>
+  </data>
+  <data name="package_commission" xml:space="preserve">
+    <value>Προμήθεια Πακέτου</value>
+  </data>
+  <data name="package_discount" xml:space="preserve">
+    <value>Έκπτωση Πακέτου</value>
+  </data>
+  <data name="package_id" xml:space="preserve">
+    <value>Κωδικός Πακέτου</value>
+  </data>
+  <data name="parameter" xml:space="preserve">
+    <value>Παράμετρος</value>
+  </data>
+  <data name="pdf" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="personally" xml:space="preserve">
+    <value>Προσωπικά</value>
+  </data>
+  <data name="personal_settings" xml:space="preserve">
+    <value>Προσωπικές Ρυθμίσεις</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Τηλέφωνο</value>
+  </data>
+  <data name="police_id_card" xml:space="preserve">
+    <value>ΑΔΤ</value>
+  </data>
+  <data name="politically_exposed_persons" xml:space="preserve">
+    <value>Πολιτικώς Εκτιθέμενο Πρόσωπο</value>
+  </data>
+  <data name="postcode" xml:space="preserve">
+    <value>Τ.Κ.</value>
+  </data>
+  <data name="post_mail" xml:space="preserve">
+    <value>Ταχυδρομική Αποστολή</value>
+  </data>
+  <data name="previous_value" xml:space="preserve">
+    <value>Προηγούμενη Τιμή</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>Τιμή</value>
+  </data>
+  <data name="private_" xml:space="preserve">
+    <value>Ιδιώτης</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>Προϊόν</value>
+  </data>
+  <data name="product_categories" xml:space="preserve">
+    <value>Κατηγορίες Προϊοντων</value>
+  </data>
+  <data name="product_list" xml:space="preserve">
+    <value>Λίστα Προϊόντων</value>
+  </data>
+  <data name="product_prices" xml:space="preserve">
+    <value>Τιμές Προϊόντων</value>
+  </data>
+  <data name="profession" xml:space="preserve">
+    <value>Επάγγελμα</value>
+  </data>
+  <data name="prospective_clients" xml:space="preserve">
+    <value>Υποψήφιοι Πελάτες</value>
+  </data>
+  <data name="provider" xml:space="preserve">
+    <value>Πάροχος</value>
+  </data>
+  <data name="securities_account" xml:space="preserve">
+    <value>Λογαριασμός Αξιών</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>Ποσότητα</value>
+  </data>
+  <data name="questionnaire" xml:space="preserve">
+    <value>Ερωτηματολόγιο</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>Ισοτιμία</value>
+  </data>
+  <data name="rates" xml:space="preserve">
+    <value>Ισοτιμίες</value>
+  </data>
+  <data name="receipt" xml:space="preserve">
+    <value>Λήψη</value>
+  </data>
+  <data name="receipt_time" xml:space="preserve">
+    <value>Ώρα Λήψης</value>
+  </data>
+  <data name="receipt_way" xml:space="preserve">
+    <value>Τρόπος Λήψης</value>
+  </data>
+  <data name="receive_and_transmit" xml:space="preserve">
+    <value>Λήψη Διαβίβαση</value>
+  </data>
+  <data name="receiving_transmission" xml:space="preserve">
+    <value>Λήψη Διαβίβαση</value>
+  </data>
+  <data name="recipient_name" xml:space="preserve">
+    <value>Όνομα λήψης</value>
+  </data>
+  <data name="reference_currency" xml:space="preserve">
+    <value>Νόμισμα Αναφοράς</value>
+  </data>
+  <data name="tax_office" xml:space="preserve">
+    <value>ΔΟΥ</value>
+  </data>
+  <data name="remaining_characters" xml:space="preserve">
+    <value>Υπόλοιποι Χαρακτήρες</value>
+  </data>
+  <data name="retrocession_fees" xml:space="preserve">
+    <value>Τέλη επανεκχώρησης</value>
+  </data>
+  <data name="reuters_code" xml:space="preserve">
+    <value>Reuters Κωδικός</value>
+  </data>
+  <data name="rm" xml:space="preserve">
+    <value>RM</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Αποθήκευση</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Αναζητηση</value>
+  </data>
+  <data name="search_investment_proposals" xml:space="preserve">
+    <value>Αναζήτηση Επενδυτικών Προτάσεων</value>
+  </data>
+  <data name="sectors" xml:space="preserve">
+    <value>Τομείς</value>
+  </data>
+  <data name="send" xml:space="preserve">
+    <value>Αποστολή</value>
+  </data>
+  <data name="send_sms" xml:space="preserve">
+    <value>Αποστολή SMS</value>
+  </data>
+  <data name="service" xml:space="preserve">
+    <value>Υπηρεσία</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Υπηρεσίες</value>
+  </data>
+  <data name="service_package" xml:space="preserve">
+    <value>Πακέτο Υπηρεσιών</value>
+  </data>
+  <data name="service_providers" xml:space="preserve">
+    <value>Υπηρεσίες Παρόχων</value>
+  </data>
+  <data name="settlement_advice_checking" xml:space="preserve">
+    <value>Έλεγχος πινακιδίων</value>
+  </data>
+  <data name="sex" xml:space="preserve">
+    <value>Φύλο</value>
+  </data>
+  <data name="shared_documents" xml:space="preserve">
+    <value>Κοινά Έγγραφα</value>
+  </data>
+  <data name="show_canceled_orders" xml:space="preserve">
+    <value>Προβολή ακυρωμένων Εντολών</value>
+  </data>
+  <data name="sn" xml:space="preserve">
+    <value>ΑΑ</value>
+  </data>
+  <data name="sound" xml:space="preserve">
+    <value>Ήχος</value>
+  </data>
+  <data name="spouses_surname" xml:space="preserve">
+    <value>Επώνυμο Συζύγου</value>
+  </data>
+  <data name="stages_of_ontracts" xml:space="preserve">
+    <value>Στάδια Συμβάσεων</value>
+  </data>
+  <data name="starting_date" xml:space="preserve">
+    <value>Ημερομηνια Εναρξης</value>
+  </data>
+  <data name="stock_exchange" xml:space="preserve">
+    <value>Χρηματιστήριο</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>Θέμα</value>
+  </data>
+  <data name="surname" xml:space="preserve">
+    <value>Επώνυμο</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>Τηλέφωνο</value>
+  </data>
+  <data name="temporary_import_data" xml:space="preserve">
+    <value>Προσωρινή Εισαγωγή δεδομένων</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>Κείμενο</value>
+  </data>
+  <data name="tin" xml:space="preserve">
+    <value>ΑΦΜ</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Τίτλος</value>
+  </data>
+  <data name="tools" xml:space="preserve">
+    <value>Εργαλεία</value>
+  </data>
+  <data name="tools_snd_sms" xml:space="preserve">
+    <value>Εργαλείο αποστολης SMS</value>
+  </data>
+  <data name="tools_options" xml:space="preserve">
+    <value>Επιλογές Εργαλείων</value>
+  </data>
+  <data name="tools_send_sms" xml:space="preserve">
+    <value>Εργαλείο αποστολης SMS</value>
+  </data>
+  <data name="transaction" xml:space="preserve">
+    <value>Πράξη</value>
+  </data>
+  <data name="transactions" xml:space="preserve">
+    <value>Πράξεις</value>
+  </data>
+  <data name="transactions_list" xml:space="preserve">
+    <value>Εντολόχαρτο</value>
+  </data>
+  <data name="transactions_search" xml:space="preserve">
+    <value>Αναζήτηση Εντολών</value>
+  </data>
+  <data name="transaction_commission" xml:space="preserve">
+    <value>Προμήθεια Συναλλαγής</value>
+  </data>
+  <data name="transmission" xml:space="preserve">
+    <value>Διαβίβαση</value>
+  </data>
+  <data name="transmission_time" xml:space="preserve">
+    <value>Ώρα Διαβίβασης</value>
+  </data>
+  <data name="transmitter" xml:space="preserve">
+    <value>Διαβιβαστής</value>
+  </data>
+  <data name="turnover" xml:space="preserve">
+    <value>Τζίρος</value>
+  </data>
+  <data name="turnover_fees" xml:space="preserve">
+    <value>Τζίροι &amp; Προμήθειες</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Τυπος</value>
+  </data>
+  <data name="type_of_issue" xml:space="preserve">
+    <value>Τύπος Προβλήματος</value>
+  </data>
+  <data name="until_" xml:space="preserve">
+    <value>έως</value>
+  </data>
+  <data name="updates_file" xml:space="preserve">
+    <value>Αρχείο Ενημερώσεων</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>Χρήστες</value>
+  </data>
+  <data name="via_eam_net" xml:space="preserve">
+    <value>Μέσω EAM-NET</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Ναι</value>
+  </data>
+  <data name="action" xml:space="preserve">
+    <value>Ενέργεια</value>
+  </data>
+  <data name="aum" xml:space="preserve">
+    <value>AUM</value>
+  </data>
+  <data name="bloomberg_code" xml:space="preserve">
+    <value> Bloomberg Κωδικός</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value>Αγορά</value>
+  </data>
+  <data name="customer" xml:space="preserve">
+    <value>Πελάτης</value>
+  </data>
+  <data name="customers_list" xml:space="preserve">
+    <value>Λίστα Πελατών</value>
+  </data>
+  <data name="customer_name" xml:space="preserve">
+    <value>Όνομα Πελάτη</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="needs" xml:space="preserve">
+    <value>Ανάγκες</value>
+  </data>
+  <data name="sell" xml:space="preserve">
+    <value>Πώληση</value>
+  </data>
+  <data name="subaccount" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="waiting" xml:space="preserve">
+    <value>Αναμονή</value>
+  </data>
+  <data name="debit" xml:space="preserve">
+    <value>Χρεωστικά</value>
+  </data>
+  <data name="inactive" xml:space="preserve">
+    <value>Ανενεργός</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Διάρκεια</value>
+  </data>
+  <data name="documents_for_applicants" xml:space="preserve">
+    <value>Έγγραφα Υποψηφίου</value>
+  </data>
+  <data name="executed_command" xml:space="preserve">
+    <value>Εκτελεσμένη εντολή</value>
+  </data>
+  <data name="contact_and_prospective_clients" xml:space="preserve">
+    <value>Επαφές και Υποψήφιοι πελάτες</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Επαφή</value>
+  </data>
+  <data name="pensive" xml:space="preserve">
+    <value>Σκεπτικός</value>
+  </data>
+  <data name="credit" xml:space="preserve">
+    <value>Πιστωτικά</value>
+  </data>
+  <data name="prospective" xml:space="preserve">
+    <value>Υποψήφιος</value>
+  </data>
+  <data name="fixed_assets" xml:space="preserve">
+    <value>Πάγια</value>
+  </data>
+  <data name="nomical_value" xml:space="preserve">
+    <value>Ονομ.Αξία</value>
+  </data>
+  <data name="investment_amount" xml:space="preserve">
+    <value>Ποσό επενδ.</value>
+  </data>
+  <data name="wrong_code" xml:space="preserve">
+    <value>Λανθασμένος κωδικός</value>
+  </data>
+  <data name="fixed_assets_until" xml:space="preserve">
+    <value>Πάγια έως</value>
+  </data>
+  <data name="pieces" xml:space="preserve">
+    <value>Τεμάχια</value>
+  </data>
+  <data name="shares" xml:space="preserve">
+    <value>Μερίδια</value>
+  </data>
+  <data name="enter_profitCenter_subacc" xml:space="preserve">
+    <value>Καταχωρήστε το Portoflio</value>
+  </data>
+  <data name="additional_margin_rate" xml:space="preserve">
+    <value>Επιπλεον Περιθωριο//Προστιθεμενο Επιτοκιο//Επιπλεον Επιτοκιο</value>
+  </data>
+  <data name="final_additional_margin_rate" xml:space="preserve">
+    <value>Τελικο Επιπλεον Περιθωριο//Προστιθεμενο Επιτοκιο//Επιπλεον Επιτοκιο</value>
+  </data>
+  <data name="gross_clients_rate" xml:space="preserve">
+    <value>Τελικο Επιτοκιο Πελατη</value>
+  </data>
+  <data name="period_start" xml:space="preserve">
+    <value>Αρχή Περιόδου</value>
+  </data>
+  <data name="period_end" xml:space="preserve">
+    <value>Τέλος Περιόδου</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>Ημέρες</value>
+  </data>
+  <data name="marital_status" xml:space="preserve">
+    <value>Οικ.κατάσταση</value>
+  </data>
+  <data name="product_recognition_error" xml:space="preserve">
+    <value>Πρόβλημα στην αναγνώριση του προϊοντος</value>
+  </data>
+  <data name="product_code_error" xml:space="preserve">
+    <value>Πρόβλημα στην αναγνώριση του κωδικού του προϊοντος</value>
+  </data>
+  <data name="group_report" xml:space="preserve">
+    <value>Ομαδικη Αναφορα</value>
+  </data>
+  <data name="trader" xml:space="preserve">
+    <value>Εμπορος</value>
+  </data>
+  <data name="summary" xml:space="preserve">
+    <value>Περίληψη</value>
+  </data>
+  <data name="ltv" xml:space="preserve">
+    <value>Περιθώριο Δανεισμού</value>
+  </data>
+  <data name="lombard_lending_as_of_portfolio_ltv" xml:space="preserve">
+    <value>% Δανεισμου σε σχεση με το Περιθωριο Δανεισμου</value>
+  </data>
+  <data name="providers_rate" xml:space="preserve">
+    <value>Ποσοστό Παρόχου</value>
+  </data>
+  <data name="lombard_lending_margin" xml:space="preserve">
+    <value>Περιθώριο Δανεισμού</value>
+    <comment>__b1</comment>
+  </data>
+  <data name="lombard_lending" xml:space="preserve">
+    <value>Δάνειο</value>
+    <comment>__b2</comment>
+  </data>
+  <data name="customer_cannot_be__deleted_due_investment_proposal__list_is_not_empty" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των επενδυτικών προτάσεων τού</value>
+    <comment>__b10</comment>
+  </data>
+  <data name="customer_cannot_be_deleted_cause_is_active" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον είναι ενεργός</value>
+    <comment>__b11</comment>
+  </data>
+  <data name="add_this_document_to_the_customer_document_file" xml:space="preserve">
+    <value>Να προστεθεί αυτό το έγγραφο στο αρχείο εγγράφων του πελάτη;</value>
+    <comment>__b12</comment>
+  </data>
+  <data name="the_introduction_of_the_surname_is_mandatory" xml:space="preserve">
+    <value>Η εισαγωγή του επωνύμου είναι υποχρεωτική</value>
+    <comment>__b13</comment>
+  </data>
+  <data name="saving_completed_successfully" xml:space="preserve">
+    <value>Η αποθήκευση ολοκληρώθηκε με επιτυχία</value>
+    <comment>__b14</comment>
+  </data>
+  <data name="customer_is_in_blacklist" xml:space="preserve">
+    <value>Πελάτης είναι στην BlackList</value>
+    <comment>__b3</comment>
+  </data>
+  <data name="attention_you_ask_for_deletion" xml:space="preserve">
+    <value>ΠΡΟΣΟΧΗ! Ζητήσατε να διαγραφεί η εγγραφή</value>
+    <comment>__b4</comment>
+  </data>
+  <data name="are_you_sure_for_deletion" xml:space="preserve">
+    <value>Είστε σίγουρος για τη διαγραφή της;</value>
+    <comment>__b5</comment>
+  </data>
+  <data name="customer_cannot_be__deleted_due_code_list_is_not_empty" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των κωδικών τού</value>
+    <comment>__b6</comment>
+  </data>
+  <data name="customer_cannot_be__deleted_due_bank_accounts_list_is_not_empty" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των τραπεζικών λογαριασμών τού</value>
+    <comment>__b7</comment>
+  </data>
+  <data name="customer_cannot_be__deleted_due_documents_list_is_not_empty" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των εγγράφων τού</value>
+    <comment>__b8</comment>
+  </data>
+  <data name="customer_cannot_be__deleted_due_update_list_is_not_empty" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των ενημερώσεων τού</value>
+    <comment>__b9</comment>
+  </data>
+  <data name="final_commission_percent" xml:space="preserve">
+    <value>Τελικό Ποσοστό Προμήθεια</value>
+    <comment>final_commission_percent</comment>
+  </data>
+  <data name="discount_in_percent" xml:space="preserve">
+    <value>% Έκπτωσης Προμήθειας</value>
+    <comment>__b15</comment>
+  </data>
+  <data name="discount_in_amount" xml:space="preserve">
+    <value>Ποσό Έκπτωσης Προμήθειας</value>
+    <comment>__b16</comment>
+  </data>
+  <data name="enter_your_product" xml:space="preserve">
+    <value>Καταχωρήστε το Προϊόν</value>
+    <comment>__b17</comment>
+  </data>
+  <data name="update_date" xml:space="preserve">
+    <value>Ημερομηνία Ενημέρωσης</value>
+    <comment>__b18</comment>
+  </data>
+  <data name="executed_debit" xml:space="preserve">
+    <value>Εκτελεσμένο Debit</value>
+    <comment>__b19</comment>
+  </data>
+  <data name="executed_credit" xml:space="preserve">
+    <value>Εκτελεσμένο Credit</value>
+    <comment>__b21</comment>
+  </data>
+  <data name="update_execution_command" xml:space="preserve">
+    <value>Ενημέρωση εκτέλεσης εντολής</value>
+    <comment>__b22</comment>
+  </data>
+  <data name="mobile_number_is_not_register" xml:space="preserve">
+    <value>Αριθμός του κινητού τηλέφώνου δεν είναι δηλωμένος</value>
+    <comment>__b23</comment>
+  </data>
+  <data name="update_execution_command_FX" xml:space="preserve">
+    <value>Ενημέρωση εκτέλεσης εντολής FX</value>
+    <comment>__b24</comment>
+  </data>
+  <data name="update_execution_command_LL" xml:space="preserve">
+    <value>Ενημέρωση εκτέλεσης εντολής LL</value>
+    <comment>__b25</comment>
+  </data>
+  <data name="update_type" xml:space="preserve">
+    <value>Τύπος Ενημέρωσης</value>
+    <comment>__b28</comment>
+  </data>
+  <data name="official_customer_information" xml:space="preserve">
+    <value>Επίσημη Ενημέρωση Πελατών</value>
+    <comment>__b26</comment>
+  </data>
+  <data name="is_not_number_register_number" xml:space="preserve">
+    <value>Δεν είναι Αριθμος. Καταχωρήστε  Αριθμό</value>
+    <comment>__b27</comment>
+  </data>
+  <data name="totals_unexecuted_transactions" xml:space="preserve">
+    <value>Σύνολα ανεκτέλεστων πράξεων</value>
+    <comment>__b29</comment>
+  </data>
+  <data name="month" xml:space="preserve">
+    <value>Μήνας</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>Έτος</value>
+    <comment>__b43</comment>
+  </data>
+  <data name="new_registration" xml:space="preserve">
+    <value>Νέα εγγραφή</value>
+    <comment>__b30</comment>
+  </data>
+  <data name="sent" xml:space="preserve">
+    <value>Στάλθηκε</value>
+    <comment>__b31</comment>
+  </data>
+  <data name="no_sent" xml:space="preserve">
+    <value>Δεν στάλθηκε</value>
+    <comment>__b32</comment>
+  </data>
+  <data name="conventional_limits" xml:space="preserve">
+    <value>Συμβατικά Όρια</value>
+    <comment>__b33</comment>
+  </data>
+  <data name="asset_allocation" xml:space="preserve">
+    <value>Asset Allocation</value>
+    <comment>__b34</comment>
+  </data>
+  <data name="suggested_products" xml:space="preserve">
+    <value>Προτινόμ.Προϊόντα</value>
+    <comment>__b35</comment>
+  </data>
+  <data name="weight_products_percent" xml:space="preserve">
+    <value>Βαρύτητα Προϊόντον</value>
+    <comment>__b36</comment>
+  </data>
+  <data name="leverage" xml:space="preserve">
+    <value>Μόχλευση</value>
+    <comment>__b37</comment>
+  </data>
+  <data name="debit_balance" xml:space="preserve">
+    <value>Χρεωστ. Υπόλοιπα</value>
+    <comment>__b38</comment>
+  </data>
+  <data name="financial_instruments" xml:space="preserve">
+    <value>Χρηματοπιστικά μέσα</value>
+    <comment>__b39</comment>
+  </data>
+  <data name="warning_monitoring_pdf" xml:space="preserve">
+    <value>ΠΡΟΣΟΧΗ! Για την τροποποίηση στοιχείων πρέπει να διαγραφεί αρχείο Monitoring PDF</value>
+    <comment>__b40</comment>
+  </data>
+  <data name="are_you_sure_for_delete" xml:space="preserve">
+    <value>Είστε σίγουρος για τη διαγραφή του;</value>
+    <comment>__b41</comment>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Διαγραφή</value>
+    <comment>__b42</comment>
+  </data>
+  <data name="contacts" xml:space="preserve">
+    <value>Επαφές</value>
+    <comment>__b44</comment>
+  </data>
+  <data name="__b45" xml:space="preserve">
+    <value>Εντολέας</value>
+    <comment>__b45</comment>
+  </data>
+  <data name="__b46" xml:space="preserve">
+    <value>Ο πελάτης δεν μπορεί να διαγραφεί εφόσον δεν είναι κενή η λίστα των προσυμβατικών εργασιών</value>
+    <comment>__b46</comment>
+  </data>
+  <data name="amka" xml:space="preserve">
+    <value>AMKA</value>
+  </data>
+  <data name="place_of_birth" xml:space="preserve">
+    <value>Τόπος Γέννησης</value>
+  </data>
+  <data name="expire_date" xml:space="preserve">
+    <value>Ημ/νία Λήξης</value>
+  </data>
+  <data name="cash_account_warning" xml:space="preserve">
+    <value>Δεν μπορεί να επιλεχθεί το ίδιο currency account στο ίδιο subaccount</value>
+  </data>
+  <data name="afm" xml:space="preserve">
+    <value>ΑΦΜ</value>
+  </data>
+  <data name="contract" xml:space="preserve">
+    <value>Σύμβαση</value>
+  </data>
+  <data name="doy" xml:space="preserve">
+    <value>ΔΟΥ</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>Προφίλ</value>
+  </data>
+  <data name="zip" xml:space="preserve">
+    <value>ΤΚ</value>
+  </data>
+  <data name="new_product" xml:space="preserve">
+    <value>Νέο προϊόν</value>
+  </data>
+  <data name="portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="products" xml:space="preserve">
+    <value>Προϊόντα</value>
+  </data>
+</root>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>POST method</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>POST method</h1>
+
+<h2>Add record</h2>
+<form action="http://localhost:8091/clientsrequests/AddClientsRequests" method="post">
+   <p><input type="text" name="Client_ID" value = "356" >
+   <p><input type="text" name="Tipos" value = "1" >
+   <p><input type="text" name="Source_ID" value = "1" >
+   <p><input type="text" name="Description" value = "{'file_name' : 'W-8BEN 7-2017_20211207214258.pdf','file_type' : 0}^{'file_name' : 'notebooks_20211207214304.docx','file_type' : 0}^" >
+   <p><input type="text" name="Warning" value = "" >
+   <p><input type="text" name="DateIns" value = "2021/12/07" >
+   <p><input type="text" name="DateClose" value = "1900/01/01" >
+   <p><input type="text" name="User_ID" value = "0" >
+   <p><input type="text" name="Status" value = "2" >
+   <p><input type="submit" value="Send">
+</form>
+
+
+</body>
+</html>

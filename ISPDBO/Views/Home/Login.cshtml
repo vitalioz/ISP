@@ -1,0 +1,27 @@
+﻿@model ISPDBO.Models.WebUsers
+@{
+    Layout = "_RegistryLayout";
+}
+
+<section id="contact">
+
+    <div class="container-md col-md-2 col-md-offset-5" style="padding-top: 100px;">
+        <form id="form" asp-action="Login" method="post">
+            <div class="form-group">
+                <label asp-for="Email">e-mail:</label>
+                <input type="email" name="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Συνθηματικό:</label>
+                <input type="password" name="Password" class="form-control" />
+            </div>
+            <div class="text-danger" style="@(Model.ID < 0 ? "display:block" : "display:none")">Λάθος e-mail η συνθηματικό</div>
+
+            <div class="form-group">
+                <a href="#">Ξέχασα τον κωδικό μου</a>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary py-2 px-4 text-white">
+        </form>
+    </div>
+
+</section>

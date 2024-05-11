@@ -1,0 +1,70 @@
+localhost:8091/webusers/GetWebUser_ID/{'email': 'gundartsev@gmail.com'}
+localhost:8091/webusers/GetWebUser_ID/{'email': 'gundartsev@gmail.com', 'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'email': 'vitaly@otenet.gr', 'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'client_id': '584'}
+localhost:8091/webusers/GetWebUser_Data/{'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'afm': '059518919'}
+localhost:8091/webusers/GetWebUser_ID/{'dob': '1959-12-26T00:00:00'}
+localhost:8091/webusers/MatchWUC/{'WU_ID': '1', 'Client_ID': '584'}
+localhost:8091/webusers/Delete?id=35
+
+localhost:8091/webusersdevices/GetWebUsersDevices_ID/{'id': '2'}
+localhost:8091/webusersdevices/GetWebUsersDevicesList_ID/{'id': '1'}
+localhost:8091/webusersdevices/GetWebUsersDevicesList_Data/{'id': '1'}
+localhost:8091/webusersdevices/GetList_Unique_ID/{'unique_ID': 'pff08pz7ob2rq9182nb0k2751qa8hl45'}
+
+localhost:8091/webusersdevices/Update
+localhost:8091/webusersdevices/UpdateStatus
+localhost:8091/webusersdevices/Delete
+localhost:8091/clients/GetClientsList/id=584
+localhost:8091/clients/GetClients_Clients/id=269
+localhost:8091/currencies/GetCurrenciesList
+localhost:8091/countries/GetCountriesList
+localhost:8091/banks/GetBanksList
+localhost:8091/specials/GetSpecialsList
+localhost:8091/brunches/GetBrunchesList
+localhost:8091/clientsdocfiles/GetClientsDocFilesList/{'client_id': '584', 'contract_id': '0', 'precontract_id': '0', 'doctypes_id': '3924' }
+localhost:8091/clientsrequests/UpdateStatus
+http://localhost:8091/clientsrequests/GetClientsRequest_Data?id=2
+http://localhost:8091/clientsrequests/GetClientsRequest_ClientID?client_id=4469&status=2
+http://localhost:8091/clients/getclient_data/{'afm':'046703510'}
+http://localhost:8091/ClientsContracts/GetClientsContractsList/356
+http://localhost:8091/webusersstates/getstatus/2263
+
+localhost:8091/clients/GetClient_ID/{'afm': '059518919'}
+localhost:8091/clients/GetClient_Data/{'mobile': '6972288803'}
+localhost:8091/clients/GetClient_Data/{'dob': '1959-12-26T00:00:00', 'afm': '059518919'}
+localhost:8091/clients/getclient_list/{'afm': '076489468'} 
+localhost:8091/clients/getclient_list/{'email': 'ceo@hellasfin.gr'} 
+
+http://10.0.4.7:8091/webusers/GetWebUser_ID/{'email': 'gundartsev@gmail.com'}
+http://10.0.4.7:8091/webusers/getwebuser_id/{'mobile': '6972288803', 'afm': '059518919'}
+http://10.0.4.7:8091/webusers/GetWebUser_Data/{'mobile': '6972288803'}
+http://10.0.4.7:8091/webusers/GetWebUser_ID/{'dob': '1959-12-26T00:00:00'}
+http://10.0.4.7:8091/webusers/GetWebUser_ID/{'client_id': '584'}
+http://10.0.4.7:8091/webusers/MatchWUC/{'WU_ID': '123', 'Client_ID': '456'}
+http://10.0.4.7:8091/webusers/Delete?id=35
+http://10.0.4.7:8091/webusersdevices/create
+http://10.0.4.7:8091/webusersstates/getstatus/2263
+http://10.0.4.7:8091/webusersdevices/GetList_Unique_ID/{'unique_ID': '79ce4d691c8f46c887e54274c87626af'}
+http://10.0.4.7:8091/webusersdevices/GetDeviceStatus/{'unique_ID': 'pff08pz7ob2rq9182nb0k2751qa8hl45'}
+
+
+localhost:8091/clients/GetClient_Data/{'afm': '076489468'} 
+http://10.0.4.7:8091/clients/GetClient_Data/{'email': 'bbenetikidis@gmail.com'}
+http://10.0.4.7:8091/clients/getclient_data/{'afm': '076489468', 'dob': '1972-02-29T00:00:00'} 
+http://10.0.4.7:8091/clients/getclient_list/{'afm': '076489468'} 
+http://10.0.4.7:8091/clients/getclient_list/{'email': 'ceo@hellasfin.gr'} 
+http://10.0.4.7:8091/clientsdocfiles/GetClientsDocFilesList/{'client_id': '584', 'contract_id': '0', 'precontract_id': '0', 'doctypes_id': '3924' }
+http://10.0.4.7:8091/currencies/GetCurrenciesList
+http://10.0.4.7:8091/countries/GetCountriesList
+http://10.0.4.7:8091/banks/GetBanksList
+http://10.0.4.7:8091/specials/GetSpecialsList
+http://10.0.4.7:8091/brunches/GetBrunchesList
+http://10.0.4.7:8091/clientsrequests/GetClientsRequest_Data?id=2
+
+localhost:8091/ClientsBankAccounts/GetClientBankAccountsList_Data/{'client_id': '584'}
+http://localhost:8091/ClientsBankAccounts/Delete?id=505
+localhost:8091/ClientsBankAccounts/GetClientBankAccountsList_Data/{'client_id': '584'}
+http://10.0.4.7:8091/ClientsBankAccounts/Delete?id=505

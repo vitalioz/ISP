@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolRight.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1154, 26</value>
+  </metadata>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>17,0,0,0,0,85,Columns:0{Width:30;Caption:"AA";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:200;Caption:"Ονοματεπώνυμο";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:140;Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:140;Caption:"SubAccount/Profit Center";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:60;Caption:"Securities";}	5{Width:60;Caption:"FX";}	6{Width:60;Caption:"Lombard Lending";}	7{Width:60;Caption:"Funds";}	8{Width:60;Caption:"Custody";}	9{Width:60;Caption:"Finders Fees";}	10{Width:110;Caption:"Advisor";}	11{Width:110;Caption:"RM";}	12{Width:110;Caption:"Introducer";}	13{Caption:"ID";Visible:False;}	14{Caption:"Client_ID";Visible:False;}	15{Caption:"Package_ID";Visible:False;}	16{Caption:"Flag";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1256, 26</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbAdd_Securities.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgSecurities.ColumnInfo" xml:space="preserve">
+    <value>37,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:30;Caption:"Α/Π";}	3{Width:100;Caption:"Προϊον Τύπος";}	4{Width:100;Caption:"Προϊον Τίτλος";}	5{Width:100;Caption:"Προϊον Κωδικός";}	6{Width:50;Caption:"Ποσότητα";}	7{Width:55;Caption:"Τιμή";Style:"TextAlign:RightCenter;";}	8{Width:45;Caption:"Νόμισμα";}	9{Width:35;Caption:"%";Style:"BackColor:PaleTurquoise;";}	10{Width:60;Caption:"Basic Fee";Style:"BackColor:PaleTurquoise;";}	11{Width:60;Caption:"Ticket Fee";Style:"BackColor:PaleTurquoise;";}	12{Width:40;Caption:"Νόμισμα";Style:"BackColor:PaleTurquoise;";}	13{Width:50;Caption:"Status";Style:"DataType:System.Boolean;BackColor:PaleTurquoise;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	14{Width:50;Caption:"Rate";}	15{Width:60;Caption:"Basic Fee";Style:"BackColor:Khaki;";}	16{Width:60;Caption:"Ticket Fee";Style:"BackColor:Khaki;";}	17{Width:40;Caption:"%";Style:"BackColor:Khaki;";}	18{Width:60;Caption:"Return Basic Fee";Style:"BackColor:Khaki;";}	19{Width:60;Caption:"Return Ticket Fee";Style:"BackColor:Khaki;";}	20{Width:60;Caption:"Basic Fee";Style:"BackColor:LightPink;ForeColor:WindowText;";}	21{Width:60;Caption:"Ticket Fee";Style:"BackColor:LightPink;";}	22{Width:40;Caption:"%";Style:"BackColor:LightPink;";}	23{Width:60;Caption:"Return Basic Fee";Style:"BackColor:LightPink;ForeColor:WindowText;";}	24{Width:60;Caption:"Return Ticket Fee";Style:"BackColor:LightPink;";}	25{Width:60;Caption:"Return Basic Fee";}	26{Width:60;Caption:"Return Ticket Fee";}	27{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:PaleGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	28{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	29{Width:150;Caption:"Παρατήρηση";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	30{Width:80;Caption:"Ημερομηνία";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	31{Width:29;Caption:"ID";Visible:False;}	32{Caption:"ProblemType_ID";Visible:False;}	33{Width:47;Caption:"Edited";Visible:False;}	34{Caption:"Values_BeforeEdit";Visible:False;}	35{Caption:"stSecur.ID";Visible:False;}	36{Caption:"Source";Visible:False;}	</value>
+  </data>
+  <metadata name="tsbAdd_FX.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1363, 26</value>
+  </metadata>
+  <data name="tabAdd_FX.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgFX.ColumnInfo" xml:space="preserve">
+    <value>27,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:160;Caption:"Cash Account";}	3{Width:70;Caption:"Αγορά";}	4{Width:50;Caption:"CurrFrom";}	5{Width:160;Caption:"Cash Account";}	6{Width:70;Caption:"Πώληση";}	7{Width:50;Caption:"CurrTo";}	8{Width:70;Caption:"Fee Rate";}	9{Width:70;Caption:"Ισοτιμία";}	10{Width:60;Caption:"Basic Fee";Style:"BackColor:Khaki;ForeColor:WindowText;";}	11{Width:40;Caption:"%";Style:"BackColor:Khaki;";}	12{Width:60;Caption:"Return Basic Fee";Style:"BackColor:Khaki;ForeColor:WindowText;";}	13{Width:60;Caption:"Basic Fee";Style:"BackColor:LightPink;";}	14{Width:40;Caption:"%";Style:"BackColor:LightPink;";}	15{Width:60;Caption:"Return Basic Fee";Style:"BackColor:LightPink;";}	16{Width:60;Caption:"Διαφορές";}	17{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:LightGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	18{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	19{Width:170;Caption:"Παρατήρηση";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	20{Width:70;Caption:"Ημερομηνία";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	21{Width:29;Caption:"ID";Visible:False;}	22{Caption:"ProblemType_ID";Visible:False;}	23{Width:47;Caption:"Edited";Visible:False;}	24{Width:87;Caption:"Values_BeforeEdit";Visible:False;}	25{Caption:"stFX.ID";Visible:False;}	26{Caption:"Source";Visible:False;}	</value>
+  </data>
+  <data name="fgLL.ColumnInfo" xml:space="preserve">
+    <value>27,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:160;Caption:"Cash Account";}	3{Width:70;Caption:"Ποσό";}	4{Width:50;Caption:"Νόμισμα";}	5{Width:80;Caption:"Τελικό Επιπλέον Περιθώριο";}	6{Width:70;Caption:"Αρχή Περιόδου";}	7{Width:70;Caption:"Τέλος Περιόδου";}	8{Width:50;Caption:"Ημέρες";}	9{Width:60;Caption:"Ισοτιμία";}	10{Width:60;Caption:"Basic Fee";Style:"BackColor:Khaki;ForeColor:WindowText;";}	11{Width:40;Caption:"%";Style:"BackColor:Khaki;";}	12{Width:60;Caption:"Return Basic Fee";Style:"BackColor:Khaki;ForeColor:WindowText;";}	13{Width:60;Caption:"Basic Fee";Style:"BackColor:LightPink;";}	14{Width:40;Caption:"%";Style:"BackColor:LightPink;";}	15{Width:60;Caption:"Return Basic Fee";Style:"BackColor:LightPink;";}	16{Width:60;Caption:"Διαφορές";}	17{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:LightGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	18{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	19{Width:180;Caption:"Παρατήρηση";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	20{Width:70;Caption:"Ημερομηνία";Style:"BackColor:LightGreen;ForeColor:WindowText;";}	21{Width:29;Caption:"ID";Visible:False;}	22{Caption:"ProblemType_ID";Visible:False;}	23{Width:47;Caption:"Edited";Visible:False;}	24{Width:87;Caption:"Values_BeforeEdit";Visible:False;}	25{Caption:"stLL.ID";Visible:False;}	26{Caption:"Source";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 65</value>
+  </metadata>
+  <data name="tabAdd_LL.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgFunds.ColumnInfo" xml:space="preserve">
+    <value>19,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:200;Caption:"Τύπος";}	3{Width:180;Caption:"Τίτλος";}	4{Width:100;Caption:"ISIN";}	5{Width:80;Caption:"Holding Position";}	6{Width:50;Caption:"BPs %";}	7{Width:120;Caption:"Returm Mutual Funds Holdings";}	8{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:PaleGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	9{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	10{Width:150;Caption:"Παρατήρηση";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	11{Width:80;Caption:"Ημερομηνία";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	12{Width:29;Caption:"ID";Visible:False;}	13{Caption:"ProblemType_ID";Visible:False;}	14{Width:47;Caption:"Edited";Visible:False;}	15{Width:87;Caption:"Values_BeforeEdit";Visible:False;}	16{Caption:"stFunds.ID";Visible:False;}	17{Caption:"Funds_ID";Visible:False;}	18{Caption:"Source";Visible:False;}	</value>
+  </data>
+  <metadata name="toolBrokerageOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>124, 65</value>
+  </metadata>
+  <data name="tsbAdd_Funds.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgCustody.ColumnInfo" xml:space="preserve">
+    <value>15,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:60;Caption:"Basic Fee";Style:"BackColor:LightPink;ForeColor:WindowText;";}	3{Width:40;Caption:"%";Style:"BackColor:LightPink;";}	4{Width:60;Caption:"Return";Style:"BackColor:LightPink;ForeColor:WindowText;";}	5{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:PaleGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	6{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	7{Width:150;Caption:"Παρατήρηση";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	8{Width:80;Caption:"Ημερομηνία";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	9{Width:29;Caption:"ID";Visible:False;}	10{Caption:"ProblemType_ID";Visible:False;}	11{Width:47;Caption:"Edited";Visible:False;}	12{Caption:"Values_BeforeEdit";Visible:False;}	13{Caption:"stCustody.ID";Visible:False;}	14{Caption:"Source";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>296, 65</value>
+  </metadata>
+  <data name="tsbAdd_Cusdoy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="C1FlexGrid2.ColumnInfo" xml:space="preserve">
+    <value>17,0,0,0,0,85,Columns:0{Width:30;Caption:"A/A";}	1{Width:70;Caption:"Ημερομηνία";Style:"Format:""dd/MM/yyyy"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:200;Caption:"Τύπος";}	3{Width:180;Caption:"Τίτλος";}	4{Width:100;Caption:"ISIN";}	5{Width:80;Caption:"Holding Position";}	6{Width:50;Caption:"BPs %";}	7{Width:120;Caption:"Returm Mutual Funds Holdings";}	8{Width:50;Caption:"Κατάσταση";Style:"DataType:System.Boolean;BackColor:PaleGreen;ForeColor:WindowText;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	9{Width:80;Caption:"Τύπος προβλήματος";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	10{Width:150;Caption:"Παρατήρηση";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	11{Width:80;Caption:"Ημερομηνία";Style:"BackColor:PaleGreen;ForeColor:WindowText;";}	12{Width:29;Caption:"ID";Visible:False;}	13{Caption:"ProblemType_ID";Visible:False;}	14{Width:47;Caption:"Edited";Visible:False;}	15{Width:87;Caption:"Values_BeforeEdit";Visible:False;}	16{Caption:"stTrans.ID";Visible:False;}	</value>
+  </data>
+  <metadata name="ToolStrip5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>403, 65</value>
+  </metadata>
+  <data name="ToolStripButton10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgShares.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:180;Caption:"Τίτλος";}	1{Width:100;Caption:"Reuters Κωδικός";}	2{Width:100;Caption:"Bloomberg Κωδικός";}	3{Width:90;Caption:"ISIN";}	4{Width:80;Caption:"Τύπος Προϊόντος";}	5{Width:100;Caption:"Κατηγορία προϊοντος";}	6{Width:60;Caption:"Χρηματ/ριο";}	7{Width:45;Caption:"Νόμισμα";}	8{Caption:"ID";}	9{Width:80;Caption:"SE_ID";}	10{Caption:"Product_ID";}	11{Caption:"ProductCategory_ID";}	</value>
+  </data>
+  <metadata name="mnuContextList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>510, 65</value>
+  </metadata>
+  <metadata name="mnuContextTrans.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>647, 65</value>
+  </metadata>
+</root>

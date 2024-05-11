@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8750BFE-2F69-4AF6-9F49-55F15E1F6280}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Email, Version=4.9.0.0, Culture=neutral, PublicKeyToken=ad504e9f0d34714a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\Aspose.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20073.357, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4000\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.13.0.25.3158\lib\CrystalDecisions.ReportSource.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4000\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.13.0.25.3158\lib\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.13.0.25.3158\lib\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.37\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAdminFees_Recs.cs" />
+    <Compile Include="clsAdminFees_Titles.cs" />
+    <Compile Include="clsBanks.cs" />
+    <Compile Include="clsCashTables.cs" />
+    <Compile Include="clsClientsRequests_Types.cs" />
+    <Compile Include="clsClients_Clients.cs" />
+    <Compile Include="clsClients_Contracts_Account.cs" />
+    <Compile Include="clsBrunches.cs" />
+    <Compile Include="clsCheckProblems.cs" />
+    <Compile Include="clsClientsDocFiles.cs" />
+    <Compile Include="clsClientsRequests.cs" />
+    <Compile Include="clsClients_Contracts.cs" />
+    <Compile Include="clsClients_Fees.cs" />
+    <Compile Include="clsClients_Filters.cs" />
+    <Compile Include="clsClients_SpecialCategories.cs" />
+    <Compile Include="clsCompanyCodes.cs" />
+    <Compile Include="clsComplexSigns.cs" />
+    <Compile Include="clsAUM_Recs.cs" />
+    <Compile Include="clsAUM_Titles.cs" />
+    <Compile Include="clsClients.cs" />
+    <Compile Include="clsCompanyPackages.cs" />
+    <Compile Include="clsClientsAdminFees.cs" />
+    <Compile Include="clsClientsAdvisoryFees.cs" />
+    <Compile Include="clsClientsBrokerageFees.cs" />
+    <Compile Include="clsClientsCustodyFees.cs" />
+    <Compile Include="clsClientsDealAdvisoryFees.cs" />
+    <Compile Include="clsClientsDiscretFees.cs" />
+    <Compile Include="clsClientsFXFees.cs" />
+    <Compile Include="clsClientsLombardFees.cs" />
+    <Compile Include="clsClientsRTOFees.cs" />
+    <Compile Include="clsContracts.cs" />
+    <Compile Include="clsClientsSettlementFees.cs" />
+    <Compile Include="clsClients_BankAccounts.cs" />
+    <Compile Include="clsContracts_Balances.cs" />
+    <Compile Include="clsContracts_BankAccounts.cs" />
+    <Compile Include="clsContracts_CashAccounts.cs" />
+    <Compile Include="clsContracts_ComplexSigns.cs" />
+    <Compile Include="clsContracts_Details.cs" />
+    <Compile Include="clsContracts_Details_Packages.cs" />
+    <Compile Include="clsContracts_Monitoring.cs" />
+    <Compile Include="clsContracts_Packages.cs" />
+    <Compile Include="clsContracts_PeriodicalEvaluation.cs" />
+    <Compile Include="clsContract_Blocks.cs" />
+    <Compile Include="clsCountries.cs" />
+    <Compile Include="clsCountriesGroups.cs" />
+    <Compile Include="clsCurrencies.cs" />
+    <Compile Include="clsCustodyCommands.cs" />
+    <Compile Include="clsCustodyFees_Recs.cs" />
+    <Compile Include="clsCustodyFees_Titles.cs" />
+    <Compile Include="clsCustomersProfiles.cs" />
+    <Compile Include="clsDepositories.cs" />
+    <Compile Include="clsDivisions.cs" />
+    <Compile Include="clsDMS_Files.cs" />
+    <Compile Include="clsDocTypes.cs" />
+    <Compile Include="clsExPostCost_Recs.cs" />
+    <Compile Include="clsExPostCost_Title.cs" />
+    <Compile Include="clsFinanceTools.cs" />
+    <Compile Include="clsFIX_IN.cs" />
+    <Compile Include="clsFIX_OUT.cs" />
+    <Compile Include="clsGAP.cs" />
+    <Compile Include="clsHFCategories.cs" />
+    <Compile Include="clsHistory.cs" />
+    <Compile Include="clsImportData.cs" />
+    <Compile Include="clsInformationMethods.cs" />
+    <Compile Include="clsInformings.cs" />
+    <Compile Include="clsInvestIdees.cs" />
+    <Compile Include="clsInvestIdees_Attachments.cs" />
+    <Compile Include="clsInvestIdees_Commands.cs" />
+    <Compile Include="clsInvestIdees_Customers.cs" />
+    <Compile Include="clsInvestIdees_Products.cs" />
+    <Compile Include="clsInvestmentCommetties_AssetAllocation.cs" />
+    <Compile Include="clsInvestmentCommetties_AssetAllocationRecs.cs" />
+    <Compile Include="clsInvestPolicies.cs" />
+    <Compile Include="clsInvoiceRecs.cs" />
+    <Compile Include="clsInvoicesRTO_Details.cs" />
+    <Compile Include="clsInvoicesTypes.cs" />
+    <Compile Include="clsInvoiceTitles.cs" />
+    <Compile Include="clsLogger.cs" />
+    <Compile Include="clsManagmentFees_Recs.cs" />
+    <Compile Include="clsManagmentFees_Titles.cs" />
+    <Compile Include="clsMenusUsers.cs" />
+    <Compile Include="clsNeeds.cs" />
+    <Compile Include="clsOptions.cs" />
+    <Compile Include="clsOrdersDPM.cs" />
+    <Compile Include="clsOrdersDPM_Recs.cs" />
+    <Compile Include="clsOrdersFX_Check.cs" />
+    <Compile Include="clsOrdersFX_Recieved.cs" />
+    <Compile Include="clsOrdersLL.cs" />
+    <Compile Include="clsOrdersLL_Check.cs" />
+    <Compile Include="clsOrdersLL_Recieved.cs" />
+    <Compile Include="clsOrdersSecurity.cs" />
+    <Compile Include="clsOrdersFX.cs" />
+    <Compile Include="clsOrders_Check.cs" />
+    <Compile Include="clsOrders_Executions.cs" />
+    <Compile Include="clsOrders_ProvidersData.cs" />
+    <Compile Include="clsOrders_ProvidersRecs.cs" />
+    <Compile Include="clsOrders_Recieved.cs" />
+    <Compile Include="clsPerformanceFees_Recs.cs" />
+    <Compile Include="clsPerformanceFees_Titles.cs" />
+    <Compile Include="clsPreContracts_Clients.cs" />
+    <Compile Include="clsProductsPrices.cs" />
+    <Compile Include="clsProducts.cs" />
+    <Compile Include="clsProductsCategories.cs" />
+    <Compile Include="clsProductsCodes.cs" />
+    <Compile Include="clsProductsDocFiles.cs" />
+    <Compile Include="clsProductsRecomLog.cs" />
+    <Compile Include="clsProductsTitles.cs" />
+    <Compile Include="clsProductsTitlesCodes.cs" />
+    <Compile Include="clsProductTitles_ComplexReasons.cs" />
+    <Compile Include="clsRatingCodes.cs" />
+    <Compile Include="clsRecieveMethods.cs" />
+    <Compile Include="clsRepresentPersons.cs" />
+    <Compile Include="clsRMJobs.cs" />
+    <Compile Include="clsSectors.cs" />
+    <Compile Include="clsServerJobs.cs" />
+    <Compile Include="clsServiceProviderAdvisoryFees.cs" />
+    <Compile Include="clsServiceProviderBrokerageFees.cs" />
+    <Compile Include="clsServiceProviderCustodyFees.cs" />
+    <Compile Include="clsServiceProviderDealAdvisoryFees.cs" />
+    <Compile Include="clsServiceProviderDiscretFees.cs" />
+    <Compile Include="clsServiceProviderFXFees.cs" />
+    <Compile Include="clsServiceProviderLombardFees.cs" />
+    <Compile Include="clsServiceProviderRTOFees.cs" />
+    <Compile Include="clsServiceProviders.cs" />
+    <Compile Include="clsServiceProvidersAdminFees.cs" />
+    <Compile Include="clsServiceProvidersCashAccounts.cs" />
+    <Compile Include="clsServiceProviderSettlementsFees.cs" />
+    <Compile Include="clsServiceProvidersOptions.cs" />
+    <Compile Include="clsServices.cs" />
+    <Compile Include="clsSettlements.cs" />
+    <Compile Include="clsSpecials.cs" />
+    <Compile Include="clsStart.cs" />
+    <Compile Include="clsStockExchanges.cs" />
+    <Compile Include="clsStockExchanges_Alias.cs" />
+    <Compile Include="clsSystem.cs" />
+    <Compile Include="clsTrx.cs" />
+    <Compile Include="clsTrxActions.cs" />
+    <Compile Include="clsContracts_BalancesRecs.cs" />
+    <Compile Include="clsTrxCharges.cs" />
+    <Compile Include="clsTrxClientsFees.cs" />
+    <Compile Include="clsTrxFees.cs" />
+    <Compile Include="clsTrxFeesSubTypes.cs" />
+    <Compile Include="clsTrxFeesTypes.cs" />
+    <Compile Include="clsTrxInvestCategories.cs" />
+    <Compile Include="clsTrxInvoices.cs" />
+    <Compile Include="clsTrxReasons.cs" />
+    <Compile Include="clsTrxTypes.cs" />
+    <Compile Include="clsUsers.cs" />
+    <Compile Include="clsDepositories_Alias.cs" />
+    <Compile Include="clsWebUsers.cs" />
+    <Compile Include="clsWebUsersDevices.cs" />
+    <Compile Include="clsWebUsersRegistrationData.cs" />
+    <Compile Include="clsWebUsersStates.cs" />
+    <Compile Include="FlexFreezeBottom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmClientData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientData.Designer.cs">
+      <DependentUpon>frmClientData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContract.Designer.cs">
+      <DependentUpon>frmContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocFilesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocFilesEdit.Designer.cs">
+      <DependentUpon>frmDocFilesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDPMOrder_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDPMOrder_Client.designer.cs">
+      <DependentUpon>frmDPMOrder_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDPMOrder_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDPMOrder_Product.designer.cs">
+      <DependentUpon>frmDPMOrder_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportData.Designer.cs">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntroducerContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntroducerContract.Designer.cs">
+      <DependentUpon>frmIntroducerContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvestProposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvestProposal.Designer.cs">
+      <DependentUpon>frmInvestProposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderDPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderDPM.Designer.cs">
+      <DependentUpon>frmOrderDPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderExecution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderExecution.Designer.cs">
+      <DependentUpon>frmOrderExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderFX.Designer.cs">
+      <DependentUpon>frmOrderFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderFX_Execution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderFX_Execution.Designer.cs">
+      <DependentUpon>frmOrderFX_Execution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderLL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderLL.Designer.cs">
+      <DependentUpon>frmOrderLL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderSecurity.Designer.cs">
+      <DependentUpon>frmOrderSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOwnersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOwnersEdit.Designer.cs">
+      <DependentUpon>frmOwnersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintInvoiceOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintInvoiceOptions.Designer.cs">
+      <DependentUpon>frmPrintInvoiceOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductData.Designer.cs">
+      <DependentUpon>frmProductData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductsPricesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductsPricesView.Designer.cs">
+      <DependentUpon>frmProductsPricesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowHistory.Designer.cs">
+      <DependentUpon>frmShowHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSMS.Designer.cs">
+      <DependentUpon>frmSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecsTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\repOfficialInforming.cs">
+      <DependentUpon>repOfficialInforming.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\repOfficialInformingAdminFees_List.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repOfficialInformingAdminFees_List.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\repOfficialInformingList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repOfficialInformingList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\repOfficialInformingManFees_List.cs">
+      <DependentUpon>repOfficialInformingManFees_List.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\repOfficialInforming_PeriodicalEvaluation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repOfficialInforming_PeriodicalEvaluation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\repOfficialInforming_RTOList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repOfficialInforming_RTOList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Greek.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Greek.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucClientData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClientData.Designer.cs">
+      <DependentUpon>ucClientData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucClientSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClientSearch.Designer.cs">
+      <DependentUpon>ucClientSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContract.Designer.cs">
+      <DependentUpon>ucContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContractsSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContractsSearch.Designer.cs">
+      <DependentUpon>ucContractsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDoubleCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDoubleCalendar.Designer.cs">
+      <DependentUpon>ucDoubleCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProductsSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProductsSearch.Designer.cs">
+      <DependentUpon>ucProductsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_Bond.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_Bond.Designer.cs">
+      <DependentUpon>ucProducts_Bond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_ETF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_ETF.Designer.cs">
+      <DependentUpon>ucProducts_ETF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_Fund.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_Fund.Designer.cs">
+      <DependentUpon>ucProducts_Fund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_Indexes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_Indexes.Designer.cs">
+      <DependentUpon>ucProducts_Indexes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_Rates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_Rates.Designer.cs">
+      <DependentUpon>ucProducts_Rates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts_Share.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts_Share.Designer.cs">
+      <DependentUpon>ucProducts_Share.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmClientData.resx">
+      <DependentUpon>frmClientData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContract.resx">
+      <DependentUpon>frmContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocFilesEdit.resx">
+      <DependentUpon>frmDocFilesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDPMOrder_Client.resx">
+      <DependentUpon>frmDPMOrder_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDPMOrder_Product.resx">
+      <DependentUpon>frmDPMOrder_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportData.resx">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntroducerContract.resx">
+      <DependentUpon>frmIntroducerContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvestProposal.resx">
+      <DependentUpon>frmInvestProposal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderDPM.resx">
+      <DependentUpon>frmOrderDPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderExecution.resx">
+      <DependentUpon>frmOrderExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderFX.resx">
+      <DependentUpon>frmOrderFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderFX_Execution.resx">
+      <DependentUpon>frmOrderFX_Execution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderLL.resx">
+      <DependentUpon>frmOrderLL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderSecurity.resx">
+      <DependentUpon>frmOrderSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOwnersEdit.resx">
+      <DependentUpon>frmOwnersEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintInvoiceOptions.resx">
+      <DependentUpon>frmPrintInvoiceOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductData.resx">
+      <DependentUpon>frmProductData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductsPricesView.resx">
+      <DependentUpon>frmProductsPricesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowHistory.resx">
+      <DependentUpon>frmShowHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSMS.resx">
+      <DependentUpon>frmSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\repOfficialInforming.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInforming.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOfficialInformingAdminFees_List.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInformingAdminFees_List.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOfficialInformingList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInformingList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOfficialInformingManFees_List.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInformingManFees_List.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOfficialInforming_PeriodicalEvaluation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInforming_PeriodicalEvaluation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOfficialInforming_RTOList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repOfficialInforming_RTOList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Greek.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Greek.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucClientData.resx">
+      <DependentUpon>ucClientData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucClientSearch.resx">
+      <DependentUpon>ucClientSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContract.resx">
+      <DependentUpon>ucContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContractsSearch.resx">
+      <DependentUpon>ucContractsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDoubleCalendar.resx">
+      <DependentUpon>ucDoubleCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProductsSearch.resx">
+      <DependentUpon>ucProductsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_Bond.resx">
+      <DependentUpon>ucProducts_Bond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_ETF.resx">
+      <DependentUpon>ucProducts_ETF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_Fund.resx">
+      <DependentUpon>ucProducts_Fund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_Indexes.resx">
+      <DependentUpon>ucProducts_Indexes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_Rates.resx">
+      <DependentUpon>ucProducts_Rates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts_Share.resx">
+      <DependentUpon>ucProducts_Share.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RecsTable.xsc">
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </None>
+    <None Include="RecsTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RecsTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RecsTable.xss">
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\25.bmp" />
+    <Content Include="images\3dots.jpg" />
+    <Content Include="images\acrobat.ico" />
+    <Content Include="images\AddChild.ico" />
+    <Content Include="images\AddFather.ico" />
+    <Content Include="images\application_form.png" />
+    <Content Include="images\application_form_add.png" />
+    <Content Include="images\application_form_edit.png" />
+    <Content Include="images\application_form_magnify.png" />
+    <Content Include="images\ArDown.gif" />
+    <Content Include="images\ArRight.gif" />
+    <Content Include="images\ArUp.gif" />
+    <Content Include="images\attach.png" />
+    <Content Include="images\AudioHS.png" />
+    <Content Include="images\basket.png" />
+    <Content Include="images\boss.ico" />
+    <Content Include="images\bulk_order.jpg" />
+    <Content Include="images\calculator.png" />
+    <Content Include="images\cancel.gif" />
+    <Content Include="images\cancel.jpg" />
+    <Content Include="images\change_group.png" />
+    <Content Include="images\cleanup.gif" />
+    <Content Include="images\client.png" />
+    <Content Include="images\clients_list.png" />
+    <Content Include="images\clipboard_sign.png" />
+    <Content Include="images\clipboard_sign_out.png" />
+    <Content Include="images\close.bmp" />
+    <Content Include="images\compare.png" />
+    <Content Include="images\confirm.gif" />
+    <Content Include="images\copy.gif" />
+    <Content Include="images\date.png" />
+    <Content Include="images\dblCalendar.png" />
+    <Content Include="images\DeleteHS.png" />
+    <Content Include="images\Disclaimer_Table_3_.png" />
+    <Content Include="images\download.gif" />
+    <Content Include="images\download.png" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\edit_multi.gif" />
+    <Content Include="images\EK_1.png" />
+    <Content Include="images\EK_2.png" />
+    <Content Include="images\EK_3.png" />
+    <Content Include="images\EK_4.png" />
+    <Content Include="images\EK_5.png" />
+    <Content Include="images\EK_6.png" />
+    <Content Include="images\EK_boxes.png" />
+    <Content Include="images\Email.ico" />
+    <Content Include="images\emailicon.gif" />
+    <Content Include="images\Enimerosi.ico" />
+    <Content Include="images\evernote.png" />
+    <Content Include="images\excel.gif" />
+    <Content Include="images\eye.png" />
+    <Content Include="images\F5.jpg" />
+    <Content Include="images\filter.gif" />
+    <Content Include="images\Find.png" />
+    <Content Include="images\FindFolder.ico" />
+    <Content Include="images\Folder-Import-16x16.png" />
+    <Content Include="images\forward.png" />
+    <Content Include="images\group_stroke.png" />
+    <Content Include="images\Help.png" />
+    <Content Include="images\history.gif" />
+    <Content Include="images\history.jpg" />
+    <Content Include="images\history4.bmp" />
+    <Content Include="images\ico_pdf.gif" />
+    <Content Include="images\intro.jpg" />
+    <Content Include="images\key.png" />
+    <Content Include="images\Labels.png" />
+    <Content Include="images\Letter.ico" />
+    <Content Include="images\limit.jpg" />
+    <Content Include="images\link.png" />
+    <Content Include="images\list_box.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\map_torn.png" />
+    <Content Include="images\market.jpg" />
+    <Content Include="images\maximise.png" />
+    <Content Include="images\merge.png" />
+    <Content Include="images\minimise.png" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\money.png" />
+    <Content Include="images\money_bag.png" />
+    <Content Include="images\money_distrib.png" />
+    <Content Include="images\node-tree.png" />
+    <Content Include="images\OK.png" />
+    <Content Include="images\options.png" />
+    <Content Include="images\pageadd_16.png" />
+    <Content Include="images\page_white_put.png" />
+    <Content Include="images\pdf.jpg" />
+    <Content Include="images\PDF_add.bmp" />
+    <Content Include="images\percent.png" />
+    <Content Include="images\phone.png" />
+    <Content Include="images\phone_handset.png" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\plus_db.gif" />
+    <Content Include="images\plus_multi.gif" />
+    <Content Include="images\price_down.png" />
+    <Content Include="images\price_up.png" />
+    <Content Include="images\print.gif" />
+    <Content Include="images\PrintHS.png" />
+    <Content Include="images\question.png" />
+    <Content Include="images\refresh.gif" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\refresh_all.png" />
+    <Content Include="images\report.png" />
+    <Content Include="images\save.gif" />
+    <Content Include="images\scenario.jpg" />
+    <Content Include="images\schema_data.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\settings.png" />
+    <None Include="images\setting_tools.png" />
+    <Content Include="images\SMS.ico" />
+    <Content Include="images\snapshot.png" />
+    <Content Include="images\SRRI_1.jpg" />
+    <Content Include="images\SRRI_2.jpg" />
+    <Content Include="images\SRRI_3.jpg" />
+    <Content Include="images\SRRI_4.jpg" />
+    <Content Include="images\SRRI_5.jpg" />
+    <Content Include="images\SRRI_6.jpg" />
+    <Content Include="images\SRRI_7.jpg" />
+    <Content Include="images\statistics.png" />
+    <Content Include="images\stop.bmp" />
+    <Content Include="images\table_sum.png" />
+    <Content Include="images\TEST.png" />
+    <Content Include="images\transfer.png" />
+    <Content Include="images\tree.gif" />
+    <Content Include="images\tree.png" />
+    <Content Include="images\tree_master.png" />
+    <Content Include="images\tree_minus.ico" />
+    <Content Include="images\tree_plus.ico" />
+    <Content Include="images\xml_exports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseUniversalClock="True" BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_StartDate="2020/8/1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

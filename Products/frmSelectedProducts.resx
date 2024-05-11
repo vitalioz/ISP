@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>39,0,0,0,0,85,Columns:0{Width:22;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"TextAlign:LeftCenter;";}	1{Width:35;Name:"AA";Caption:"N";Style:"DataType:System.Int16;TextAlign:RightCenter;";StyleFixed:"TextAlign:LeftCenter;";}	2{Width:200;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	3{Width:110;Name:"ISIN";Caption:"ISIN";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	4{Width:110;Name:"ProductCategory_Title";Caption:"Κατηγορία προϊοντος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	5{Width:120;Name:"HFCategory_Title";Caption:"Global Broad Category";Style:"DataType:System.String;TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	6{Width:80;Name:"SecID";Caption:"SecID";StyleFixed:"TextAlign:LeftCenter;";}	7{Width:110;Name:"Code";Caption:"Κωδικός Reuters";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	8{Width:80;Name:"Code2";Caption:"Exchange Ticker";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	9{Width:50;Name:"Currency";Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	10{Width:70;Name:"CreditRating";Caption:"Credit Rating";StyleFixed:"TextAlign:LeftCenter;";}	11{Width:70;Name:"MoodysRating";Caption:"Moodys";StyleFixed:"TextAlign:LeftCenter;";}	12{Width:60;Name:"FitchsRating";Caption:"Fitchs";StyleFixed:"TextAlign:LeftCenter;";}	13{Width:60;Name:"SPRating";Caption:"S&amp;P";StyleFixed:"TextAlign:LeftCenter;";}	14{Width:60;Name:"ICAPRating";Caption:"ICAP";StyleFixed:"TextAlign:LeftCenter;";}	15{Width:60;Name:"RatingGroup";Caption:"Rating Group";StyleFixed:"TextAlign:LeftCenter;";}	16{Width:100;Name:"CountryGroup_Title";Caption:"Country Group";StyleFixed:"TextAlign:LeftCenter;";}	17{Width:100;Name:"CountryRisk_Title";Caption:"Country Risk";StyleFixed:"TextAlign:LeftCenter;";}	18{Width:70;Name:"Date2";Caption:"Ημερ.Λήξης";StyleFixed:"TextAlign:LeftCenter;";}	19{Width:55;Name:"Maturity";Caption:"Maturity";StyleFixed:"TextAlign:LeftCenter;";}	20{Width:70;Name:"MaturityDate";Caption:"Maturity Date";StyleFixed:"TextAlign:LeftCenter;";}	21{Width:90;Name:"CurrencyHedged";Caption:"CurrencyHedged";StyleFixed:"TextAlign:LeftCenter;";}	22{Width:90;Name:"CurrencyHedged2";Caption:"CurrencyHedged To";StyleFixed:"TextAlign:LeftCenter;";}	23{Width:60;Name:"SurveyedKIID";Caption:"SRRI";StyleFixed:"TextAlign:LeftCenter;";}	24{Width:70;Name:"SurveyedKIID_Date";Caption:"SRRI Date";StyleFixed:"TextAlign:LeftCenter;";}	25{Width:60;Name:"StockExchange_Code";Caption:"Χρηματηστίριο";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	26{Width:60;Name:"Gravity";Caption:"Βαρύτητα %";StyleFixed:"TextAlign:LeftCenter;";}	27{Width:50;Name:"Retail";Caption:"Retail";Style:"TextAlign:GeneralCenter;ImageAlign:CenterCenter;";StyleFixed:"TextAlign:LeftCenter;";}	28{Width:50;Name:"Professional";Caption:"Professional";Style:"TextAlign:GeneralCenter;ImageAlign:CenterCenter;";StyleFixed:"TextAlign:LeftCenter;";}	29{Width:70;Name:"ComplexProduct";Caption:"Complex Pr.";StyleFixed:"TextAlign:LeftCenter;";}	30{Name:"Distribution_RTO";Caption:"Distribution-Execution Only";StyleFixed:"TextAlign:LeftCenter;";}	31{Name:"Distribution_Advisory";Caption:"Distribution-Investment Advice";StyleFixed:"TextAlign:LeftCenter;";}	32{Name:"Distribution_Discret";Caption:"Distribution-Portfolio Management";StyleFixed:"TextAlign:LeftCenter;";}	33{Width:60;Name:"RiskProfile";Caption:"Risk Profile";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	34{Width:60;Name:"Groups";Caption:"Ομάδες";StyleFixed:"TextAlign:LeftCenter;";}	35{Width:32;Name:"ID";Caption:"ID (ShareCodes_ID)";}	36{Name:"ShareTitles_ID";Caption:"ShareTitles_ID";}	38{Name:"Error";Caption:"Error";}	</value>
+  </data>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>57, 12</value>
+  </metadata>
+  <metadata name="toolLeft2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 12</value>
+  </metadata>
+  <data name="fgHistory.ColumnInfo" xml:space="preserve">
+    <value>14,0,0,0,0,85,Columns:0{Width:40;Name:"AA";Caption:"ΑΑ";}	1{Width:80;Name:"EditDate";Caption:"Ημερομηνία";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	2{Width:90;Name:"EditAktion";Caption:"Πράξη";}	3{Width:180;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:GeneralCenter;ImageAlign:CenterCenter;";}	4{Width:100;Name:"Code";Caption:"Reuters Κωδικός";}	5{Width:100;Name:"Code2";Caption:"Bloomberg Κωδικός";}	6{Width:90;Name:"ISIN";Caption:"ISIN";}	7{Width:160;Name:"ProductTitle";Caption:"Προϊον / Κατηγορία προϊοντος";}	8{Width:80;Name:"StockExchange_Code";Caption:"Χρηματ/ριο";}	9{Width:50;Name:"Currency";Caption:"Νόμισμα";}	10{Name:"ID";Caption:"ShareCodes_ID";}	11{Width:80;Name:"SE_ID";Caption:"SE_ID";}	12{Name:"Product_ID";Caption:"Product_ID";}	13{Name:"ProductCategory_ID";Caption:"ProductCategory_ID";}	</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCleanUp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIYAAEA4IJCQ4ODQcMC4gLCQMEA4kN7c1ZCYwN3YzcDI0Ozq5uDYsGdfV6CYjoB4gLa0
+        tuTi3GZmzEBIUODY4JmZZv/wsHBogMOzmODIoNfY4LCosHt1Y/Do8JOJkdPEmsvJ2tC4YGBggNnWzkpK
+        aMCwgPDgkPDYgHBosKKakMCoQPDosJB4QGZmZubk3/Py8P/4wJCIwMC9vO7s6XBwcLyynlBAMOno47et
+        ltbQsYCIkOTYvZCIsFBYYMzI1JmZmVBQUODYkODQgNDAkJWVwrSwoaCQcHB4gP//wHBoUOPTrvDooODQ
+        kMzMzPHv7eXi2NbW1uDg4LCwsPDggPDwsICAgEBQUP/4sJmZmcTHz+DgsMi6koBwYKWclNbOteDYoNDI
+        kJmZzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAAGACwAAAAAFAAUAAAIrQANCBxIsKDBgwgTKlyIMMMQGD0YDvwwJMAJCwqfRNmIZQeYCAVGJEQQBUoP
+        KD4OgBzxAKEWEguicEgwgUoIlgWd4PAwYMqRI1l8QMmh4UcHgxi8vPj508oXBz6MzKhiMMkSFU0rlDAx
+        gAUVFhIO6hCi4oWSrQJAUOAhoeVBHAOASDGRNgWBGjEUXigSpC4BACgY0tgCwi6ABhIN3ECy4nBigUQY
+        bHhMubLlgQEBADs=
+</value>
+  </data>
+  <data name="tsbAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tsbImport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVDhPtZGxDoAgDET5dkdHR+Pk6Ojoz2nvCgZLUYnx
+        JRdC4a5Fwy/sDvHoHXRsskCrbqdxSiFYk3zogBFaioBn6KgHlBPwhgVGaPaPo1VhJX9z6gyNUUNULxJg
+        U7fAijWiM1QJuHwTVmoBuRHqRAJs6hZYseSdHby/klL1hj+ylQ8dfsAtZzIxb26fwNA0QYO+EsIBugGQ
+        plqlG5sAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tsbCompare.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVDhPfZLfShtREMb3VUovAqXQgoIWpBdVoeAD+Ca9
+        8iIFQWqlPkDYCIr0wt1sEpuTP20TLRQ1V71piSgmm5DWaNxdk9hVk+brnNk1qN30Bx9nz8zsl9nJKMMw
+        NjfjejwOLRbDhpSus77u7IDiml82nGTCwDB+lErQDOO9XxpMNqlxcc00UamYKJcrfF9dX+fzqFz2Ople
+        /hKfWCpgfDGPsTeeRhfyeDz/GWGxD6d5gpNGA/X6T35xr1gcmOiGAWViaYsvQWi7B5h9l8D2pwzOmk20
+        2x0/4yHno4wvFvhSrVZhmqSK1+qDuTSf+t4hXunf4LZbcBwHtu3AsmzOscGYb1C3z1GzHNSOG3yfS3wf
+        mITCH4Gui5WoikwmAyEELl1XDpIM3nqfcKgowMwL/CKji84Fx24IvSYD9NDr9tAlXV/3OH7HwCKdks46
+        v2E759yqY8moZ7CdE0C/j0gkglQqBXdYBy36BTUaRTqbhUjTS0QonOPzPndmcEW6lPrTx1Xff5YJwvuE
+        f5GbOjBQVRWCBvRBpNFotbEvO3r5nHOP5gsQSR0xw1tnudpyB1bX1rbob8xz0X2oiQFPFgqg5RwJ0MP/
+        LtINz2hOVBzM1HKuxavsr/FtyZjMTVKNXx7IU1JQe7clawJQlL818Kr+FeqCvgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tsbHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPtVJNaxNRFM1PyE+Yn1AUXLjK0uWgDWQZwUUX
+        KsGFBEEcCkIwqBEpGiydsSo2kupsasdo7Yi2toh0sFZjG5JpiZo20/TpVOmH5njvm8BYahEXHji8+968
+        c+55l4n8F0zM+rhVWkHmdg29A/PoK1Yw8uIjOp/3xpvqBgrjLeilZbjNLXxZ34bwt6jexMVCGRndQenl
+        0p+NWHzPXoP3rQ3bAbQhQM0E5Np2BKprbZzrm8TIs8puE+68+r0NwwZiacCwALEBCVcAqet8JlAjk1PZ
+        JzsNJt6u4+FMS3ZmMV9mmFNAMhesbBZLC6oFdOsd8oVXocmdx018Ej9k1FgqiJ0zgS6qlR6BVI4iEFRN
+        IJlxMF/1cfTMcGiQvbskB6ZqgairJ6BCTJKYu9tlAUW1oSRsNDwfB+JXQ4PzN6s07W0ZPxDS5aSgJEFn
+        06Y9CaOqSauJRvMr9qmXQ4P8/RoWvU16eyBUEq5kbigwiKoOMTBQ0zbKlTq6TxihwejkZ1iOJwfEwmiC
+        BQ49yaW50J7Fh0xJw3IxbM3hwo2x0ICRHZzFgveTunYERK5lgo5YMxx8WPFw5Li+U8wYm66jNz+Naov+
+        Beqiao58N5NrPluoryJO0QeKU7sNGKPPazh9aRzGo/eYmVvEMk270fTlmzl2N3XW9xL/jv7iaxw7+wAH
+        E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="fgList2.ColumnInfo" xml:space="preserve">
+    <value>15,0,0,0,0,85,Columns:0{Width:24;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:35;Caption:"N";Style:"DataType:System.Int16;TextAlign:RightCenter;";}	2{Width:180;Caption:"Προϊον / Κατηγορία προϊοντος";Style:"TextAlign:LeftCenter;";}	3{Width:260;Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";}	4{Width:100;Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	5{Width:100;Caption:"SecID";}	6{Width:100;Caption:"Κωδικός Reuters";Style:"TextAlign:LeftCenter;";}	7{Width:110;Caption:"Κωδικός Bloomberg";Style:"TextAlign:LeftCenter;";}	8{Width:50;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	9{Width:80;Caption:"Χρηματηστίριο";Style:"TextAlign:LeftCenter;";}	10{Width:65;Name:"EntryPrice";Caption:"Entry Price";}	11{Width:65;Name:"TargetPrice";Caption:"Target Price";}	12{Width:65;Name:"StopLoss";Caption:"Stop Loss";}	13{Width:32;Name:"ID";Caption:"ID";}	</value>
+  </data>
+  <metadata name="toolLeft2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 12</value>
+  </metadata>
+  <data name="tsbAdd2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tsbImport2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVDhPtZGxDoAgDET5dkdHR+Pk6Ojoz2nvCgZLUYnx
+        JRdC4a5Fwy/sDvHoHXRsskCrbqdxSiFYk3zogBFaioBn6KgHlBPwhgVGaPaPo1VhJX9z6gyNUUNULxJg
+        U7fAijWiM1QJuHwTVmoBuRHqRAJs6hZYseSdHby/klL1hj+ylQ8dfsAtZzIxb26fwNA0QYO+EsIBugGQ
+        plqlG5sAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ToolStripButton7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPtVJNaxNRFM1PyE+Yn1AUXLjK0uWgDWQZwUUX
+        KsGFBEEcCkIwqBEpGiydsSo2kupsasdo7Yi2toh0sFZjG5JpiZo20/TpVOmH5njvm8BYahEXHji8+968
+        c+55l4n8F0zM+rhVWkHmdg29A/PoK1Yw8uIjOp/3xpvqBgrjLeilZbjNLXxZ34bwt6jexMVCGRndQenl
+        0p+NWHzPXoP3rQ3bAbQhQM0E5Np2BKprbZzrm8TIs8puE+68+r0NwwZiacCwALEBCVcAqet8JlAjk1PZ
+        JzsNJt6u4+FMS3ZmMV9mmFNAMhesbBZLC6oFdOsd8oVXocmdx018Ej9k1FgqiJ0zgS6qlR6BVI4iEFRN
+        IJlxMF/1cfTMcGiQvbskB6ZqgairJ6BCTJKYu9tlAUW1oSRsNDwfB+JXQ4PzN6s07W0ZPxDS5aSgJEFn
+        06Y9CaOqSauJRvMr9qmXQ4P8/RoWvU16eyBUEq5kbigwiKoOMTBQ0zbKlTq6TxihwejkZ1iOJwfEwmiC
+        BQ49yaW50J7Fh0xJw3IxbM3hwo2x0ICRHZzFgveTunYERK5lgo5YMxx8WPFw5Li+U8wYm66jNz+Naov+
+        Beqiao58N5NrPluoryJO0QeKU7sNGKPPazh9aRzGo/eYmVvEMk270fTlmzl2N3XW9xL/jv7iaxw7+wAH
+        E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="fgShares.ColumnInfo" xml:space="preserve">
+    <value>13,0,0,0,0,85,Columns:0{Width:24;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:180;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:GeneralCenter;ImageAlign:CenterCenter;";}	2{Width:100;Name:"Code";Caption:"Reuters Κωδικός";}	3{Width:100;Name:"Code2";Caption:"Bloomberg Κωδικός";}	4{Width:90;Name:"ISIN";Caption:"ISIN";}	5{Width:160;Name:"ProductTitle";Caption:"Προϊον / Κατηγορία προϊοντος";}	6{Width:80;Name:"StockExchange_Code";Caption:"Χρηματ/ριο";}	7{Width:50;Name:"Currency";Caption:"Νόμισμα";}	8{Width:80;Name:"SE_ID";Caption:"SE_ID";Visible:False;}	9{Name:"Product_ID";Caption:"Product_ID";Visible:False;}	10{Name:"ProductCategory_ID";Caption:"ProductCategory_ID";Visible:False;}	11{Name:"ID";Caption:"ID";Visible:False;}	12{Name:"HFIC_Recom";Caption:"HFIC_Recom";Visible:False;}	</value>
+  </data>
+  <data name="fgCompare.ColumnInfo" xml:space="preserve">
+    <value>5,0,0,0,0,85,Columns:0{Width:30;Caption:"ΑΑ";}	1{Width:140;Name:"Title";Caption:"ISIN";Style:"TextAlign:GeneralCenter;ImageAlign:CenterCenter;";}	2{Width:140;Name:"Code";Caption:"SecID";}	3{Width:140;Caption:"ISIN/SecID";}	4{Width:34;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="picFilesPath.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADmUlEQVRIS+2U60/TZxiG+QP2L2wf9sEv
+        y7IsmVsyNGNbYhZNEOYwfphOd4Bo2OZ0gtSJcogrKMWCLSJoKBSGhAECpYrl0GJLSynH1tVBRSq0wGzn
+        wgzQA9feskLCNnHHbB92J3ee501+ua/3eZL3F/O//lvytBUxoXzvV3Yp9xL95M/Ld9vInZyXCdikBKxp
+        BPpPETBnELB8wcOOVO5WH/lrkLlRA1OFb7I8nMyy9R3C1t2E+5JWHDLsxJ77IvbsWEZPvxL1q8Kbhbfg
+        kO/APWLc+AIRwPT5BMKDqSxbEgmbE1bqav/I/AHz5hP8aEkXNUfUDFEzmbdI8ImzPivxyQCPXNw4Cvil
+        vTe201J+kNbKMytuvngMR0Esd/O3MJbzHP0HnsIme5tHM67fBq0B+vcR7t6+5kDXDixVe1BXqRlxumjs
+        v8dV0xh6s43L5eWM1J8kNHyU8HgeXtVeIjnRyPVaBfia4pnI34y7NI77pVvp+zKOpgqFCJ7kI5UNqW4C
+        accE+y9bKG+zoVYrcLd9TNiVhUeVsgGgu4Up6S48JW/gVx8j6Kgk5FRwXZnJNz1WkmRamk1u7ow9wDnu
+        o+HWJPHSVrTqOm4o0gga0vBc3EckJxq5XqsTzFa+zsNrJ1j+oR78RdRWyTE7vSSpBml5ADrfMu3CGtEn
+        1Y2LKQZoupIn1iTBW5v+Oya4sBWfOoOQQ0GwT8ZXirOYe/qIV/RSPTCLxu5F4/Cu9PElFlQ1LVQXivfS
+        lcL9ssMbTDDQibvwADOlL+FvySM8WSFWlE9TdSYOx20SlUaUo360nkU6hBWij79g4OvWToyXPiFk/RyP
+        WG0kJxq5XnMmLdNndzEtHtv3DZkiXEnAlMW3zZ9Sc0WJ0ewksaibg+W3+PCSkW357TRqDJTlZjNUtpOg
+        8QiTKgmRnGjkeq0CvCVx+OuzxC+imGBvqoAcx9F8CFWxDFuPCaPBjk5nw3D9JkWSdIbPv4Uj7WnmapM3
+        BkQ0WPAuw0c34dfkE3SpCI2eXvOs/iSdlZ9xs0yOtqKAjqrDOEv348p+lvnG13DnbsJybvfjV7SqgZJD
+        jBW/z8JsP4seK0teC0szZgKzJtGbWLjXxeKkgcWpXhbcBlx1p3Cde4ElfQIjkmeY0NdtDIjI0dWAVZ4s
+        nBL14/qfz+0FyYxkPc/CUDJm2Ta+G+16MuSPSn+1AnthLDZ5HC5dzd8PiGhIdw1bR+M/E/4vKSbmJ2q1
+        UwCSxHllAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="mnuContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>251, 12</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>41</value>
+  </metadata>
+</root>

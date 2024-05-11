@@ -1,0 +1,834 @@
+﻿@model ISPDBO.Models.Users
+@{
+    Layout = "_Layout";
+
+
+    int iMode = 0;                                                      // 0 - new user - upload all files
+    if (ViewBag.Doc_Web.D1_DMS_File_ID != 0) iMode = 1;                 // 1 - existing user - view or change any files
+
+    int iWait = 0;                                                      // 0 - нет сообщений с сервера, 1 - ожидается сообщение с сервера
+    string sWaitMessage = "";
+    if (ViewBag.Doc_Web.D1_Status == 2 || ViewBag.Doc_Web.D2_Status == 2 || ViewBag.Doc_Web.D3_Status == 2 || ViewBag.Doc_Web.D11_Status == 2)
+    {
+        iWait = 1;
+        sWaitMessage = "Αναμένετε απάντηση στο αίτημα σας";
+    }
+
+    // iPending - признак наличия хоть одного нового файла (== 1), загруженного в текущум сеансе и пока еще не отправленного на сервер
+    int iPending = 0;
+    if (ViewBag.Doc_Web.D1_New_File_ID != 0 || ViewBag.Doc_Web.D21_New_File_ID != 0 || ViewBag.Doc_Web.D22_New_File_ID != 0 || ViewBag.Doc_Web.D3_New_File_ID != 0 || ViewBag.Doc_Web.D11_New_File_ID != 0) iPending = 1;
+}
+
+<style>
+    button.btn-settings {
+        margin: 25px;
+        padding: 20px 30px;
+        font-size: 1.2em;
+        background-color: #337ab7;
+        color: white;
+    }
+
+        button.btn-settings:active {
+            color: white;
+        }
+
+    .modal {
+        overflow: hidden;
+    }
+
+    .modal-header {
+        height: 30px;
+        padding: 20px;
+        background-color: #18456b;
+        color: white;
+    }
+
+    .modal-title {
+        margin-top: -10px;
+        font-size: 16px;
+    }
+
+    .modal-header .close {
+        margin-top: -10px;
+        color: #fff;
+    }
+
+    .modal-body {
+        color: #888;
+        padding: 5px 35px 20px;
+    }
+
+        .modal-body h3 {
+            text-align: center;
+        }
+
+        .modal-body p {
+            padding-top: 10px;
+            font-size: 1.1em;
+        }
+</style>
+
+<div class="bs-docs-section">
+    <div class="row form-group">
+        <div class="col-lg-8">
+            <h4>Προσωπικά Στοιχεία  & Έγγραφα</h4>
+        </div>
+        <div class="col-lg-4">
+            <label id="head_message" class="text-danger"></label><br/>
+            <button id="head_button" onclick="SendClientRequest(@ViewBag.Doc_Web.ID);">Υποβολή</button><br />
+            <label id="wait_message" class="text-danger">@sWaitMessage</label>
+        </div>
+    </div>
+
+    <div class="well">
+        <div class="row">
+            <div class="col-lg-2">
+                <label asp-for="Surname" class="control-label">Επώνυμο :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Surname)
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="Firstname" class="control-label">Όνομα : </label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Firstname)
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="Fathername" class="control-label">Όνομα πατρός :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Fathername)
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="DoB" class="control-label">Ημνια γεννησης :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => (model.DoB))
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="ADT" class="control-label">Ταυτότητα η Διαβατήριο :</label><label class="text-danger">(*)</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.ADT)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D1_Action" href="#upADT" class="btn" data-backdrop="false" data-toggle="modal" onclick="PreparePopupWindow(@ViewBag.Doc_Web.D1_DMS_File_ID, document.getElementById('mdlADT_1'), document.getElementById('mdlADT_2'));">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D1_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D1_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D1_Message" asp-for="message1" class="control-label text-danger">Εκρεμούν εγγραφα</label>
+        </div>
+        <span id="D1_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="AFM" class="control-label">ΑΦΜ :</label><label class="text-danger">(*)</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.AFM)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D2_Action" href="#upAFM" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D2_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D21_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D2_Message" asp-for="message1" class="control-label text-danger">Εκρεμούν εγγραφα</label>
+        </div>
+        <span id="D2_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="AMKA" class="control-label">ΑΜΚΑ :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.AMKA)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D3_Action" href="#upAMKA" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D3_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D3_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D3_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D3_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Tel" class="control-label">Σταθερό τηλέφωνο :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Tel)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D4_Action" href="#upTel" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D4_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D4_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D4_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D4_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Mobile" class="control-label">Κινήτο τηλέφωνο :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Mobile)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D5_Action" href="#upMobile" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D5_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D5_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D5_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D5_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Email" class="control-label">email :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Email)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D6_Action" href="#upEmail" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D6_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D6_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D6_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D6_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Address" class="control-label">Δνση κατοικίας :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Address)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D7_Action" href="#upAddress" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D7_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D7_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D7_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D7_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="LogAxion" class="control-label">ΣΑΤ :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.LogAxion)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D8_Action" href="#upLogAxion" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D8_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D8_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D8_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D8_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Merida" class="control-label">Αρ. Μερίδα :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Merida)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D9_Action" href="#upMerida" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D9_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D9_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D9_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D9_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Category_Title" class="control-label">Κατηγορία επενδυτή :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Category_Title)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D10_Action" href="#upCategory_Title" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D10_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D10_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D10_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D10_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Spec" class="control-label">Επάγγελμα :</label><label class="text-danger">(*)</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Spec_Title)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D11_Action" href="#upSpec" class="btn" data-backdrop="false" data-toggle="modal" onclick="PreparePopupWindow(@ViewBag.Doc_Web.D11_DMS_File_ID, document.getElementById('mdlSpec_1'), document.getElementById('mdlSpec_2'));">Προσθήκη</button>
+
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D11_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D11_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D11_Message" asp-for="message1" class="control-label text-danger">Εκρεμούν εγγραφα</label>
+        </div>
+        <span id="D11_Status" hidden></span>
+    </div>
+
+    <div class="well" style="height:25px; margin-top: -15px;">
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label for="Family_Title" class="control-label">Οικογενιακή κατάσταση :</label>
+        </div>
+        <div class="col-lg-6" style="margin-top: -15px;">
+            @Html.DisplayFor(model => model.Family_Title)&nbsp;
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D12_Action" href="#upFamily_Title" class="btn" data-backdrop="false" data-toggle="modal">Προσθήκη</button>
+        </div>
+        <div class="col-lg-1" style="margin-top: -15px;">
+            <button id="D12_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D12_DMS_File_ID);">Προβολή</button>
+        </div>
+        <div class="col-lg-2" style="margin-top: -15px;">
+            <label id="D12_Message" asp-for="message1" class="control-label text-danger"></label>
+        </div>
+        <span id="D12_Status" hidden></span>
+    </div>
+
+</div>
+
+
+<!-- Modal Windows -->
+<!--- View modal window ---------------------------------------------------------------------->
+<div id="viewModal" class="modal" style="position: absolute; z-index: 999999;">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:900px; height:840px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Προβολή εγγράφου</h4>
+            </div>
+            <div class="modal-body bg-warning">
+                <img id="docDMS" style="width: 100%; height: 100%;" src="" />
+            </div>
+            <label id="file_path"></label>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- ADT Modal window ---------------------------------------------------------------------->
+<div id="upADT" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ταυτότηα η Διαβατήριο</h4>
+            </div>
+
+            <div id="mdlADT_1" class="modal-body">
+                <p>
+                    Υπάρχει ήδη φορτωμένο αρχείο ταυτότητας/διαβατιρίου. Για προβολη πατηστε <button id="D1_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D1_DMS_File_ID);">εδώ</button> 
+                </p>
+                <p>
+                    Θέλετε πραγματικά να αλλάξετε το αρχείο;
+                </p>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <button onclick="document.getElementById('mdlADT_2').style.display = 'block';">YES</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mdlADT_2" class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου και τις δύο όψεις της ταυτότητας ή του διαβατηρίου σας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <input id="upldADT" type="file" name="postedFiles" onchange="uploadFiles(1, 0, 'upldADT', 'upldADT_result')" />
+                    </div>
+                    <div class="col-md-4">
+                        <span id="upldADT_result" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- AFM Modal window ---------------------------------------------------------------------->
+<div id="upAFM" class="modal fade">
+    <div class="modal-dialog" style="width: 800px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">ΑΦΜ</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείω, τουλάχιστον τρία (3) εκκαθαριστικά των τελευταίεων ετών. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.
+                </p>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM1_year" class="text-danger">2020</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM1" type="file" name="postedFiles" onchange="uploadFiles(2, 1, 'upldAFM1', 'upldAFM1_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM1_result" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM2_year" class="text-danger">2019</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM2" type="file" name="postedFiles" onchange="uploadFiles(2, 2, 'upldAFM2', 'upldAFM2_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM2_result" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM3_year" class="text-danger">2018</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM3" type="file" name="postedFiles" onchange="uploadFiles(2, 3, 'upldAFM3', 'upldAFM3_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM3_result" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--- AMKA Modal window ---------------------------------------------------------------------->
+<div id="upAMKA" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ταυτότηα η Διαβατήριο</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου και τις δύο όψεις της ταυτότητας ή του διαβατηρίου σας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <input id="upldAMKA" type="file" name="postedFiles" onchange="uploadFiles(3, 0, 'upldAMKA', 'upldAMKA_result')" />
+                    </div>
+                    <div class="col-md-4">
+                        <span id="upldAMKA_result" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- Spec_Title Modal window ---------------------------------------------------------------------->
+<div id="upSpec" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Επάγγελμα</h4>
+
+            </div>
+
+            <div id="mdlSpec_1" class="modal-body">
+                <p>
+                    Υπάρχει ήδη φορτωμένο αρχείο για το Επάγγελμα. Για προβολη πατηστε <button id="D11_View" href="#viewModal" class="btn" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@ViewBag.Doc_Web.D11_DMS_File_ID);">εδώ</button>
+                </p>
+                <p>
+                    Θέλετε πραγματικά να αλλάξετε το αρχείο;
+                </p>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <button onclick="document.getElementById('mdlSpec_2').style.display = 'block';">YES</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mdlSpec_2" class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ....
+                </p>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <input id="upldSpec" type="file" name="postedFiles" onchange="uploadFiles(11, 0, 'upldSpec', 'upldSpec_result')" />
+                    </div>
+                    <div class="col-md-4">
+                        <span id="upldSpec_result" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+    $("#upADT").draggable({
+        handle: ".modal-header"
+    });
+    $('#upADT').on('hidden.bs.modal', function () {
+        document.getElementById('upldADT').value = null;
+        document.getElementById('upldADT_result').innerHTML = '';
+    })
+
+    $("#upAFM").draggable({
+        handle: ".modal-header"
+    });
+    $('#upAFM').on('hidden.bs.modal', function () {
+        document.getElementById('upldAFM').value = null;
+        document.getElementById('upldAFM_result').innerHTML = '';
+    })
+
+    $("#upAMKA").draggable({
+        handle: ".modal-header"
+    });
+    $('#upAMKA').on('hidden.bs.modal', function () {
+        document.getElementById('upldAMKA').value = null;
+        document.getElementById('upldAMKA_result').innerHTML = '';
+    })
+
+    $("#upSpec").draggable({
+        handle: ".modal-header"
+    });
+    $('#upSpec').on('hidden.bs.modal', function () {
+        document.getElementById('upldSpec').value = null;
+        document.getElementById('upldSpec_result').innerHTML = '';
+    })
+
+    $("#viewModal").draggable({
+        handle: ".modal-header"
+    });
+
+
+
+    document.getElementById("D1_Status").value = @ViewBag.Doc_Web.D1_Status;
+    onclick="PreparePopupWindow(@ViewBag.Doc_Web.D1_DMS_File_ID, document.getElementById('mdlADT_1'), document.getElementById('mdlADT_2'));"
+
+
+    document.getElementById("D2_Status").value = @ViewBag.Doc_Web.D2_Status;
+    document.getElementById("D3_Status").value = @ViewBag.Doc_Web.D3_Status;
+
+    document.getElementById("D11_Status").value = @ViewBag.Doc_Web.D11_Status;
+    onclick = "PreparePopupWindow(@ViewBag.Doc_Web.D11_DMS_File_ID, document.getElementById('mdlSpec_1'), document.getElementById('mdlSpec_2'));"
+
+    SwitchOnOff();
+
+    function SwitchOnOff() {
+
+        switch (document.getElementById("D1_Status").value) {
+            case 0:
+                document.getElementById("D1_Action").innerHTML = 'Προσθήκη';
+                document.getElementById("D1_View").style.visibility = "hidden";
+                document.getElementById("D1_Message").innerHTML = 'Εκρεμούν εγγραφα';
+                break;
+            case 1:
+                document.getElementById("D1_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D1_View").style.visibility = "visible";
+                document.getElementById("D1_Message").innerHTML = 'Αναμένετε αποστολή';
+                break;
+            case 2:
+                document.getElementById("D1_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D1_View").style.visibility = "visible";
+                document.getElementById("D1_Message").innerHTML = '';
+                break;
+            case 3:
+                document.getElementById("D1_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D1_View").style.visibility = "visible";
+                document.getElementById("D1_Message").innerHTML = '';
+                break;
+        }
+
+        switch (document.getElementById("D2_Status").value) {
+            case 0:
+                document.getElementById("D2_Action").innerHTML = 'Προσθήκη';
+                document.getElementById("D2_View").style.visibility = "hidden";
+                document.getElementById("D2_Message").innerHTML = 'Εκρεμούν εγγραφα';
+                break;
+            case 1:
+                document.getElementById("D2_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D2_View").style.visibility = "visible";
+                document.getElementById("D2_Message").innerHTML = 'Αναμένετε αποστολή';
+                break;
+            case 2:
+                document.getElementById("D2_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D2_View").style.visibility = "visible";
+                document.getElementById("D2_Message").innerHTML = '';
+                break;
+            case 3:
+                document.getElementById("D2_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D2_View").style.visibility = "visible";
+                document.getElementById("D2_Message").innerHTML = '';
+                break;
+        }
+
+        switch (document.getElementById("D3_Status").value) {
+            case 0:
+                document.getElementById("D3_Action").innerHTML = 'Προσθήκη';
+                document.getElementById("D3_View").style.visibility = "hidden";
+                //document.getElementById("D3_Message").innerHTML = 'Εκρεμούν εγγραφα';
+                break;
+            case 1:
+                document.getElementById("D3_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D3_View").style.visibility = "visible";
+                //document.getElementById("D3_Message").innerHTML = 'Αναμένετε αποστολή';
+                break;
+            case 2:
+                document.getElementById("D3_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D3_View").style.visibility = "visible";
+                //document.getElementById("D3_Message").innerHTML = '';
+                break;
+        }
+
+        switch (document.getElementById("D11_Status").value) {
+            case 0:
+                document.getElementById("D11_Action").innerHTML = 'Προσθήκη';
+                document.getElementById("D11_View").style.visibility = "hidden";
+                document.getElementById("D11_Message").innerHTML = 'Εκρεμούν εγγραφα';
+                break;
+            case 1:
+                document.getElementById("D11_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D11_View").style.visibility = "visible";
+                document.getElementById("D11_Message").innerHTML = 'Αναμένετε αποστολή';
+                break;
+            case 2:
+                document.getElementById("D11_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D11_View").style.visibility = "visible";
+                document.getElementById("D11_Message").innerHTML = '';
+                break;
+            case 3:
+                document.getElementById("D11_Action").innerHTML = 'Αλλαγή';
+                document.getElementById("D11_View").style.visibility = "visible";
+                document.getElementById("D11_Message").innerHTML = '';
+                break;
+        }
+
+        if (@iMode == 0) {                 // == 0 - it's new client without Surname, Firstname etc.
+            if (@iWait == 0) document.getElementById("head_message").innerHTML = "Καταχωρήστε όλα απαραίτητα αρχεία";
+            else document.getElementById("head_message").innerHTML = "";
+
+            //--- if ALL important files are loaded switch ON button YPOVOLI ---------------------------
+            if (document.getElementById("D1_Status").value == 1 && document.getElementById("D2_Status").value == 1 && document.getElementById("D11_Status").value == 1)
+                document.getElementById("head_button").style.visibility = "visible";
+            else document.getElementById("head_button").style.visibility = "hidden";
+        }
+        else {
+            if (@iPending == 1) {
+                document.getElementById("head_message").innerHTML = "Για την υποβολή αρχείων πατήστε";
+                document.getElementById("head_button").style.visibility = "visible";
+            }
+            else {
+                document.getElementById("head_message").innerHTML = "";
+                document.getElementById("head_button").style.visibility = "hidden";
+            }
+        }
+
+        document.getElementById("wait_message").innerHTML = "";
+        if (document.getElementById("D1_Status").value == 2 || document.getElementById("D2_Status").value == 2 || document.getElementById("D3_Status").value == 2 || document.getElementById("D11_Status").value == 2) {
+            document.getElementById("head_message").innerHTML = "";
+            document.getElementById("wait_message").innerHTML = "Αναμένετε απάντηση στο αίτημα σας";
+        }
+
+    }
+
+    function PreparePopupWindow(iDMS_File_ID, p1, p2) {
+        if (iDMS_File_ID == 0) {
+            p1.style.display = "none";
+            p2.style.display = "block";
+        }
+        else {
+            p1.style.display = "block";
+            p2.style.display = "none";
+        }
+    }
+
+    function uploadFiles(ndex, subndex, inputId, result_message) {
+        var input = document.getElementById(inputId);
+        var files = input.files;
+        var formData = new FormData();
+        var result = '';
+        for (var i = 0; i != files.length; i++) {
+            formData.append("files", files[i]);
+        }
+
+        $.ajax(
+                {
+            url: "Uploader/Index",
+                async: false,
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    result = data;
+                }
+            }
+        );
+
+        if (result != '') {
+            document.getElementById(result_message).innerHTML = 'Uploaded successfully';
+
+            $.ajax(
+                {
+                    url: "Home/ClientsDoc_Web",
+                    async: false,
+                    data: { doc_index: ndex, doc_subindex: subndex, file_name: result },
+                    type: "POST",
+                    success: function (data1) {
+                        var x = JSON.parse(JSON.stringify(data1));
+                        document.getElementById("D1_Status").value = x['d1_Status'];
+                        document.getElementById("D2_Status").value = x['d2_Status'];
+                        document.getElementById("D3_Status").value = x['d3_Status'];
+                        document.getElementById("D11_Status").value = x['d11_Status'];
+                        SwitchOnOff();
+                    }
+                }
+            );
+        }
+        else document.getElementById(result_message).innerHTML = 'Upload failed';
+    }
+
+    function SendClientRequest(src_id) {
+
+        $.ajax(
+            {
+        url: "Home/SendClientsRequests",
+                async: false,
+                data: { source_id: src_id},
+                type: "POST",
+                success: function (data1) {
+                    var x = JSON.parse(JSON.stringify(data1));
+                    document.getElementById("D1_Status").value = x['d1_Status'];
+                    document.getElementById("D2_Status").value = x['d2_Status'];
+                    document.getElementById("D3_Status").value = x['d3_Status'];
+                    document.getElementById("D11_Status").value = x['d11_Status'];
+                    SwitchOnOff();
+                }
+            }
+        );
+
+    }
+    function DefineDocumentPath(iClientsDocFile_ID) {
+
+        $.ajax(
+            {
+                url: "Home/DefineDocumentName",
+                async: false,
+                data: { iFile_ID: iClientsDocFile_ID},
+                type: "POST",
+                success: function (data1) {
+                    //data1 = "https://www.hellasfin.gr/themes/custom/pb/logo.svg";
+                    document.getElementById("docDMS").src = data1;
+                    document.getElementById("file_path").innerHTML = data1;
+                    }
+            }
+        );
+    }
+
+</script>
+
+

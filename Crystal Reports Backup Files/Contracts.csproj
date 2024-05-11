@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E4A8C17-0909-4232-9661-86312124130A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Contracts</RootNamespace>
+    <AssemblyName>Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2">
+      <HintPath>..\bin\Debug\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Core">
+      <HintPath>..\Core\bin\Debug\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4000\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4000\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4000\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.13.0.25.3158\lib\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.13.0.25.3158\lib\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsClientsBlackList.cs" />
+    <Compile Include="clsClientsBlackListChecks.cs" />
+    <Compile Include="clsEntryPoint.cs" />
+    <Compile Include="frmClientsBlackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsBlackList.Designer.cs">
+      <DependentUpon>frmClientsBlackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsList.Designer.cs">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsRequests.Designer.cs">
+      <DependentUpon>frmClientsRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsRequests_PersonalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsRequests_PersonalData.Designer.cs">
+      <DependentUpon>frmClientsRequests_PersonalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientsSearch.Designer.cs">
+      <DependentUpon>frmClientsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContractsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContractsSearch.Designer.cs">
+      <DependentUpon>frmContractsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficialInforming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficialInforming.Designer.cs">
+      <DependentUpon>frmOfficialInforming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPortfolio.Designer.cs">
+      <DependentUpon>frmPortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreContracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreContracts.Designer.cs">
+      <DependentUpon>frmPreContracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecsTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddress.Designer.cs">
+      <DependentUpon>ucAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucADT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucADT.Designer.cs">
+      <DependentUpon>ucADT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAFM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAFM.Designer.cs">
+      <DependentUpon>ucAFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAMKA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAMKA.Designer.cs">
+      <DependentUpon>ucAMKA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBankAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBankAccount.Designer.cs">
+      <DependentUpon>ucBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBankAccount_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBankAccount_Delete.Designer.cs">
+      <DependentUpon>ucBankAccount_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCoOwner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCoOwner.Designer.cs">
+      <DependentUpon>ucCoOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCoOwner_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCoOwner_Delete.Designer.cs">
+      <DependentUpon>ucCoOwner_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCountryTaxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCountryTaxes.Designer.cs">
+      <DependentUpon>ucCountryTaxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEkkatharistika.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEkkatharistika.Designer.cs">
+      <DependentUpon>ucEkkatharistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEmail.Designer.cs">
+      <DependentUpon>ucEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLogAxion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLogAxion.Designer.cs">
+      <DependentUpon>ucLogAxion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMerida.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMerida.Designer.cs">
+      <DependentUpon>ucMerida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMobile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMobile.Designer.cs">
+      <DependentUpon>ucMobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_AdminFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_AdminFees.Designer.cs">
+      <DependentUpon>ucOfficialInforming_AdminFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_Commands.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_Commands.Designer.cs">
+      <DependentUpon>ucOfficialInforming_Commands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_CustodyFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_CustodyFees.Designer.cs">
+      <DependentUpon>ucOfficialInforming_CustodyFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_ExPostCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_ExPostCost.Designer.cs">
+      <DependentUpon>ucOfficialInforming_ExPostCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_FX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_FX.Designer.cs">
+      <DependentUpon>ucOfficialInforming_FX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_ManFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_ManFees.Designer.cs">
+      <DependentUpon>ucOfficialInforming_ManFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_PerformanceFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_PerformanceFees.Designer.cs">
+      <DependentUpon>ucOfficialInforming_PerformanceFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_PeriodicalEvaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_PeriodicalEvaluation.Designer.cs">
+      <DependentUpon>ucOfficialInforming_PeriodicalEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOfficialInforming_RTO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOfficialInforming_RTO.Designer.cs">
+      <DependentUpon>ucOfficialInforming_RTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPasport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPasport.Designer.cs">
+      <DependentUpon>ucPasport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSpecCateg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSpecCateg.Designer.cs">
+      <DependentUpon>ucSpecCateg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSpecial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSpecial.Designer.cs">
+      <DependentUpon>ucSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTel.Designer.cs">
+      <DependentUpon>ucTel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucW8BEN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucW8BEN.Designer.cs">
+      <DependentUpon>ucW8BEN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmClientsBlackList.resx">
+      <DependentUpon>frmClientsBlackList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsList.resx">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsRequests.resx">
+      <DependentUpon>frmClientsRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsRequests_PersonalData.resx">
+      <DependentUpon>frmClientsRequests_PersonalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientsSearch.resx">
+      <DependentUpon>frmClientsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContractsSearch.resx">
+      <DependentUpon>frmContractsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficialInforming.resx">
+      <DependentUpon>frmOfficialInforming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPortfolio.resx">
+      <DependentUpon>frmPortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreContracts.resx">
+      <DependentUpon>frmPreContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucAddress.resx">
+      <DependentUpon>ucAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucADT.resx">
+      <DependentUpon>ucADT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAFM.resx">
+      <DependentUpon>ucAFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAMKA.resx">
+      <DependentUpon>ucAMKA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBankAccount.resx">
+      <DependentUpon>ucBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBankAccount_Delete.resx">
+      <DependentUpon>ucBankAccount_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCoOwner.resx">
+      <DependentUpon>ucCoOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCoOwner_Delete.resx">
+      <DependentUpon>ucCoOwner_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCountryTaxes.resx">
+      <DependentUpon>ucCountryTaxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEkkatharistika.resx">
+      <DependentUpon>ucEkkatharistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEmail.resx">
+      <DependentUpon>ucEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLogAxion.resx">
+      <DependentUpon>ucLogAxion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMerida.resx">
+      <DependentUpon>ucMerida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMobile.resx">
+      <DependentUpon>ucMobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_AdminFees.resx">
+      <DependentUpon>ucOfficialInforming_AdminFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_Commands.resx">
+      <DependentUpon>ucOfficialInforming_Commands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_CustodyFees.resx">
+      <DependentUpon>ucOfficialInforming_CustodyFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_ExPostCost.resx">
+      <DependentUpon>ucOfficialInforming_ExPostCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_FX.resx">
+      <DependentUpon>ucOfficialInforming_FX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_ManFees.resx">
+      <DependentUpon>ucOfficialInforming_ManFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_PerformanceFees.resx">
+      <DependentUpon>ucOfficialInforming_PerformanceFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_PeriodicalEvaluation.resx">
+      <DependentUpon>ucOfficialInforming_PeriodicalEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOfficialInforming_RTO.resx">
+      <DependentUpon>ucOfficialInforming_RTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPasport.resx">
+      <DependentUpon>ucPasport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSpecCateg.resx">
+      <DependentUpon>ucSpecCateg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSpecial.resx">
+      <DependentUpon>ucSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTel.resx">
+      <DependentUpon>ucTel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucW8BEN.resx">
+      <DependentUpon>ucW8BEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RecsTable.xsc">
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </None>
+    <None Include="RecsTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RecsTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RecsTable.xss">
+      <DependentUpon>RecsTable.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\history.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailicon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindFolder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailicon1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_pane_form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_pane_form1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

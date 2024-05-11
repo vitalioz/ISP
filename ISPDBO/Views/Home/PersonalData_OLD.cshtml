@@ -1,0 +1,522 @@
+﻿@model ISPDBO.Models.Users
+@{
+    Layout = "_Layout";
+
+    int iD1 = ViewBag.Doc_Web.D1_Status;
+    string DMS_D1_Filename = ViewBag.Doc_Web.D1_FileName == "" ? "#" : "Customers/" + ViewBag.Doc_Web.Folder + "/" + ViewBag.Doc_Web.D1_FileName;
+
+} 
+<style>
+    button.btn-settings {
+        margin: 25px;
+        padding: 20px 30px;
+        font-size: 1.2em;
+        background-color: #337ab7;
+        color: white;
+    }
+
+        button.btn-settings:active {
+            color: white;
+        }
+
+    .modal {
+        overflow: hidden;
+    }
+
+    .modal-header {
+        height: 30px;
+        padding: 20px;
+        background-color: #18456b;
+        color: white;
+    }
+
+    .modal-title {
+        margin-top: -10px;
+        font-size: 16px;
+    }
+
+    .modal-header .close {
+        margin-top: -10px;
+        color: #fff;
+    }
+
+    .modal-body {
+        color: #888;
+        padding: 5px 35px 20px;
+    }
+
+        .modal-body h3 {
+            text-align: center;
+        }
+
+        .modal-body p {
+            padding-top: 10px;
+            font-size: 1.1em;
+        }
+</style>
+
+
+<div class="bs-docs-section">
+
+    <div class="row form-group">
+        <div class="col-lg-10">
+            <h3>Προσωπικά Στοιχεία  & Έγγραφα</h3>
+        </div>
+    </div>
+
+
+        <div class="well">
+            <div class="row">
+                <div class="col-lg-2">
+                    <label asp-for="Surname" class="control-label">Επώνυμο :</label>
+                </div>
+                <div class="col-lg-6">
+                    @Html.DisplayFor(model => model.Surname)
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="Firstname" class="control-label">Όνομα : </label>
+                </div>
+                <div class="col-lg-6">
+                    @Html.DisplayFor(model => model.Firstname)
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="Fathername" class="control-label">Όνομα πατρός :</label>
+                </div>
+                <div class="col-lg-6">
+                    @Html.DisplayFor(model => model.Fathername)
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="DoB" class="control-label">Ημνια γεννησης :</label>
+                </div>
+                <div class="col-lg-6">
+                    @Html.DisplayFor(model => model.DoB)
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="ADT" class="control-label">Ταυτότητα η Διαβατήριο :</label>
+            </div>
+            <div class="col-lg-5" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.ADT)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <button id="D1_Action" href="#upADT" class="btn" data-backdrop="false" data-toggle="modal">Ταυτοτητα</button>
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a id="D1_View" href="#" onclick="window.open('http://HF-HQ-TRADER:9393/@DMS_D1_Filename', '_blank');">
+                    <label asp-for="view_adt" class="control-label">Προβολή</label>
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+                <label id="D1_Message" asp-for="message1" class="control-label text-danger">Εκρεμούν εγγραφα</label>
+            </div>
+        </div>
+
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="AFM" class="control-label">ΑΦΜ :</label>
+            </div>
+            <div class="col-lg-5" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.AFM)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <button id="D2_Action" href="#upAFM" class="btn" data-backdrop="false" data-toggle="modal">ΑΦΜ</button>
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a id="D2_View" href="#" onclick="window.open('http://HF-HQ-TRADER:9393/@DMS_D1_Filename', '_blank');">
+                    <label asp-for="view_adt" class="control-label">Προβολή</label>
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+                <label id="D2_Message" asp-for="message1" class="control-label text-danger">Εκρεμούν εγγραφα</label>
+            </div>
+        </div>
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="AMKA" class="control-label">ΑΜΚΑ :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.AMKA)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με ΑΜΚΑ';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Σταθερό τηλέφωνο :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Tel)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με το Σταθερό τηλέφωνο ';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Κινήτο τηλέφωνο :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Mobile)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με το Κινήτο τηλέφωνο';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">email :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Email)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με την e-mail';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label"> Δνση κατοικίας :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Address)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με την Δνση κατοικίας';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">ΣΑΤ :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.LogAxion)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με το ΣΑΤ';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Αρ. Μερίδα :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Merida)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με την Αρ. Μερίδα';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Κατηγορία επενδυτή :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Category_Title)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με την Κατηγορία επενδυτή';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Επάγγελμα :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Spec_Title)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με το Επάγγελμα';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+
+        <div class="well" style="height:25px; margin-top: -15px;">
+            <div class="col-lg-2" style="margin-top: -15px;">
+                <label for="Tel" class="control-label">Οικογενιακή κατάσταση :</label>
+            </div>
+            <div class="col-lg-6" style="margin-top: -15px;">
+                @Html.DisplayFor(model => model.Family_Title)&nbsp;
+            </div>
+            <div class="col-lg-1" style="margin-top: -15px;">
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request" onclick="document.getElementById('upload_title').innerHTML = 'Ανεβάστε αρχείο με την Οικογενιακή κατάσταση';">
+                    <img src="@Url.Content("~/images/edit.gif")" />
+                </a>
+                <a href="#" class="button-line" data-toggle="modal" data-target="#modal-request">
+                    <img src="@Url.Content("~/images/eye.png")" />
+                </a>
+            </div>
+            <div class="col-lg-3" style="margin-top: -15px;">
+            </div>
+        </div>
+</div>
+
+<div id="upADT" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ταυτότηα η Διαβατήριο</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου και τις δύο όψεις της ταυτότητας ή του διαβατηρίου σας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.
+                </p>
+                <input id="upldADT" type="file" name="postedFiles" onchange="uploadFiles('upldADT', 'upldADT_result')" />
+                <span id="upldADT_result" class="text-danger"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div id="upAFM" class="modal fade">
+    <div class="modal-dialog" style="width: 800px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">ΑΦΜ</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείω, τουλάχιστον τρία (3) εκκαθαριστικά των τελευταίεων ετών. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.
+                </p>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM1_year" class="text-danger">2020</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM1" type="file" name="postedFiles" onchange="uploadFiles('upldAFM1', 'upldAFM1_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM1_result" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM2_year" class="text-danger">2019</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM2" type="file" name="postedFiles" onchange="uploadFiles('upldAFM2', 'upldAFM2_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM2_result" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <span id="upldAFM3_year" class="text-danger">2018</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input id="upldAFM3" type="file" name="postedFiles" onchange="uploadFiles('upldAFM3', 'upldAFM3_result')" />
+                    </div>
+                    <div class="col-md-3">
+                        <span id="upldAFM3_result" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script type="text/javascript">
+    //alert('111');
+    $("#upADT").draggable({
+        handle: ".modal-header"
+    });
+    alert('222');
+    $('#upADT').on('hidden.bs.modal', function () {
+        document.getElementById('upldADT').value = null;
+        document.getElementById('upldADT_result').innerHTML = '';
+    })
+    alert('333');
+    $("#upAFM").draggable({
+        handle: ".modal-header"
+    });
+    alert('444');
+    $('#upAFM').on('hidden.bs.modal', function () {
+        document.getElementById('upldAFM').value = null;
+        document.getElementById('upldAFM_result').innerHTML = '';
+    })
+    alert('555');
+    SwitchOnOff();
+    alert('666');
+    function SwitchOnOff() {
+        alert('xxx');
+        alert(parseInt(@ViewBag.Doc_Web.D1_Status));
+        switch (parseInt(@ViewBag.Doc_Web.D1_Status)) {
+            case 0:
+                document.getElementById("D1_Action").innerHTML = 'Προσθήκη';
+                document.getElementById("D1_View").style.visibility = "hidden";
+                document.getElementById("D1_Message").innerHTML = 'Εκρεμούν εγγραφα';
+                break;
+            case 1:
+                document.getElementById("D1_Action").innerHTML = 'Αντικατάσταση';
+                document.getElementById("D1_View").style.visibility = "visible";
+                document.getElementById("D1_Message").innerHTML = 'Προς έλεγχο ...';
+                break;
+            case 2:
+                document.getElementById("D1_Action").innerHTML = 'Αντικατάσταση';
+                document.getElementById("D1_View").style.visibility = "visible";
+                document.getElementById("D1_Message").innerHTML = '';
+                break;
+        }
+    }
+
+    function uploadFiles(inputId, result_message) {
+        var input = document.getElementById(inputId);
+        var files = input.files;
+        var formData = new FormData();
+        var result = '';
+
+        for (var i = 0; i != files.length; i++) {
+            formData.append("files", files[i]);
+        }
+
+        $.ajax(
+            {
+                url: "Uploader/Index",
+                async: false,
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    result = data;
+                },
+                error: function (data) {
+                    result = data;
+                }
+            }
+        );
+        if (result == '1') document.getElementById(result_message).innerHTML = 'Uploaded successfully';
+        else document.getElementById(result_message).innerHTML = 'Upload failed';
+    }
+
+    function saveFiles(inputId) {
+        alert("SAVE");
+        var input = document.getElementById(inputId);
+        var files = input.files;
+        var formData = new FormData();
+
+        for (var i = 0; i != files.length; i++) {
+            formData.append("files", files[i]);
+        }
+        $.ajax(
+            {
+                url: "Home/SaveFiles",
+                async: true,
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    alert("Files Saved!");
+                },
+                error: function (data) {
+                    alert("Files NOT Saved!");
+                }
+            }
+        );
+        alert("FINISH SAVE");
+    }
+</script>

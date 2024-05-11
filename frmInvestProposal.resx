@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fgCodesMandatoryAttaches.ColumnInfo" xml:space="preserve">
+    <value>10,0,0,0,0,85,Columns:0{Width:100;Name:"DocType";Caption:"Τύπος εγγράφου";}	1{Width:190;Name:"FileName";Caption:"Αρχείο";Style:"TextAlign:LeftCenter;";}	2{Width:65;Name:"FileFullPath";Caption:"FileFullPath";Style:"TextAlign:LeftCenter;";}	3{Name:"ID";Caption:"ID";}	4{Name:"DocType_ID";Caption:"DocType_ID";}	5{Name:"ServerFileName";Caption:"ServerFileName";}	6{Name:"UploadFilePath";Caption:"UploadFilePath";}	7{Name:"RemoteFileName";Caption:"RemoteFileName";}	8{Name:"stAtt_i";Caption:"stAtt_i";}	9{Name:"WasEdited";Caption:"WasEdited";}	</value>
+  </data>
+  <data name="fgCodesAttaches.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:290;Name:"FileName";Caption:"Αρχείο";Style:"TextAlign:LeftCenter;";}	1{Width:38;Name:"FileFullPath";Caption:"FileFullPath";Style:"TextAlign:LeftCenter;";}	2{Name:"ID";Caption:"ID";}	3{Name:"ServerFileName";Caption:"ServerFileName";}	4{Name:"UploadFilePath";Caption:"UploadFilePath";}	5{Name:"RemoteFileName";Caption:"RemoteFileName";}	6{Name:"stAtt_i";Caption:"stAtt_i";}	7{Name:"WasEdited";Caption:"WasEdited";}	</value>
+  </data>
+  <data name="fgCalls.ColumnInfo" xml:space="preserve">
+    <value>5,0,0,0,0,85,Columns:0{Width:250;Name:"FileName";Caption:"Αρχείο";Style:"TextAlign:LeftCenter;";}	1{Width:29;Name:"ID";Caption:"ID";}	2{Width:61;Name:"FileFullPath";Caption:"FileFullPath";Style:"TextAlign:LeftCenter;";}	3{Name:"ServerFileName";Caption:"ServerFileName";}	4{Name:"UploadFilePath";Caption:"UploadFilePath";}	</value>
+  </data>
+  <data name="fgAttachedFiles.ColumnInfo" xml:space="preserve">
+    <value>6,0,0,0,0,85,Columns:0{Width:180;Name:"Title";Caption:"Source File Name";}	1{Width:160;Name:"Code";Caption:"Server File Name";}	2{Width:470;Name:"Code2";Caption:"Uploaded File Name";}	3{Width:160;Name:"ISIN";Caption:"Remote Server File Name";}	4{Name:"ID";Caption:"ID";Visible:False;}	5{Caption:"Share_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>343, 35</value>
+  </metadata>
+  <metadata name="ToolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>48, 35</value>
+  </metadata>
+  <data name="C1FlexGrid1.ColumnInfo" xml:space="preserve">
+    <value>25,0,0,0,0,85,Columns:0{Width:35;Caption:"Πράξη";}	1{Width:180;Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";}	2{Width:95;Caption:"Κωδικός Reuters";Style:"TextAlign:LeftCenter;";}	3{Width:95;Caption:"Κωδικός Bloomberg";Style:"TextAlign:LeftCenter;";}	4{Width:95;Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	5{Width:45;Caption:"Νόμισμα";}	6{Width:50;Caption:"Χρηματηστίριο";}	7{Width:75;Caption:"Διάρκεια";}	8{Width:55;Caption:"Τιμή";Style:"TextAlign:RightCenter;";}	9{Width:55;Caption:"Ποσότητα";Style:"TextAlign:RightCenter;";}	10{Width:55;Caption:"Αξία";Style:"TextAlign:RightCenter;";}	11{Width:50;Caption:"Βαρύτητα %";Style:"TextAlign:RightCenter;";}	12{Width:50;Caption:"Συννημένα αρχεία";}	13{Width:39;Caption:"ID";}	14{Caption:"Share_ID";}	15{Caption:"Product_ID";}	16{Caption:"ProductCategory_ID";}	17{Caption:"StockExchange_ID";}	18{Caption:"PriceType";}	19{Caption:"Stop";}	20{Caption:"Loss";}	21{Caption:"FULL Χρηματηστίριο";}	22{Caption:"Constant";}	23{Caption:"ConstantDate";}	24{Caption:"LineStatus";}	</value>
+  </data>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>155, 35</value>
+  </metadata>
+  <metadata name="tsCodes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>262, 35</value>
+  </metadata>
+  <metadata name="tsCodes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>262, 35</value>
+  </metadata>
+  <data name="fgCodes.ColumnInfo" xml:space="preserve">
+    <value>28,0,0,0,0,85,Columns:0{Width:35;Name:"Aktion";Caption:"Πράξη";}	1{Width:180;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";}	2{Width:95;Name:"Code";Caption:"Κωδικός Reuters";Style:"TextAlign:LeftCenter;";}	3{Width:95;Name:"Code2";Caption:"Κωδικός Bloomberg";Style:"TextAlign:LeftCenter;";}	4{Width:95;Name:"ISIN";Caption:"ISIN";Style:"TextAlign:LeftCenter;";}	5{Width:45;Name:"Currency";Caption:"Νόμισμα";}	6{Width:50;Name:"StockExhange_Title";Caption:"Χρηματηστίριο";}	7{Width:75;Name:"Days";Caption:"Διάρκεια";}	8{Width:55;Name:"Price";Caption:"Τιμή";Style:"TextAlign:RightCenter;";}	9{Width:55;Name:"Quantity";Caption:"Ποσότητα";Style:"TextAlign:RightCenter;";}	10{Width:55;Name:"Axia";Caption:"Αξία";Style:"TextAlign:RightCenter;";}	11{Width:60;Name:"Weight";Caption:"Βαρύτητα %";Style:"TextAlign:RightCenter;";}	12{Width:70;Name:"AttachedFiles";Caption:"Συννημένα αρχεία";}	13{Width:39;Name:"ID";Caption:"ID";}	14{Name:"Share_ID";Caption:"Share_ID";}	15{Name:"Product_ID";Caption:"Product_ID";}	16{Name:"ProductCategory_ID";Caption:"ProductCategory_ID";}	17{Name:"StockExchange_ID";Caption:"StockExchange_ID";}	18{Name:"PriceType";Caption:"PriceType";}	19{Name:"Stop";Caption:"Stop";}	20{Name:"Loss";Caption:"Loss";}	21{Name:"StockExchange_Full";Caption:"FULL Χρηματηστίριο";}	22{Name:"Constant";Caption:"Constant";}	23{Name:"ConstantDate";Caption:"ConstantDate";}	24{Name:"LineStatus";Caption:"LineStatus";}	25{Name:"Energia";Caption:"Energia";}	26{Name:"ProductNotes";Caption:"ProductNotes";}	27{Name:"URL_IR";Caption:"URL_IR";}	</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="picUp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIf/AAAAAP///wAA/5txct6XKdeHMeuGGu7u7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAAAACwAAAAAEAAQAAAIOgABCBxIsKDBgwgTKgxwQOHAAAYY
+        OoRoIGJDhBQrWjyYUeNGgh09fgQQUuTHAChTqlTpsKXLlzBjBgQAOw==
+</value>
+  </data>
+  <data name="picDown.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIf/AAAAAP///wAA/5txct6XKdeHMeuGGu7u7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAAAACwAAAAAEAAQAAAIOwABCBxIsKDBgwgTKlzIcGCAhxAj
+        QnRooKLFiwYCEAyA8aLGghw7fjQY0uLIgyVPIuSoMmHLhjBjIgwIADs=
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>45</value>
+  </metadata>
+</root>

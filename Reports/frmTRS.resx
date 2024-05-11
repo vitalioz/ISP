@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolLeft_Search.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbCSV.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVDhPzcxBCgAgCERRz9GBu2yHqCYMQgwcIeiDCxfz
+        5M+6pi8fxq2WPLKBNHICKcQCNOIBFHIDcCHkBoTGyAPCY2QBaoxOgB6jDaTGaC1n+r5MZABolMMBlJ6H
+        hAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ToolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPtVJNaxNRFM1PyE+Yn1AUXLjK0uWgDWQZwUUX
+        KsGFBEEcCkIwqBEpGiydsSo2kupsasdo7Yi2toh0sFZjG5JpiZo20/TpVOmH5njvm8BYahEXHji8+968
+        c+55l4n8F0zM+rhVWkHmdg29A/PoK1Yw8uIjOp/3xpvqBgrjLeilZbjNLXxZ34bwt6jexMVCGRndQenl
+        0p+NWHzPXoP3rQ3bAbQhQM0E5Np2BKprbZzrm8TIs8puE+68+r0NwwZiacCwALEBCVcAqet8JlAjk1PZ
+        JzsNJt6u4+FMS3ZmMV9mmFNAMhesbBZLC6oFdOsd8oVXocmdx018Ej9k1FgqiJ0zgS6qlR6BVI4iEFRN
+        IJlxMF/1cfTMcGiQvbskB6ZqgairJ6BCTJKYu9tlAUW1oSRsNDwfB+JXQ4PzN6s07W0ZPxDS5aSgJEFn
+        06Y9CaOqSauJRvMr9qmXQ4P8/RoWvU16eyBUEq5kbigwiKoOMTBQ0zbKlTq6TxihwejkZ1iOJwfEwmiC
+        BQ49yaW50J7Fh0xJw3IxbM3hwo2x0ICRHZzFgveTunYERK5lgo5YMxx8WPFw5Li+U8wYm66jNz+Naov+
+        Beqiao58N5NrPluoryJO0QeKU7sNGKPPazh9aRzGo/eYmVvEMk270fTlmzl2N3XW9xL/jv7iaxw7+wAH
+        E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>82,0,0,0,0,85,Columns:0{Width:40;Caption:"AA";}	1{Width:60;Caption:"Report Status";}	2{Width:80;Caption:"Transaction Reference Number";Style:"TextAlign:GeneralCenter;";}	3{Width:80;Caption:"Trading venue transaction identification code";Style:"TextAlign:GeneralCenter;";}	4{Caption:"Trader ID";}	5{Width:80;Caption:"Executing entity identification code";Style:"TextAlign:GeneralCenter;";}	6{Width:80;Caption:"Investment Firm covered by Directive 2014/65/EU";Style:"TextAlign:GeneralCenter;";}	7{Width:80;Caption:"Submitting entity identification code ";Style:"TextAlign:GeneralCenter;";}	8{Caption:"Type";Style:"BackColor:Moccasin;";}	9{Width:80;Caption:"Κωδικός";Style:"BackColor:Moccasin;TextAlign:GeneralCenter;";}	10{Width:80;Caption:"Country Branch";Style:"BackColor:Moccasin;TextAlign:GeneralCenter;";}	11{Width:80;Caption:"Firstname";Style:"BackColor:Moccasin;TextAlign:GeneralCenter;";}	12{Width:80;Caption:"Surname";Style:"BackColor:Moccasin;TextAlign:GeneralCenter;";}	13{Width:80;Caption:"Birth Date";Style:"BackColor:Moccasin;TextAlign:GeneralCenter;";}	14{Width:80;Caption:"Type";Style:"BackColor:Goldenrod;TextAlign:GeneralCenter;";}	15{Width:80;Caption:"Code";Style:"BackColor:Goldenrod;TextAlign:GeneralCenter;";}	16{Width:80;Caption:"Firstname";Style:"BackColor:Goldenrod;TextAlign:GeneralCenter;";}	17{Width:80;Caption:"Surname";Style:"BackColor:Goldenrod;TextAlign:GeneralCenter;";}	18{Width:80;Caption:"Birth Date";Style:"BackColor:Goldenrod;TextAlign:GeneralCenter;";}	19{Width:80;Caption:"Type";Style:"BackColor:LightGreen;TextAlign:GeneralCenter;";}	20{Width:80;Caption:"Code";Style:"BackColor:LightGreen;TextAlign:GeneralCenter;";}	21{Width:80;Caption:"Country Branch";Style:"Format:""N2"";BackColor:LightGreen;TextAlign:GeneralCenter;";}	22{Width:80;Caption:"Firstname";Style:"BackColor:LightGreen;TextAlign:GeneralCenter;";}	23{Width:80;Caption:"Surname";Style:"BackColor:LightGreen;TextAlign:GeneralCenter;";}	24{Width:80;Caption:"Birth Date";Style:"BackColor:LightGreen;TextAlign:GeneralCenter;";}	25{Width:80;Caption:"Type";Style:"BackColor:LimeGreen;TextAlign:GeneralCenter;";}	26{Width:80;Caption:"Code";Style:"BackColor:LimeGreen;TextAlign:GeneralCenter;";}	27{Width:80;Caption:"Firstname";Style:"BackColor:LimeGreen;TextAlign:GeneralCenter;";}	28{Width:80;Caption:"Surname";Style:"BackColor:LimeGreen;TextAlign:GeneralCenter;";}	29{Width:80;Caption:"Birth Date";Style:"BackColor:LimeGreen;TextAlign:GeneralCenter;";}	30{Width:80;Caption:"Transmission of order indicator";Style:"TextAlign:GeneralCenter;";}	31{Width:80;Caption:"Buyer Transmitting firm";Style:"TextAlign:GeneralCenter;";}	32{Width:80;Caption:"Seller transmitting firm";Style:"TextAlign:GeneralCenter;";}	33{Width:80;Caption:"Trading date and time";Style:"TextAlign:GeneralCenter;";}	34{Width:80;Caption:"Side";Style:"TextAlign:GeneralCenter;";}	35{Width:80;Caption:"Trading capacity";Style:"TextAlign:GeneralCenter;";}	36{Width:80;Caption:"Quantity notation";Style:"TextAlign:GeneralCenter;";}	37{Width:80;Caption:"Quantity";Style:"TextAlign:GeneralCenter;";}	38{Width:80;Caption:"Quantity currency";Style:"TextAlign:GeneralCenter;";}	39{Width:80;Caption:"Derivatives Notional Increase or Decrease";Style:"TextAlign:GeneralCenter;";}	40{Width:80;Caption:"Price notation";Style:"TextAlign:GeneralCenter;";}	41{Width:80;Caption:"Price";Style:"TextAlign:GeneralCenter;";}	42{Width:80;Caption:"Price Currency";Style:"TextAlign:GeneralCenter;";}	43{Width:80;Caption:"Net Amount";Style:"TextAlign:GeneralCenter;";}	44{Width:80;Caption:"Venue";Style:"TextAlign:GeneralCenter;";}	45{Width:80;Caption:"Branch membership country";Style:"TextAlign:GeneralCenter;";}	46{Width:80;Caption:"Up-front payment";Style:"TextAlign:GeneralCenter;";}	47{Width:80;Caption:"Up-front payment currency";Style:"TextAlign:GeneralCenter;";}	48{Width:80;Caption:"Complex trade component id";Style:"TextAlign:GeneralCenter;";}	49{Width:80;Caption:"Instrument ID type";Style:"TextAlign:GeneralCenter;";}	50{Width:80;Caption:"Instrument ID";Style:"TextAlign:GeneralCenter;";}	51{Width:80;Caption:"Instrument full name";Style:"TextAlign:GeneralCenter;";}	52{Width:80;Caption:"Instrument classification";Style:"TextAlign:GeneralCenter;";}	53{Width:80;Caption:"Notional currency 1";Style:"TextAlign:GeneralCenter;";}	54{Width:80;Caption:"Notional currency 2";Style:"TextAlign:GeneralCenter;";}	55{Width:80;Caption:"Price multiplier";Style:"TextAlign:GeneralCenter;";}	56{Width:80;Caption:"Underlying instrument code";Style:"TextAlign:GeneralCenter;";}	57{Width:80;Caption:"Underlying index name";Style:"TextAlign:GeneralCenter;";}	58{Width:80;Caption:"Term of the underlying index";Style:"TextAlign:GeneralCenter;";}	59{Width:80;Caption:"Option type";Style:"TextAlign:GeneralCenter;";}	60{Width:80;Caption:"Strike price notation";Style:"TextAlign:GeneralCenter;";}	61{Width:80;Caption:"Strike price";Style:"TextAlign:GeneralCenter;";}	62{Width:80;Caption:"Strike price currency";Style:"TextAlign:GeneralCenter;";}	63{Width:80;Caption:"Option exercise style";Style:"TextAlign:GeneralCenter;";}	64{Width:80;Caption:"Maturity date";Style:"TextAlign:GeneralCenter;";}	65{Caption:"Expiry date";}	66{Caption:"Delivery type";}	67{Caption:"Investment decision within firm Type";}	68{Caption:"Investment decision within firm";}	69{Caption:"Investment decision Maker Country";}	70{Caption:"Execution within firm type";}	71{Caption:"Execution within firm";}	72{Caption:"Executor Country";}	73{Caption:"Waiver indicator";}	74{Caption:"Short selling indicator";}	75{Width:80;Caption:"OTC post-trade indicator";Style:"TextAlign:GeneralCenter;";}	76{Width:80;Caption:"Commodity derivative indicator";Style:"TextAlign:GeneralCenter;";}	77{Width:80;Caption:"Securities financing transaction  indicator";Style:"TextAlign:GeneralCenter;";}	78{Caption:"Business Unit";}	79{Caption:"Free text 1";}	80{Caption:"Free text 2";}	81{Caption:"Routing Instructions";}	</value>
+  </data>
+</root>

@@ -1,0 +1,577 @@
+﻿@model ISPDBO.Models.WebUsers
+
+@{
+    Layout = "_MainLayout";
+    int PD_Status = ViewBag.Clients_MetaData.PD_Status;
+
+    int Request_Status = 1;
+    @foreach (var p_d in ViewBag.PersonalData)
+    {
+        @if (p_d.Mandatory == 1 && p_d.DocCount == 0)
+        {
+            Request_Status = 0;
+        }
+    }
+
+    int Confirmation_Status = 0;
+    @foreach (var d_f in ViewBag.Doc_Files)
+    {
+        @if (d_f.Status == 2)
+        {
+            Confirmation_Status = 1;
+        }
+    }
+
+    string sWaitMessage = "";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .modal-header {
+        height: 30px;
+        padding: 20px;
+        background-color: #18456b;
+        color: white;
+    }
+    .modal-header .close {
+        margin-top: -20px;
+        color: #fff;
+    }
+    .modal-body {
+        text-align: justify;
+        margin: 10px;
+    }
+</style>
+
+
+<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-8">
+            <h4>2. MY OFFICE</h4>
+        </div>
+        <div class="col-lg-4">
+            <span id="main_message_flag" hidden>@PD_Status</span><label id="main_message" class="text-danger"></label><br />
+            <span id="request_button_flag" hidden>@Request_Status</span><br />
+            <span id="confirmation_message_flag" hidden>@Confirmation_Status</span><label id="confirmation_message" class="text-danger">@sWaitMessage</label>
+        </div>
+    </div>
+
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-2"><strong>Προσωπικά Στοιχεία</strong></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => model.Surname) @Html.DisplayFor(model => model.Firstname) του @Html.DisplayFor(model => model.Fathername)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><a id="edit_1" href="#" onclick="ChangeMode(1, this.innerHTML);">Επεξεργασία</a></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.DoB)) <span class="font-italic" style="padding-left: 20px;">/ Ημ.Γεν.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><a id="req_ADT" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('0');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.ADT)) <span class="font-italic" style="padding-left: 20px;">/ ΑΔΤ / @Html.DisplayFor(model => (model.CountryTitle)) / @Html.DisplayFor(model => (model.ExpireDate))</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.AFM)) <span class="font-italic" style="padding-left: 20px;">/ ΑΦΜ / Ελλάδα</span>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2"><strong>Στοιχεία Επικοινωνίας</strong></div>
+            <div class="col-sm-1"><a id="req_mobile" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('1');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.Mobile)) <span class="font-italic" style="padding-left: 20px;">/ κινητό</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><a id="edit_2" href="#" onclick="ChangeMode(2, this.innerHTML);">Επεξεργασία</a></div>
+            <div class="col-sm-1"><a id="req_email" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('2');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                <a href="mailto: @Html.DisplayFor(model => (model.Email))">@Html.DisplayFor(model => (model.Email))</a>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><a id="req_tel" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('3');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.Tel)) <span class="font-italic" style="padding-left: 20px;">/ σταθερό /σπίτι</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><a id="req_tel2" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('4');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.JobTel)) <span class="font-italic" style="padding-left: 20px;">/ σταθερό / εργασία</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><a id="req_address" href="#modalReq" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow('5');">Αλλαγή</a></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.Address)) @Html.DisplayFor(model => (model.City)) @Html.DisplayFor(model => (model.Zip))<span class="font-italic" style="padding-left: 20px;">/ Μόνιμη Κατοικία</span>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2"><strong>Οικονομικά Στοιχεία</strong></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                2020
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><a id="edit_3" href="#" onclick="ChangeMode(3, this.innerHTML);">Επεξεργασία</a></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                2019
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                2018
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+                <a href="#">όλα τα εκκαθαριστικά</a>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2"><strong>Επαγγελματικά Στοιχεία</strong></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_spec" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.Brunch_Title))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><a id="edit_4" href="#" onclick="ChangeMode(4, this.innerHTML);">Επεξεργασία</a></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_post" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.JobPosition))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_company" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.CompanyTitle))<span class="font-italic" style="padding-left: 20px;">/ @Html.DisplayFor(model => (model.CompanyDescription))</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_url" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                <a href="@Html.DisplayFor(model => (model.JobURL))">@Html.DisplayFor(model => (model.JobURL))</a>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2"><strong>Άλλα στοιχεία</strong></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_category" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                Ειδικη κατηγορία
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><a id="edit_5" href="#" onclick="ChangeMode(5, this.innerHTML);">Επεξεργασία</a></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_politik" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                @if (@Model.SpecialCategory == 1)
+                {
+                    <span>Μη πολιτικά εκτεθιμένο πρόσωπο</span>
+                }
+                else
+                {
+                    <span>Πολιτικά εκτεθιμένο πρόσωπο</span>
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1"><div class="col-sm-1"><a id="req_amka" href="#modalReq" data-backdrop="false" data-toggle="modal">Αλλαγή</a></div></div>
+            <div class="col-sm-9">
+                @Html.DisplayFor(model => (model.AMKA)) <span class="font-italic" style="padding-left: 20px;">/ ΑΜΚΑ</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.card-body -->
+
+</div>
+
+<!--- modalAdd window --->
+<div id="modalReq" class="modal fade">
+    <div class="modal-dialog  vertical-align-center">
+        <div class="modal-content" style="width:700px; height:500px;">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>            
+            <div class="modal-body">
+                <div class="row">
+                    <h4 id="modalReq_title" class="modal-title"></h4><br/>
+                    <span id="modalAdd_main_text"></span>
+                    <br /><br />
+                </div>
+                <br />
+                <div class="row">
+                    <input id="upldModalReq" type="file" name="postedFiles" onchange="uploadFiles('upldModalReq', 'upldModalReq_result')" />
+                </div>
+                <div class="row">
+                    <span id="upldModalReq_result" class="text-danger"></span>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button id="modalAdd_save" type="button" class="btn btn-success" data-dismiss="modal" onclick="AddDocument2DMS();">Υποβολή</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Άκυρο</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+
+    $("#modalList").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalView").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalAdd").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalReq").draggable({
+        handle: ".modal-header"
+    });
+
+    SwitchOnOff(1, "hidden");
+    SwitchOnOff(2, "hidden");
+    SwitchOnOff(3, "hidden");
+    SwitchOnOff(4, "hidden");
+    SwitchOnOff(5, "hidden");
+
+    function ChangeMode(group_id, state) {
+        if (state == 'Επεξεργασία') SwitchOnOff(group_id, 'visible')
+        else SwitchOnOff(group_id, 'hidden')
+    }
+
+    function SwitchOnOff(group_id, vsblty) {
+        switch (group_id) {
+            case 1:
+                document.getElementById("edit_1").innerHTML = (vsblty == "hidden" ? "Επεξεργασία" : "Τέλος");
+                document.getElementById("req_ADT").style.visibility = vsblty;
+                break;
+            case 2:
+                document.getElementById("edit_2").innerHTML = (vsblty == "hidden" ? "Επεξεργασία" : "Τέλος");
+                document.getElementById("req_mobile").style.visibility = vsblty;
+                document.getElementById("req_email").style.visibility = vsblty;
+                document.getElementById("req_tel").style.visibility = vsblty;
+                document.getElementById("req_tel2").style.visibility = vsblty;
+                document.getElementById("req_address").style.visibility = vsblty;
+                break;
+            case 3:
+                document.getElementById("edit_3").innerHTML = (vsblty == "hidden" ? "Επεξεργασία" : "Τέλος");
+                break;
+            case 4:
+                document.getElementById("edit_4").innerHTML = (vsblty == "hidden" ? "Επεξεργασία" : "Τέλος");
+                document.getElementById("req_spec").style.visibility = vsblty;
+                document.getElementById("req_post").style.visibility = vsblty;
+                document.getElementById("req_company").style.visibility = vsblty;
+                document.getElementById("req_url").style.visibility = vsblty;
+                break;
+            case 5:
+                document.getElementById("edit_5").innerHTML = (vsblty == "hidden" ? "Επεξεργασία" : "Τέλος");
+                document.getElementById("req_category").style.visibility = vsblty;
+                document.getElementById("req_politik").style.visibility = vsblty;
+                document.getElementById("req_amka").style.visibility = vsblty;
+                break;
+        }
+    }
+
+
+    //--- define Group_ID and define options of Document Types -----------------
+    function PrepareDocTypesList(group_id) {
+        document.getElementById('modalList_Group_ID').innerHTML = group_id;
+
+        $.ajax(
+            {
+                url: "Home/DefineDocTypesList",
+                async: false,
+                data: { group_id: group_id },
+                type: "POST",
+                success: function (data1) {
+                    var select, option;
+                    select = document.getElementById('docTypes');
+                    select.length = 0;
+                    for (i = 0; i < data1.length; i++) {
+                        x = JSON.parse(JSON.stringify(data1[i]));
+                        option = document.createElement('option');
+                        option.value = x['id'];
+                        option.text = x['title'];
+                        select.add(option);
+                    }
+                }
+            }
+        );
+
+        DefineDocumentsList(group_id);
+    }
+    //--- add Document --------------------------------------------------------------------
+    function AddDocument2DMS() {
+        group_id = document.getElementById("modalList_Group_ID").innerHTML;
+        $.ajax(
+            {
+                url: "Home/AddFile2DMS",
+                async: false,
+                data: {
+                    doc_type: document.getElementById("docTypes").value,
+                    group_id: group_id,
+                    file_name: document.getElementById("upldModalReq").files[0].name,
+                    oldfile_id: 0
+                },
+                type: "POST",
+                success: function (data) {
+                    DefineDocumentsList(group_id);
+
+                    var x = "#dMessage_" + group_id;
+                    $(x).addClass("hidden");
+                }
+            }
+        );
+    }
+    //--- define Group_ID and define options of Document Types -----------------
+    function DefineDocumentsList(group_id) {
+        document.getElementById('modalList_Group_ID').innerHTML = group_id;
+
+        $.ajax(
+            {
+                url: "Home/DefineDocumentsList",
+                async: false,
+                data: { group_id: group_id },
+                type: "POST",
+                success: function (data) {
+                    var json = JSON.parse(JSON.stringify(data));
+                    $(function () {
+                        var content = '';
+                        //content += '<tbody>'; -- **superfluous**
+                        for (var i = 0; i < json.length; i++) {
+                            var x = json[i];
+                            content += '<tr id="r_' + i + '">';
+                            content += '<td>' + (i+1) + '</td>';
+                            content += '<td>' + x.docTypes_Title + '</td>';
+                            content += '<td>' + x.fileName + '</td>';
+                            content += '<td  class="project-actions text-right">' +
+                                       '<button id="btnView_List" href="#modalView" class="btn btn-info btn-sm" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(' + x.id + ');">Προβολή</button>&nbsp;' +
+                                       '<button id="btnEdit_List" href="#modalAdd" class="btn btn-warning btn-sm" data-backdrop="false" data-toggle="modal" onclick="PrepareReqWindow(1);">Αλλαγή</button>&nbsp;' +
+                                       '<a href="/Home/DeleteClientDocFile?id=' + x.id + '" class="btn btn-danger btn-sm" onclick="return confirm(`Είστε σίγουρος για τη διαγραφή της εγγραφής;`);">Διαγραφή</a>' +
+                                       '</td>';
+                            content += '</tr>';
+                        }
+                        // content += '</tbody>';-- **superfluous**
+                        //$('table tbody').replaceWith(content);  **incorrect..**
+                        $('#docList tbody').html(content);  // **better. give the table a ID, and replace**
+                    });
+
+                    //$("table#docList tbody").load(data);
+                    //$('table tbody tr td').css({ 'padding': '10px' });
+                    //$('#docList').html(data);
+                    //$("table#docList tbody").append(data);
+                }
+            }
+        );
+    }
+
+    //--- send Client's Requests ---------------------------------------------------------
+    function SendClientRequest() {
+
+        $.ajax(
+            {
+                url: "Home/SendClientsRequests",
+                async: false,
+                data: { source_id: src_id },
+                type: "POST",
+                success: function (data1) {
+                    var x = JSON.parse(JSON.stringify(data1));
+                    document.getElementById("D1_Status").value = x['d1_Status'];
+                    document.getElementById("D2_Status").value = x['d2_Status'];
+                    document.getElementById("D3_Status").value = x['d3_Status'];
+                    document.getElementById("D11_Status").value = x['d11_Status'];
+                    ShowPersonalData();
+                }
+            }
+        );
+    }
+
+
+
+
+    //--- define attributes (header, main_text, year visibility) for each Group_ID ---------
+    function PrepareReqWindow(aktion) {                                                     
+        var doc_types, header, main_text, visibility_flag;
+        switch (aktion) {
+            case '0':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ ΤΑΥΤΟΤΗΤΑΣ";
+                main_text = "Για να αλάξετε την ταυτότητα σας κάντε προσθήκη την νέα σας <br/><br/>Εδώ μπορείτε να προσθέσετε την νέα σας ταυτότητα και να κάνετε υποβολή αιτήματος";
+                visibility_flag = "none";
+                break;
+            case '1':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ ΚΙΝΗΤΟΥ ΤΗΛΕΦΩΝΟΥ";
+                main_text = "Για να αλάξετε τον αριμθμό του κινητού τηλέφωνου, κάντε Προσθήκη του τελευταίου λογαριασμού και πατήστε Υποβολή. Θα επεξεργαστούμε το αίτημά σας το συνομότερο δυνατόν. <br/><br/>Προσοχη. Έαν ο λογαριασμός δεν είναι στο ονομά σας αλλά είναι άλλου πορσώπου, θα πρέπει να προσθέσεττε κιαι μία υπέθυνη δήλωση του δικαιούχου ότι το συγκεκριμένο νούμερο τηλεφώνου χρησιμοποιείται από εσάς. Δείγμα έδώ. Υπέυθυνη δήλωση μπορείτε να  κάνετε μέσω Gov.gr";
+                visibility_flag = "none";
+                break;
+            case '2':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ email";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου e-mail. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχείαΠροσοχή. Για τη δική σας ασφλάλεια, καταχωρήστε το προσωπικό σας email και όχι τρίτων. Η αλλαγή του email επιφέρει σημαντικές αλλαγές στο σταθερό μέσο επικοινωνίας με την HellasFin και για τις συμβάσεις που έχετ υπογραψει.				";
+                visibility_flag = "none";
+                break;
+            case '3':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ ΣΤΑΘΕΡΟΥ ΤΗΛΕΦΩΝΟΥ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΔΙΕΥΘΥΝΣΗΣ ΚΑΙ ΤΗΛΕΦΩΝΟΥ η ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΤΗΛΕΦΩΝΟΥ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '4':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ ΣΤΑΘΕΡΟΥ ΤΗΛΕΦΩΝΟΥ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΔΙΕΥΘΥΝΣΗΣ ΚΑΙ ΤΗΛΕΦΩΝΟΥ η ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΤΗΛΕΦΩΝΟΥ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '5':
+                header = "ΑΙΤΗΜΑ ΑΛΛΑΓΗΣ ΔΝΣΗΣ ΚΑΤΟΙΚΙΑΣ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Δνση κατοικίας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+
+            case '6':
+                header = "ΑΦΜ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου, εκκαθαριστικό των τελευταίεων ετών. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "block";
+                break;
+            case '7':
+                header = "ΑΜΚΑ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΑΜΚΑ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '8':
+                header = "ΣΑΤ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΣΑΤ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '9':
+                header = "Αρ. Μερίδα";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Αρ. Μερίδα. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '10':
+                header = "Κατηγορία επενδυτή";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Κατηγορία επενδυτή. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '11':
+                header = "Επάγγελμα";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Επάγγελμα. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '12':
+                header = "Οικογενιακή κατάσταση";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Οικογενιακή κατάσταση. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+        }
+        document.getElementById("modalReq_title").innerHTML = header;
+        document.getElementById("modalAdd_main_text").innerHTML = main_text;
+        document.getElementById("txtModalAdd_year").value = "";
+        document.getElementById("modalAdd_year").style.display = visibility_flag;
+        document.getElementById("upldModalReq").value = "";
+        document.getElementById("upldModalReq_result").innerHTML = "";
+        document.getElementById("modalAdd_save").disabled = true;
+        PrepareDocTypesList(document.getElementById("modalList_Group_ID").innerHTML);
+    }
+
+    //--- upload file ---------------------------------------------------------------------
+    function uploadFiles(inputId, result_message) {
+        var input = document.getElementById(inputId);
+        var files = input.files;
+        var formData = new FormData();
+        var result = '';
+        for (var i = 0; i != files.length; i++) {
+            formData.append("files", files[i]);
+        }
+
+        $.ajax(
+            {
+                url: "Uploader/Index",
+                async: false,
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    result = data;
+                }
+            }
+        );
+
+        if (result != '') {
+            //alert(document.getElementById(result_message).innerHTML);
+            //alert(result);
+            document.getElementById(result_message).innerHTML = document.getElementById(result_message).innerHTML + "<br/>" + result + "     " + "<a href='#'>Διαγραφή</a>";
+            document.getElementById(inputId).innerHTML = "";
+            document.getElementById("modalAdd_save").disabled = false;
+
+            $.ajax(
+                {
+                    url: "Home/DownloadUploadedFile2DMS",
+                    async: false,
+                    data: {file_name: result },
+                    type: "POST"
+                }
+            );
+        }
+        else document.getElementById(result_message).innerHTML = 'Upload failed';
+    }
+
+
+
+    //--- define FullPath of document with ClientsDocFile_ID --------------------------
+    function DefineDocumentPath(iClientsDocFile_ID) {
+
+        $.ajax(
+            {
+                url: "Home/DefineDocumentName",
+                async: false,
+                data: { iFile_ID: iClientsDocFile_ID},
+                type: "POST",
+                success: function (data1) {
+                    //data1 = "https://www.hellasfin.gr/themes/custom/pb/logo.svg";
+                    document.getElementById("docDMS").src = data1;
+                    document.getElementById("file_path").innerHTML = data1;
+                }
+            }
+        );
+    }
+
+</script>
+
+

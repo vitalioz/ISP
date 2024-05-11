@@ -1,0 +1,629 @@
+﻿@model ISPDBO.Models.Users
+
+@{
+    Layout = "_MainLayout";
+    int PD_Status = ViewBag.Clients_MetaData.PD_Status;
+
+    int Request_Status = 1;
+    @foreach (var p_d in ViewBag.PersonalData)
+    {
+        @if (p_d.Mandatory == 1 && p_d.DocCount == 0)
+        {
+            Request_Status = 0;
+        }
+    }
+
+    int Confirmation_Status = 0;
+    @foreach (var d_f in ViewBag.Doc_Files)
+    {
+        @if (d_f.Status == 2)
+        {
+            Confirmation_Status = 1;
+        }
+    }
+
+    int iPending = 0;
+    string sWaitMessage = "";
+}
+<style>
+    button.btn-settings {
+        margin: 25px;
+        padding: 20px 30px;
+        font-size: 1.2em;
+        background-color: #337ab7;
+        color: white;
+    }
+
+        button.btn-settings:active {
+            color: white;
+        }
+
+    .modal {
+        overflow: hidden;
+    }
+
+        .modal::before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            margin-right: -4px;
+            vertical-align: middle;
+        }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .modal-header {
+        height: 30px;
+        padding: 20px;
+        background-color: #18456b;
+        color: white;
+    }
+
+    .modal-title {
+        margin-top: -10px;
+        font-size: 16px;
+    }
+
+    .modal-header .close {
+        margin-top: -10px;
+        color: #fff;
+    }
+
+    .modal-body {
+        color: #888;
+        padding: 5px 35px 20px;
+    }
+
+        .modal-body h3 {
+            text-align: center;
+        }
+
+        .modal-body p {
+            padding-top: 10px;
+            font-size: 1.1em;
+        }
+
+    .modal-body {
+        max-height: calc(100vh - 312px);
+        overflow-y: auto;
+    }
+</style>
+
+<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-8">
+            <h4>Προσωπικά Στοιχεία  & Έγγραφα</h4>
+        </div>
+        <div class="col-lg-4">
+            <span id="main_message_flag" hidden >@PD_Status</span><label id="main_message" class="text-danger"></label><br />
+            <span id="request_button_flag" hidden>@Request_Status</span><button id="request_button" href="#modalRequest" class="btn btn-success btn-sm" data-backdrop="false" data-toggle="modal">Υποβολή</button><br />
+            <span id="confirmation_message_flag" hidden>@Confirmation_Status</span><label id="confirmation_message" class="text-danger">@sWaitMessage</label>
+        </div>
+    </div>
+
+    <div class="well">
+        <div class="row">
+            <div class="col-lg-2">
+                <label asp-for="Surname" class="control-label">Επώνυμο :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Surname)
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="Firstname" class="control-label">Όνομα : </label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Firstname)
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="Fathername" class="control-label">Όνομα πατρός :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => model.Fathername)
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label for="DoB" class="control-label">Ημνια γεννησης :</label>
+            </div>
+            <div class="col-lg-6">
+                @Html.DisplayFor(model => (model.DoB))
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+
+    @{var i = 0; }
+    @foreach (var doc_file in ViewBag.PersonalData)
+    {
+        @if (doc_file.Status == 1)
+        {
+            <div class="well" style="height:25px; margin-top: -15px;">
+                <div class="col-lg-2" style="margin-top: -15px;">
+                    <label for="@("dTitle_" + i)" class="control-label">@doc_file.Title</label><label class="text-danger" hidden="@(doc_file.Mandatory == 0)"> (*)</label>
+                </div>
+                <div class="col-lg-6" style="margin-top: -15px;">
+                    @doc_file.Value &nbsp;
+                </div>
+                <div class="col-lg-1" style="margin-top: -15px;">
+                    <button id="@("dList_" + i)" href="#modalList" class="btn btn-primary btn-sm" data-backdrop="false" data-toggle="modal" onclick="PrepareDocTypesList(@i);">Έγγραφα</button>
+                </div>
+                <div class="col-lg-2" style="margin-top: -15px;">
+                    <label id="@("dMessage_" + i)" asp-for="message1" class="control-label text-danger" hidden="@(doc_file.Mandatory == 0 || doc_file.DocCount > 0)">Εκρεμούν εγγραφα</label>
+                </div>
+            </div>
+            i++;
+        }
+    }
+</div>
+
+<!------------------------------------------------------- Modal Windows ------------------------------------------------------>
+<!--- modalList window --->
+<div id="modalList" class="modal" style="position: absolute; z-index: 100000;">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content" style="width:1200px; height:740px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Λίστα εγγράφων</h4><span id="modalList_Group_ID" hidden></span>
+            </div>
+            <div class="modal-body">
+                <button id="btnAdd_List" href="#modalAdd" class="btn btn-success btn-sm" data-backdrop="false" data-toggle="modal" onclick="PrepareAddWindow(0);">
+                    Προσθήκη
+                </button>
+                <table id="docList" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 3%">ΑΑ</th>
+                            <th style="width: 32%">Τύπος εγγράφου</th>
+                            <th style="width: 40%">Αρχείο</th>
+                            <th style="width: 25%">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- modalAdd window --->
+<div id="modalAdd" class="modal fade" style="position: absolute; z-index: 200000;">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:800px;">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="modalAdd_title" class="modal-title"></h4><span id="modalAdd_Action" hidden></span><span id="modalAdd_DocTypes" hidden></span>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <span id="modalAdd_main_text"></span>
+                    <br /><br />
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label name="docTypes">Τύπος εγγράφου</label>
+                    </div>
+                    <div class="col-md-9">
+                        <select id="docTypes" name="docTypes" class="form-select" style="width: 500px;">
+                        </select>
+                    </div>
+                </div>
+                <div id="modalAdd_year" class="row">
+                    <div class="col-md-3">
+                        <label name="docTypes">Έτος</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input id="txtModalAdd_year" type="text" style="width: 100px;" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-8">
+                        <input id="upldModalAdd" type="file" name="postedFiles" onchange="uploadFiles(1, 0, 'upldModalAdd', 'upldModalAdd_result')" />
+                    </div>
+                    <div class="col-md-4">
+                        <span id="upldModalAdd_result" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="modalAdd_save" type="button" class="btn btn-success" data-dismiss="modal" onclick="AddDocument2DMS();">Αποθήκευση</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Άκυρο</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- modalView window ---------------------------------------------------------------------->
+<div id="modalView" class="modal" style="position: absolute; z-index: 300000;">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:900px; height:640px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Προβολή εγγράφου</h4>
+            </div>
+            <div class="modal-body bg-warning">
+                <img id="docDMS" style="width: 100%; height: 100%;" src="" />
+            </div>
+            <label id="file_path"></label>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--- modalRequest window --->
+<div id="modalRequest" class="modal" style="position: absolute; z-index: 100000; ">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content" style="width:1100px; height:740px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Αίτημα</h4><span id="modalList_Group_ID" hidden></span>
+            </div>
+            <div class="modal-body">
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">ΑΑ</th>
+                            <th style="width: 10%">Πράξη</th>
+                            <th style="width: 30%">Τύπος εγγράφου</th>
+                            <th style="width: 35%">Αρχείο</th>
+                            <th style="width: 30%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{i = 1;}
+                        @foreach (var doc_file in ViewBag.Doc_Files)
+                        {
+                            if (doc_file.Status == 0 || doc_file.Status == 1)
+                            {
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@(doc_file.Status == 0 ? "Προθήκη" : "Αλλαγή")</td>
+                                    <td>@doc_file.DocTypes_Title</td>
+                                    <td>@doc_file.FileName</td>
+                                    <td class="project-actions text-right">
+                                        <button id="btnView_List" href="#modalView" class="btn btn-info btn-sm" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(@doc_file.ID);">Προβολή</button>
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="/Home/SendClientsRequests" class="btn btn-success">Αποστολή</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+
+    $("#modalList").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalView").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalAdd").draggable({
+        handle: ".modal-header"
+    });
+    $("#modalRequest").draggable({
+        handle: ".modal-header"
+    });
+
+    ShowPersonalData();
+
+    function ShowPersonalData() {
+
+        if (document.getElementById("main_message_flag").innerHTML == "0") {   // == 0 - it's new client
+            document.getElementById("main_message").innerHTML = "Καταχωρήστε όλα απαραίτητα αρχεία";
+
+            //--- if ALL important files are loaded switch ON button YPOVOLI ---------------------------
+            if (document.getElementById("request_button_flag").innerHTML == "0") document.getElementById("request_button").style.visibility = "hidden";
+            else document.getElementById("request_button").style.visibility = "visible";
+        }
+        if (document.getElementById("main_message_flag").innerHTML == "1") {   // == 1 - documents sent to server but yet not confirmed.
+            document.getElementById("confirmation_message").innerHTML = "Αναμένετε απάντηση στο αίτημα σας";
+
+            //--- button YPOVOLI is hidden when documents sent to server but yet not confirmed ----------
+            document.getElementById("request_button").style.visibility = "hidden";            
+        }
+        if (document.getElementById("main_message_flag").innerHTML == "2") {   // == 2 - confirmed from server
+            if (@iPending == 1) {
+                document.getElementById("main_message").innerHTML = "Για την υποβολή αρχείων πατήστε";
+                document.getElementById("request_button").style.visibility = "visible";
+            }
+            else {
+                document.getElementById("main_message").innerHTML = "";
+                document.getElementById("request_button").style.visibility = "hidden";
+            }
+        }
+    }
+    //--- define Group_ID and define options of Document Types -----------------
+    function PrepareDocTypesList(group_id) {
+        document.getElementById('modalList_Group_ID').innerHTML = group_id;
+
+        $.ajax(
+            {
+                url: "Home/DefineDocTypesList",
+                async: false,
+                data: { group_id: group_id },
+                type: "POST",
+                success: function (data1) {
+                    var select, option;
+                    select = document.getElementById('docTypes');
+                    select.length = 0;
+                    for (i = 0; i < data1.length; i++) {
+                        x = JSON.parse(JSON.stringify(data1[i]));
+                        option = document.createElement('option');
+                        option.value = x['id'];
+                        option.text = x['title'];
+                        select.add(option);
+                    }
+                }
+            }
+        );
+
+        DefineDocumentsList(group_id);
+    }
+    //--- add Document --------------------------------------------------------------------
+    function AddDocument2DMS() {
+        group_id = document.getElementById("modalList_Group_ID").innerHTML;        
+        $.ajax(
+            {
+                url: "Home/AddFile2DMS",
+                async: false,
+                data: {
+                    doc_type: document.getElementById("docTypes").value,                
+                    group_id: group_id,
+                    aktion: document.getElementById("modalAdd_Action").innerHTML,
+                    file_name: document.getElementById("upldModalAdd").files[0].name,
+                    oldfile_id: 0
+                },
+                type: "POST",
+                success: function (data) {
+                    DefineDocumentsList(group_id);
+
+                    var x = "#dMessage_" + group_id;
+                    $(x).addClass("hidden");
+                }
+            }
+        );
+    }
+    //--- define Group_ID and define options of Document Types -----------------
+    function DefineDocumentsList(group_id) {
+        document.getElementById('modalList_Group_ID').innerHTML = group_id;
+
+        $.ajax(
+            {
+                url: "Home/DefineDocumentsList",
+                async: false,
+                data: { group_id: group_id },
+                type: "POST",
+                success: function (data) {
+                    var json = JSON.parse(JSON.stringify(data));
+                    $(function () {
+                        var content = '';
+                        //content += '<tbody>'; -- **superfluous**
+                        for (var i = 0; i < json.length; i++) {
+                            var x = json[i];
+                            content += '<tr id="r_' + i + '">';
+                            content += '<td>' + (i+1) + '</td>';
+                            content += '<td>' + x.docTypes_Title + '</td>';
+                            content += '<td>' + x.fileName + '</td>';
+                            content += '<td  class="project-actions text-right">' +
+                                       '<button id="btnView_List" href="#modalView" class="btn btn-info btn-sm" data-backdrop="false" data-toggle="modal" onclick="DefineDocumentPath(' + x.id + ');">Προβολή</button>&nbsp;' +
+                                       '<button id="btnEdit_List" href="#modalAdd" class="btn btn-warning btn-sm" data-backdrop="false" data-toggle="modal" onclick="PrepareAddWindow(1);">Αλλαγή</button>&nbsp;' +
+                                       '<a href="/Home/DeleteClientDocFile?id=' + x.id + '" class="btn btn-danger btn-sm" onclick="return confirm(`Είστε σίγουρος για τη διαγραφή της εγγραφής;`);">Διαγραφή</a>' +
+                                       '</td>';
+                            content += '</tr>';
+                        }
+                        // content += '</tbody>';-- **superfluous**
+                        //$('table tbody').replaceWith(content);  **incorrect..**
+                        $('#docList tbody').html(content);  // **better. give the table a ID, and replace**
+                    });
+
+                    //$("table#docList tbody").load(data);
+                    //$('table tbody tr td').css({ 'padding': '10px' });
+                    //$('#docList').html(data);
+                    //$("table#docList tbody").append(data);
+                }
+            }
+        );
+    }
+
+    //--- send Client's Requests ---------------------------------------------------------
+    function SendClientRequest() {
+
+        $.ajax(
+            {
+                url: "Home/SendClientsRequests",
+                async: false,
+                data: { source_id: src_id },
+                type: "POST",
+                success: function (data1) {
+                    var x = JSON.parse(JSON.stringify(data1));
+                    document.getElementById("D1_Status").value = x['d1_Status'];
+                    document.getElementById("D2_Status").value = x['d2_Status'];
+                    document.getElementById("D3_Status").value = x['d3_Status'];
+                    document.getElementById("D11_Status").value = x['d11_Status'];
+                    ShowPersonalData();
+                }
+            }
+        );
+    }
+
+
+
+
+    //--- define attributes (header, main_text, year visibility) for each Group_ID ---------
+    function PrepareAddWindow(aktion) {                                                     // aktion = 0 - add new document, 1 - replace existing document
+        var doc_types, header, main_text, visibility_flag;
+        switch (document.getElementById("modalList_Group_ID").innerHTML) {
+            case '0':
+                header = "Ταυτότηα η Διαβατήριο";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου και τις δύο όψεις της ταυτότητας ή του διαβατηρίου σας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία. Σε περίπτωση του διαβατηρίου, να μην έχει λήξη.";
+                visibility_flag = "none";
+                break;
+            case '1':
+                header = "ΑΦΜ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου, εκκαθαριστικό των τελευταίεων ετών. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "block";
+                break;
+            case '2':
+                header = "ΑΜΚΑ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΑΜΚΑ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '3':
+                header = "Σταθερό τηλέφωνο";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΔΙΕΥΘΥΝΣΗΣ ΚΑΙ ΤΗΛΕΦΩΝΟΥ η ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΤΗΛΕΦΩΝΟΥ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '4':
+                header = "Κινήτο τηλέφωνο";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Κινήτο τηλέφωνο. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '5':
+                header = "e-mail";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου e-mail. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '6':
+                header = "Δνση κατοικίας";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Δνση κατοικίας. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '7':
+                header = "ΣΑΤ";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου ΣΑΤ. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '8':
+                header = "Αρ. Μερίδα";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Αρ. Μερίδα. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '9':
+                header = "Κατηγορία επενδυτή";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Κατηγορία επενδυτή. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '10':
+                header = "Επάγγελμα";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Επάγγελμα. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+            case '11':
+                header = "Οικογενιακή κατάσταση";
+                main_text = "Προσθέστε σε μορφή φωτογραφίας ή σε  μορφή PDF αρχείου Οικογενιακή κατάσταση. Προσοχή, να είναι πλήρως διακριτά και ευανάγνωστα όλα τα στοιχεία";
+                visibility_flag = "none";
+                break;
+        }
+        document.getElementById("modalAdd_DocTypes").innerHTML = doc_types;
+        document.getElementById("modalAdd_title").innerHTML = header;
+        document.getElementById("modalAdd_Action").innerHTML = aktion;
+        document.getElementById("modalAdd_main_text").innerHTML = main_text;
+        document.getElementById("txtModalAdd_year").value = "";
+        document.getElementById("modalAdd_year").style.display = visibility_flag;
+        document.getElementById("upldModalAdd").value = "";
+        document.getElementById("upldModalAdd_result").innerHTML = "";
+        document.getElementById("modalAdd_save").disabled = true;         
+        PrepareDocTypesList(document.getElementById("modalList_Group_ID").innerHTML);
+    }
+
+    //--- upload file ---------------------------------------------------------------------
+    function uploadFiles(ndex, subndex, inputId, result_message) {
+        var input = document.getElementById(inputId);
+        var files = input.files;
+        var formData = new FormData();
+        var result = '';
+        for (var i = 0; i != files.length; i++) {
+            alert("i = " + i + "    files[i] = " + files[i]);
+            formData.append("files", files[i]);
+        }
+
+        $.ajax(
+            {
+                url: "Uploader/Index",
+                async: false,
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    result = data;
+                }
+            }
+        );
+
+        if (result != '') {
+            document.getElementById(result_message).innerHTML = 'Uploaded successfully';
+            document.getElementById("modalAdd_save").disabled = false;
+
+            $.ajax(
+                {
+                    url: "Home/DownloadUploadedFile2DMS",
+                    async: false,
+                    data: {file_name: result },
+                    type: "POST"
+                }
+            );
+        }
+        else document.getElementById(result_message).innerHTML = 'Upload failed';
+    }
+
+
+
+    //--- define FullPath of document with ClientsDocFile_ID --------------------------
+    function DefineDocumentPath(iClientsDocFile_ID) {
+
+        $.ajax(
+            {
+                url: "Home/DefineDocumentName",
+                async: false,
+                data: { iFile_ID: iClientsDocFile_ID},
+                type: "POST",
+                success: function (data1) {
+                    //data1 = "https://www.hellasfin.gr/themes/custom/pb/logo.svg";
+                    document.getElementById("docDMS").src = data1;
+                    document.getElementById("file_path").innerHTML = data1;
+                }
+            }
+        );
+    }
+
+</script>
+
+

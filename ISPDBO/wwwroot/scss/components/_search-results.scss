@@ -1,0 +1,118 @@
+.search-results {
+  margin-top: 0;
+  .search-result {
+    display: block;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    @media (min-width: 992px) {
+      display: flex;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid $border-color;
+    }
+    &:last-child {
+      border: none;
+      margin-bottom: 1rem;
+      @media (min-width: 992px) {
+        border: none;
+        margin-bottom: 2rem;
+      }
+    }
+    .result-image {
+      flex: 0 0 240px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
+      a {
+        display: block;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .result-container {
+      display: block;
+      @media (min-width: 992px) {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+      }
+    }
+  }
+  .result-info {
+    flex: 1;
+    @media (min-width: 992px) {
+      padding-right: 5rem;
+    }
+  }
+  .result-action {
+    flex: 0 0 25%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    @media (min-width: 992px) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .result-action-price {
+    font-weight: 900;
+    padding-top: 1rem;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    line-height: 1;
+    span {
+      display: block;
+      margin-left: 0.5rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 0.675rem;
+    }
+  }
+  .result-action-hours {
+    .result-action-hours-title {
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 0.5rem;
+      li {
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.result-action-phone {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  display: inline-block;
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+  .btn {
+    font-weight: 700;
+  }
+  i {
+    transform: rotate(90deg);
+    margin-right: 0.25rem;
+  }
+}

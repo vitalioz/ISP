@@ -1,0 +1,44 @@
+.popup-modal-container {
+  padding: 0 2rem;
+}
+.popup-modal-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+.popup-modal-form {
+}
+
+.popup-modal-socials {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f4f4f4;
+  .btn-google,
+  .btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      flex: 0 0 30px;
+    }
+    span {
+      flex: 1;
+      margin-left: -16px;
+    }
+  }
+  .btn-google {
+    background: #dd422d;
+    color: $white;
+    &:hover {
+      background: darken(#dd422d, 5%);
+    }
+  }
+  .btn-facebook {
+    background: #385aa5;
+    color: $white;
+    &:hover {
+      background: darken(#385aa5, 5%);
+    }
+  }
+}

@@ -1,0 +1,155 @@
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  &.fixed {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .sidebar-mask {
+      display: block;
+      opacity: 1;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+      z-index: 5;
+      transition-delay: 0.15s;
+      transition: all ease 0.15s;
+    }
+  }
+}
+
+.sidebar-mask {
+  display: none;
+  opacity: 0;
+  transition: all ease 0.15s;
+}
+
+ul {
+  &.no-styles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+.close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none !important;
+}
+
+label {
+  font-size: 0.875rem;
+  padding-left: 0.25rem;
+  // font-weight: 500;
+  margin-bottom: 0.375rem;
+}
+
+.breadcrumb {
+  display: none;
+  @media (min-width: 992px) {
+    padding: 0;
+    background-color: transparent;
+    font-size: 0.875rem;
+    display: flex;
+  }
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    @media (min-width: 992px) {
+      font-size: 1.875rem;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 0;
+  .page-item {
+    .page-link {
+      display: block;
+      border-radius: $border-radius;
+      margin: 0 0.25rem;
+    }
+  }
+}
+
+.alternative-page-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media (min-width: 992px) {
+    min-height: 300px;
+  }
+  h1 {
+    font-size: 1.875rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+  }
+}
+
+.mobile-sidebar-toggler {
+  display: block;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.responsiveIframeWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.responsiveIframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: medium none;
+}

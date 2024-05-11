@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="account_number" xml:space="preserve">
+    <value>Account Number</value>
+  </data>
+  <data name="account_subaccount" xml:space="preserve">
+    <value>Account / Subaccount</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="address_and_contact_information" xml:space="preserve">
+    <value>Address and Contact Information</value>
+  </data>
+  <data name="address_and_contact_details" xml:space="preserve">
+    <value>Address and Contact Details</value>
+  </data>
+  <data name="address_street" xml:space="preserve">
+    <value>Address - Street</value>
+  </data>
+  <data name="advisor" xml:space="preserve">
+    <value>Advisor</value>
+  </data>
+  <data name="advisors" xml:space="preserve">
+    <value>Advisors</value>
+  </data>
+  <data name="advisory" xml:space="preserve">
+    <value>Advisory</value>
+  </data>
+  <data name="aggressive_growth" xml:space="preserve">
+    <value>Aggressive Growth</value>
+  </data>
+  <data name="alerts" xml:space="preserve">
+    <value>Alerts</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="all_orders" xml:space="preserve">
+    <value>All Orders</value>
+  </data>
+  <data name="all_transactions" xml:space="preserve">
+    <value>All Transactions</value>
+  </data>
+  <data name="amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="balanced_growth" xml:space="preserve">
+    <value>Balanced Growth</value>
+  </data>
+  <data name="bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="black_list" xml:space="preserve">
+    <value>Black List</value>
+  </data>
+  <data name="bonds" xml:space="preserve">
+    <value>Bonds</value>
+  </data>
+  <data name="branch" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="brokerage_and_intermediary" xml:space="preserve">
+    <value>Brokerage and Intermediary</value>
+  </data>
+  <data name="brokerage_comissions_reports" xml:space="preserve">
+    <value>Brokerage Comissions Reports</value>
+  </data>
+  <data name="brokerage_settlements" xml:space="preserve">
+    <value>Brokerage Settlements</value>
+  </data>
+  <data name="bs" xml:space="preserve">
+    <value>BS</value>
+  </data>
+  <data name="b_s" xml:space="preserve">
+    <value>B&amp;S</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="__a19" xml:space="preserve">
+    <value>___</value>
+  </data>
+  <data name="certificate_Information" xml:space="preserve">
+    <value>Certificate Information</value>
+  </data>
+  <data name="checking" xml:space="preserve">
+    <value>Checking</value>
+  </data>
+  <data name="citizenship" xml:space="preserve">
+    <value>Citizenship</value>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="clear_filters" xml:space="preserve">
+    <value>Clear Filters</value>
+  </data>
+  <data name="client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="clients_bank_accounts" xml:space="preserve">
+    <value>Client's Bank Accounts</value>
+  </data>
+  <data name="clients_list" xml:space="preserve">
+    <value>Clients List</value>
+  </data>
+  <data name="clients_search" xml:space="preserve">
+    <value>Clients Search</value>
+  </data>
+  <data name="clients_update" xml:space="preserve">
+    <value>Client’s update</value>
+  </data>
+  <data name="client_information" xml:space="preserve">
+    <value>Client Information</value>
+  </data>
+  <data name="client_list" xml:space="preserve">
+    <value>Client List</value>
+  </data>
+  <data name="client_search" xml:space="preserve">
+    <value>Client Search</value>
+  </data>
+  <data name="client_updating" xml:space="preserve">
+    <value>Client Updating</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="coment" xml:space="preserve">
+    <value>Coment</value>
+  </data>
+  <data name="coments" xml:space="preserve">
+    <value>Coments</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="commercial_management_accounting" xml:space="preserve">
+    <value>Commercial Management &amp; Accounting</value>
+  </data>
+  <data name="commission" xml:space="preserve">
+    <value>Commission</value>
+  </data>
+  <data name="commissions" xml:space="preserve">
+    <value>Commissions</value>
+  </data>
+  <data name="commission_calculation" xml:space="preserve">
+    <value>Commission Calculation</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="companys_commission" xml:space="preserve">
+    <value>Company's commission</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="connection_method" xml:space="preserve">
+    <value>Connection Method</value>
+  </data>
+  <data name="contact_details" xml:space="preserve">
+    <value>Contact Details</value>
+  </data>
+  <data name="contact_information" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="contracts" xml:space="preserve">
+    <value>Contracts</value>
+  </data>
+  <data name="contract_details" xml:space="preserve">
+    <value>Contract Details</value>
+  </data>
+  <data name="countries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="country_of_taxation" xml:space="preserve">
+    <value>Country of Taxation</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="customer_information" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="data_changes" xml:space="preserve">
+    <value>Data changes</value>
+  </data>
+  <data name="data_entry" xml:space="preserve">
+    <value>Data Entry</value>
+  </data>
+  <data name="data_initialisation" xml:space="preserve">
+    <value>Data initialisation</value>
+  </data>
+  <data name="date_" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="date_from" xml:space="preserve">
+    <value>Date from</value>
+  </data>
+  <data name="date_of_birth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="date_of_issuing" xml:space="preserve">
+    <value>Date of Issuing</value>
+  </data>
+  <data name="date_of_registration" xml:space="preserve">
+    <value>Date of Registration</value>
+  </data>
+  <data name="date_start_end" xml:space="preserve">
+    <value>Date Start / End</value>
+  </data>
+  <data name="derivatives" xml:space="preserve">
+    <value>Derivatives</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="digital_settlement_advice" xml:space="preserve">
+    <value>Digital Settlement Advice</value>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="discretionary_portfolio_management" xml:space="preserve">
+    <value>Discretionary Portfolio Management</value>
+  </data>
+  <data name="dms" xml:space="preserve">
+    <value>DMS</value>
+  </data>
+  <data name="documentation" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="documents" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="document_type" xml:space="preserve">
+    <value>Document Type</value>
+  </data>
+  <data name="doc_type_id" xml:space="preserve">
+    <value>Doc Type ID</value>
+  </data>
+  <data name="entry_basis" xml:space="preserve">
+    <value>Entry Basis</value>
+  </data>
+  <data name="equities" xml:space="preserve">
+    <value>Equities</value>
+  </data>
+  <data name="etf" xml:space="preserve">
+    <value>ETF</value>
+  </data>
+  <data name="Execution" xml:space="preserve">
+    <value>Execution</value>
+  </data>
+  <data name="execution_date" xml:space="preserve">
+    <value>Execution date</value>
+  </data>
+  <data name="execution_date_from" xml:space="preserve">
+    <value>Execution date from</value>
+  </data>
+  <data name="execution_venue" xml:space="preserve">
+    <value>Execution Venue</value>
+  </data>
+  <data name="exit_" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="e_mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="facility_options" xml:space="preserve">
+    <value>Facility Options</value>
+  </data>
+  <data name="fathers_surname" xml:space="preserve">
+    <value>Father's Surname</value>
+  </data>
+  <data name="fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="file_name" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="final" xml:space="preserve">
+    <value>Final</value>
+  </data>
+  <data name="final_commission" xml:space="preserve">
+    <value>Final Commission</value>
+  </data>
+  <data name="fixed_advance" xml:space="preserve">
+    <value>Fixed Advance</value>
+  </data>
+  <data name="fixed_income" xml:space="preserve">
+    <value>Fixed Income</value>
+  </data>
+  <data name="full_name" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="general_information" xml:space="preserve">
+    <value>General Information</value>
+  </data>
+  <data name="gtc" xml:space="preserve">
+    <value>GTC</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="hf_greek_products_of_fixed_income" xml:space="preserve">
+    <value>HF Greek Products of Fixed Income</value>
+  </data>
+  <data name="hf_international_equities" xml:space="preserve">
+    <value>HF International Equities</value>
+  </data>
+  <data name="hf_international_fixed_income" xml:space="preserve">
+    <value>HF International Fixed Income</value>
+  </data>
+  <data name="history" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="income_80_20" xml:space="preserve">
+    <value>Income 80/20</value>
+  </data>
+  <data name="indexes" xml:space="preserve">
+    <value>Indexes</value>
+  </data>
+  <data name="informing" xml:space="preserve">
+    <value>Informing</value>
+  </data>
+  <data name="informing_ways" xml:space="preserve">
+    <value>Informing ways</value>
+  </data>
+  <data name="institutional" xml:space="preserve">
+    <value>Institutional</value>
+  </data>
+  <data name="wrong_amount" xml:space="preserve">
+    <value>Wrong amount</value>
+  </data>
+  <data name="investment_advices" xml:space="preserve">
+    <value>Investment Advices</value>
+  </data>
+  <data name="investment_advise" xml:space="preserve">
+    <value>Investment Advise</value>
+  </data>
+  <data name="investment_committees" xml:space="preserve">
+    <value>Investment Committees</value>
+  </data>
+  <data name="investment_dvices" xml:space="preserve">
+    <value>Investment Advices</value>
+  </data>
+  <data name="investment_policy" xml:space="preserve">
+    <value>Investment Policy</value>
+  </data>
+  <data name="investment_proposals" xml:space="preserve">
+    <value>Investment Proposals</value>
+  </data>
+  <data name="isin" xml:space="preserve">
+    <value>ISIN</value>
+  </data>
+  <data name="issue" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="issuing_authority" xml:space="preserve">
+    <value>Issuing Authority</value>
+  </data>
+  <data name="joint" xml:space="preserve">
+    <value>Joint</value>
+  </data>
+  <data name="joint_owners" xml:space="preserve">
+    <value>Joint Owners</value>
+  </data>
+  <data name="labels" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="legal_documentation" xml:space="preserve">
+    <value>Legal Documentation</value>
+  </data>
+  <data name="legal_documents" xml:space="preserve">
+    <value>Legal Documents</value>
+  </data>
+  <data name="list_print" xml:space="preserve">
+    <value>List Print</value>
+  </data>
+  <data name="male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="managment_fees_reports" xml:space="preserve">
+    <value>Managment Fees Reports</value>
+  </data>
+  <data name="managment_fees" xml:space="preserve">
+    <value>Managment Fees</value>
+  </data>
+  <data name="maximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="miscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="miscellaneous_lists" xml:space="preserve">
+    <value>Miscellaneous Lists</value>
+  </data>
+  <data name="mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="money_market" xml:space="preserve">
+    <value>Money Market</value>
+  </data>
+  <data name="mothers_surname" xml:space="preserve">
+    <value>Mother's Surname</value>
+  </data>
+  <data name="mutual_fund" xml:space="preserve">
+    <value>Mutual Fund</value>
+  </data>
+  <data name="mutual_funds" xml:space="preserve">
+    <value>Mutual Funds</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nee" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="not_checked" xml:space="preserve">
+    <value>Not Checked</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="number_account" xml:space="preserve">
+    <value>Number Account</value>
+  </data>
+  <data name="only_active_clients" xml:space="preserve">
+    <value>Only active clients</value>
+  </data>
+  <data name="only_executed_transactions" xml:space="preserve">
+    <value>Only Executed Transactions</value>
+  </data>
+  <data name="only_transmitted_transactions" xml:space="preserve">
+    <value>Only transmitted Transactions</value>
+  </data>
+  <data name="only_unexecuted_transactions" xml:space="preserve">
+    <value>Only unexecuted Transactions</value>
+  </data>
+  <data name="only_untransmitted_transactions" xml:space="preserve">
+    <value>Only untransmitted Transactions</value>
+  </data>
+  <data name="options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="orders_search" xml:space="preserve">
+    <value>Orders Search</value>
+  </data>
+  <data name="order_book" xml:space="preserve">
+    <value>Order Book</value>
+  </data>
+  <data name="order_cancelation" xml:space="preserve">
+    <value>Order Cancelation</value>
+  </data>
+  <data name="order_execution" xml:space="preserve">
+    <value>Order Execution</value>
+  </data>
+  <data name="order_receipt_way" xml:space="preserve">
+    <value>Order Receipt Way</value>
+  </data>
+  <data name="orders_transfer" xml:space="preserve">
+    <value>Orders Transfer</value>
+  </data>
+  <data name="p" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="package" xml:space="preserve">
+    <value>Package</value>
+  </data>
+  <data name="package_commission" xml:space="preserve">
+    <value>Package commission</value>
+  </data>
+  <data name="package_discount" xml:space="preserve">
+    <value>Package discount</value>
+  </data>
+  <data name="package_id" xml:space="preserve">
+    <value>Package ID</value>
+  </data>
+  <data name="parameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="pdf" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="personally" xml:space="preserve">
+    <value>Personally</value>
+  </data>
+  <data name="personal_settings" xml:space="preserve">
+    <value>Personal Settings</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="police_id_card" xml:space="preserve">
+    <value>Police ID Card</value>
+  </data>
+  <data name="politically_exposed_persons" xml:space="preserve">
+    <value>Politically exposed persons</value>
+  </data>
+  <data name="postcode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="post_mail" xml:space="preserve">
+    <value>Post Mail</value>
+  </data>
+  <data name="previous_value" xml:space="preserve">
+    <value>Previous Value</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="private_" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="product_categories" xml:space="preserve">
+    <value>Product Categories</value>
+  </data>
+  <data name="product_list" xml:space="preserve">
+    <value>Product List</value>
+  </data>
+  <data name="product_prices" xml:space="preserve">
+    <value>Product Prices</value>
+  </data>
+  <data name="profession" xml:space="preserve">
+    <value>Profession</value>
+  </data>
+  <data name="prospective_clients" xml:space="preserve">
+    <value>Prospective Clients</value>
+  </data>
+  <data name="provider" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="publisher" xml:space="preserve">
+    <value>Publisher</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="questionnaire" xml:space="preserve">
+    <value>Questionairre</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="rates" xml:space="preserve">
+    <value>Rates</value>
+  </data>
+  <data name="receipt" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="receipt_time" xml:space="preserve">
+    <value>Receipt time</value>
+  </data>
+  <data name="receipt_way" xml:space="preserve">
+    <value>Receipt way</value>
+  </data>
+  <data name="receive_and_transmit" xml:space="preserve">
+    <value>Receive and Transmit</value>
+  </data>
+  <data name="receiving_transmission" xml:space="preserve">
+    <value>Receiving Transmission</value>
+  </data>
+  <data name="recipient_name" xml:space="preserve">
+    <value>Recipient Name</value>
+  </data>
+  <data name="reference_currency" xml:space="preserve">
+    <value>Reference Currency</value>
+  </data>
+  <data name="release_date" xml:space="preserve">
+    <value>Release Date</value>
+  </data>
+  <data name="remaining_characters" xml:space="preserve">
+    <value>Remaining Characters</value>
+  </data>
+  <data name="retrocession_fees" xml:space="preserve">
+    <value>Retrocession Fees</value>
+  </data>
+  <data name="reuters_code" xml:space="preserve">
+    <value>Reuters Code</value>
+  </data>
+  <data name="rm" xml:space="preserve">
+    <value>RM</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="search_investment_proposals" xml:space="preserve">
+    <value>Search Investment Proposals</value>
+  </data>
+  <data name="sectors" xml:space="preserve">
+    <value>Sectors</value>
+  </data>
+  <data name="send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="send_sms" xml:space="preserve">
+    <value>Send SMS</value>
+  </data>
+  <data name="service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="service_package" xml:space="preserve">
+    <value>Service package</value>
+  </data>
+  <data name="service_providers" xml:space="preserve">
+    <value>Service Providers</value>
+  </data>
+  <data name="settlement_advice_checking" xml:space="preserve">
+    <value>Settlement Advice Checking</value>
+  </data>
+  <data name="sex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="shared_documents" xml:space="preserve">
+    <value>Shared Documents</value>
+  </data>
+  <data name="show_canceled_orders" xml:space="preserve">
+    <value>Show canceled orders</value>
+  </data>
+  <data name="sn" xml:space="preserve">
+    <value>SN</value>
+  </data>
+  <data name="sound" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="spouses_surname" xml:space="preserve">
+    <value>Spouse's Surname</value>
+  </data>
+  <data name="stages_of_ontracts" xml:space="preserve">
+    <value>Stages of Contracts</value>
+  </data>
+  <data name="starting_date" xml:space="preserve">
+    <value>Starting Date</value>
+  </data>
+  <data name="stock_exchange" xml:space="preserve">
+    <value>Stock exchange</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="temporary_import_data" xml:space="preserve">
+    <value>Temporary Import Data</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="tin" xml:space="preserve">
+    <value>TIN</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="tools_snd_sms" xml:space="preserve">
+    <value>Tools Send SMS</value>
+  </data>
+  <data name="tools_options" xml:space="preserve">
+    <value>Tools Options</value>
+  </data>
+  <data name="tools_send_sms" xml:space="preserve">
+    <value>Tools Send SMS</value>
+  </data>
+  <data name="transaction" xml:space="preserve">
+    <value>Transaction</value>
+  </data>
+  <data name="transactions" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="transactions_list" xml:space="preserve">
+    <value>Transactions List</value>
+  </data>
+  <data name="transactions_search" xml:space="preserve">
+    <value>Transactions Search</value>
+  </data>
+  <data name="transaction_commission" xml:space="preserve">
+    <value>Transaction commission</value>
+  </data>
+  <data name="transmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="transmission_time" xml:space="preserve">
+    <value>Transmission time</value>
+  </data>
+  <data name="transmitter" xml:space="preserve">
+    <value>Transmitter</value>
+  </data>
+  <data name="turnover" xml:space="preserve">
+    <value>Turnover</value>
+  </data>
+  <data name="turnover_fees" xml:space="preserve">
+    <value>Turnover &amp; Fees</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="type_of_issue" xml:space="preserve">
+    <value>Type of issue</value>
+  </data>
+  <data name="until_" xml:space="preserve">
+    <value>Until</value>
+  </data>
+  <data name="updates_file" xml:space="preserve">
+    <value>Updates file</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="via_eam_net" xml:space="preserve">
+    <value>Via EAM-NET</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="aum" xml:space="preserve">
+    <value>AUM</value>
+  </data>
+  <data name="bloomberg_code" xml:space="preserve">
+    <value>Bloomberg Code</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="customers_list" xml:space="preserve">
+    <value>Customers List</value>
+  </data>
+  <data name="customer_name" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="needs" xml:space="preserve">
+    <value>Needs</value>
+  </data>
+  <data name="sell" xml:space="preserve">
+    <value>Sell</value>
+  </data>
+  <data name="subaccount" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="waiting" xml:space="preserve">
+    <value>Anamoni</value>
+  </data>
+  <data name="inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="documents_for_applicants" xml:space="preserve">
+    <value>Documents for applicants</value>
+  </data>
+  <data name="executed_command" xml:space="preserve">
+    <value>Executed command</value>
+  </data>
+  <data name="contact_and_prospective_clients" xml:space="preserve">
+    <value>Contact and prospective clients</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="commisions" xml:space="preserve">
+    <value>Commisions</value>
+  </data>
+  <data name="pensive" xml:space="preserve">
+    <value>Pensive</value>
+  </data>
+  <data name="receipt_way_type" xml:space="preserve">
+    <value>Receipt way type</value>
+  </data>
+  <data name="prospective" xml:space="preserve">
+    <value>Prospective</value>
+  </data>
+  <data name="enter_profitCenter_subacc" xml:space="preserve">
+    <value>Enter Portfolio</value>
+  </data>
+  <data name="amka" xml:space="preserve">
+    <value>AMKA</value>
+  </data>
+  <data name="place_of_birth" xml:space="preserve">
+    <value>Born place</value>
+  </data>
+  <data name="cash_account_warning" xml:space="preserve">
+    <value>Δεν μπορεί να επιλεχθεί το ίδιο currency account στο ίδιο subaccount</value>
+  </data>
+  <data name="expire_date" xml:space="preserve">
+    <value>Expire Date</value>
+  </data>
+  <data name="tax_office" xml:space="preserve">
+    <value>Tax Office</value>
+  </data>
+  <data name="afm" xml:space="preserve">
+    <value>VAT number</value>
+  </data>
+  <data name="contract" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="doy" xml:space="preserve">
+    <value>DOY</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="zip" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="saving_completed_successfully" xml:space="preserve">
+    <value>Saving completed successfully</value>
+  </data>
+  <data name="add_this_document_to_the_customer_document_file" xml:space="preserve">
+    <value>Add this document to the customer document  file?</value>
+  </data>
+  <data name="the_introduction_of_the_surname_is_mandatory" xml:space="preserve">
+    <value>The introduction of the  surname is mandatory</value>
+  </data>
+  <data name="new_product" xml:space="preserve">
+    <value>New Product</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="investor_share" xml:space="preserve">
+    <value>Investor Share</value>
+  </data>
+  <data name="marital_status" xml:space="preserve">
+    <value>Marital Status</value>
+  </data>
+  <data name="securities_account" xml:space="preserve">
+    <value>Securities Account</value>
+  </data>
+</root>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>POST method</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>WebUsers</h1>
+
+<h2>Add record</h2>
+<form action="http://localhost:8091/webusers/create" method="post">
+   <p><input type="text" name="surname" value = "petrov" >
+   <p><input type="text" name="firstname" value = "ivan" >
+   <p><input type="text" name="afm" value = "123456789" >
+   <p><input type="text" name="email" value = "VITALY@otenet.gr" >
+   <p><input type="text" name="mobile_phone" value = "6972288803" >
+   <p><input type="text" name="password" value = "999" >
+   <p><input type="text" name="NetworkCountryISO" value = "GR" >
+   <p><input type="text" name="Manufacturer" value = "TOSHIBA" >
+   <p><input type="text" name="Brand" value = "TOSHIBA TOKYO" >
+   <p><input type="submit" value="Send">
+</form>
+
+<h2>Update Password</h2>
+<form action="http://localhost:8091/webusers/UpdatePassword" method="post">
+   <p><input type="text" name="wu_id" value = "1" >
+   <p><input type="text" name="password" value = "qwerty" >
+   <p><input type="submit" value="Send">
+</form>
+
+
+<h2>Update Status</h2>
+<form action="http://localhost:8091/webusers/UpdateStatus" method="post">
+   <p><input type="text" name="id" value = "1" >
+   <p><input type="text" name="status" value = "1" >
+   <p><input type="submit" value="Send">
+</form>
+
+<form action="http://localhost:8091/webusersstates/savedata" method="post">
+   <p><input type="text" name="surname" value = "petrov" >
+   <p><input type="text" name="firstname" value = "ivan" >
+   <p><input type="text" name="afm" value = "123456789" >
+   <p><input type="text" name="email" value = "VITALY@otenet.gr" >
+   <p><input type="text" name="mobile_phone" value = "6972288803" >
+   <p><input type="text" name="password" value = "999" >
+   <p><input type="text" name="NetworkCountryISO" value = "GR" >
+   <p><input type="text" name="wu_id" value = "123" >
+   <p><input type="text" name="status" value = "8" >
+   <p><input type="submit" value="Send">
+</form>
+
+</body>
+</html>

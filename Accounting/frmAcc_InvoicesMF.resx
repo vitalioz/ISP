@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>178, 25</value>
+  </metadata>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>71,0,0,0,0,85,Columns:0{Width:20;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:24;Name:"image_map";Style:"DataType:System.Int32;TextAlign:RightCenter;";}	2{Width:30;Name:"AA";Caption:"AA";Style:"DataType:System.Int16;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	3{Width:54;Name:"DateFrom";Caption:"Από";Style:"Format:""dd/MM/yy"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	4{Width:54;Name:"DateTo";Caption:"Εώς";Style:"Format:""dd/MM/yy"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	5{Width:160;Name:"ContractTitle";Caption:"Σύμβαση";Style:"DataType:System.String;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	6{Width:90;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	7{Width:90;Name:"Portfolio";Caption:"Portfolio";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	8{Width:110;Name:"Package";Caption:"Πακέτο";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	9{Width:50;Name:"Currency";Caption:"Νόμισμα";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	10{Width:50;Name:"Days";Caption:"Ημέρες";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	11{Width:80;Name:"AUM";Caption:"AUM";Style:"Format:""N2"";DataType:System.Decimal;BackColor:LightSalmon;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	12{Width:55;Name:"AmoiviPro";Caption:"% προ έκπτωσης";Style:"Format:""N4"";DataType:System.Single;BackColor:AntiqueWhite;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	13{Width:70;Caption:"αξία προ έκπτωση";Style:"BackColor:AntiqueWhite;";}	14{Width:55;Name:"Discount_Percent";Caption:"% έκπτωση";Style:"Format:""N2"";DataType:System.Single;BackColor:Moccasin;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	15{Width:55;Name:"AmoiviAfter";Caption:"% μετα την έκπτωση";Style:"Format:""N4"";DataType:System.Single;BackColor:AntiqueWhite;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	16{Width:70;Name:"AxiaAfter";Caption:"Αξία μετα την Εκπτωση";Style:"Format:""N2"";DataType:System.Single;BackColor:AntiqueWhite;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	17{Width:80;Name:"Climakas";Caption:"Κλίμακα Σύμβασης";Style:"BackColor:Pink;";}	18{Width:80;Name:"Discount_DateTo";Caption:"Ημερομηνίες έκπτωσης";Style:"BackColor:MistyRose;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	19{Width:70;Name:"MinAmoivi";Caption:"Minimum προ έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:PaleTurquoise;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	20{Width:60;Name:"MinAmoivi_Percent";Caption:"% Έκπτωση Minimum";Style:"Format:""N2"";DataType:System.Single;BackColor:PaleTurquoise;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	21{Width:70;Name:"FinishMinAmoivi";Caption:"Minimum Τελικό";Style:"Format:""N2"";DataType:System.Single;BackColor:PaleTurquoise;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	22{Width:75;Name:"LastAmount";Caption:"Τελική Αξία ";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	23{Width:70;Name:"VAT_Amount";Caption:"ΦΠΑ";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	24{Width:75;Name:"FinishAmount";Caption:"Πληρωτέο Ποσό";Style:"Format:""N2"";DataType:System.Single;BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	25{Width:65;Name:"LastAmount_Percent";Caption:"Τελική Αξία % ετήσια";Style:"Format:""N2"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	26{Width:80;Name:"Invoice_Num";Caption:"Αρ.Παραστατικου";Style:"BackColor:Khaki;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	27{Width:70;Name:"DateFees";Caption:"Ημερ.Χρέωσεις";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	28{Width:190;Name:"Notes";Caption:"Αιτιολογία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	29{Width:80;Name:"ServiceTitle";Caption:"Υπηρεσία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	30{Width:100;Name:"InvestPolicy";Caption:"Επενδυτική Πολιτική";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	31{Width:100;Name:"InvestmentProfile";Caption:"Επενδυτικό Profile";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	32{Width:150;Name:"AdvisorName";Caption:"Advisor";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	33{Width:150;Name:"RMName";Caption:"RM";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	34{Name:"IntroName";Caption:"Introducer";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	35{Name:"DiaxName";Caption:"Διαχειριστής";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	36{Name:"User1Name";Caption:"1ος Δικαιούχος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	37{Name:"Address";Caption:"Διεύθυνση";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	38{Name:"City";Caption:"Πόλη";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	39{Name:"ZIP";Caption:"ΤΚ";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	40{Name:"Country";Caption:"Χώρα";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	41{Name:"AFM";Caption:"ΑΦΜ";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	42{Name:"DOY";Caption:"ΔΟΥ";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	43{Name:"ID";Caption:"ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	44{Name:"ClientType";Caption:"ClientType";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	45{Name:"Client_ID";Caption:"Client_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	46{Name:"Invoice_ID";Caption:"Invoice_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	47{Name:"Invoice_Type";Caption:"Invoice_Type";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	48{Name:"L4";Caption:"L4";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	49{Name:"VAT_Percent";Caption:"VAT_Percent";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	50{Width:80;Name:"Invoice_External";Caption:"Α.Π. Χρημ.Εταιρίας";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	51{Name:"Contract_ID";Caption:"Contract_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	52{Name:"Contract_Details_ID";Caption:"Contract_Details_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	53{Name:"Contract_Packages_ID";Caption:"Contract_Packages_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	54{Name:"Service_ID";Caption:"Service_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	55{Name:"Status";Caption:"Status";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	56{Name:"AxiaPro";Caption:"AxiaPro";}	57{Name:"Discount_Percent1";Caption:"Discount_Percent1";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	58{Name:"Discount_Amount1";Caption:"Discount_Amount1";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	59{Name:"Discount_Percent2";Caption:"Discount_Percent2";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	60{Name:"Discount_Amount2";Caption:"Discount_Amount2";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	61{Name:"Discount_Amount";Caption:"Discount_Amount";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	62{Name:"User1_ID";Caption:"User1_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	63{Name:"ConnectionMethod";Caption:"ConnectionMethod";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	64{Name:"Invoice_Arithmos";Caption:"Invoice_Arithmos";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	65{Name:"FileName";Caption:"FileName";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	66{Name:"MIFID_2";Caption:"MIFID_2";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	67{Name:"CountryEnglish";Caption:"CountryEnglish";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	68{Name:"User_ID";Caption:"User_ID";StyleFixed:"TextAlign:CenterCenter;ImageAlign:CenterCenter;";}	69{Name:"Author_Name";Caption:"Author";}	70{Name:"DateEdit";Caption:"DateEdit";}	</value>
+  </data>
+  <metadata name="mnuContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 22</value>
+  </metadata>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>426, 22</value>
+  </metadata>
+  <data name="fgFees.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:80;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:70;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Caption:"Ημερ.από";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Caption:"Ημερ.εώς";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:70;Caption:"% Έκπτωσης";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:70;Caption:"Τελική Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:24;Caption:"ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	</value>
+  </data>
+  <data name="fgFees.StyleInfo" xml:space="preserve">
+    <value>Normal{Font:Microsoft Sans Serif, 8pt;}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	NewRow{}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{}	SelectedRowHeader{}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	</value>
+  </data>
+  <metadata name="imgFiles.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>36, 25</value>
+  </metadata>
+  <data name="imgFiles.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAs
+        CAAAAk1TRnQBSQFMAgEBAgEAAXABBQFwAQUBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEAEPQCAAHwBEUGRAFu
+        AfIhABD/AQAB7wQgCR8B8yAAEP8BAAQgCh8BbiAAEP8BAAIgAUYB/wofAUUgABD/AQADIAL/CB8B6QFG
+        IAAQ/wEABCABlAH/AZMD6QL/AekBIAFGIAAQ/wEABSABlAEgARcBvQL/AZMCIAFGIAAQ/wEABSAB/wEg
+        ARYBkwLpAyABRiAAEP8BAAUgAZQBFwGTAukEIAFGIAAQ/wEABfkBFwEaAukF+QFGIAAQ/wEABfkB/wFv
+        ASAG+QFvIAAQ/wEABfkBlAFGB/kBbyAAEP8BAAX5AeMI+QFvIAAQ/wEAAeMN+QHyIAAQ/wIAAeMK+QFH
+        AQchABD/MAABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wMAAcABAQYAAYAHAAGA
+        BwABgAcAAYAHAAGABwABgAcAAYAHAAGABwABgAcAAYAHAAGABwABgAcAAYAHAAHAAQEGAAL/BAAL
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="picFilePath.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADmUlEQVRIS+2U60/TZxiG+QP2L2wf9sEv
+        y7IsmVsyNGNbYhZNEOYwfphOd4Bo2OZ0gtSJcogrKMWCLSJoKBSGhAECpYrl0GJLSynH1tVBRSq0wGzn
+        wgzQA9feskLCNnHHbB92J3ee501+ua/3eZL3F/O//lvytBUxoXzvV3Yp9xL95M/Ld9vInZyXCdikBKxp
+        BPpPETBnELB8wcOOVO5WH/lrkLlRA1OFb7I8nMyy9R3C1t2E+5JWHDLsxJ77IvbsWEZPvxL1q8Kbhbfg
+        kO/APWLc+AIRwPT5BMKDqSxbEgmbE1bqav/I/AHz5hP8aEkXNUfUDFEzmbdI8ImzPivxyQCPXNw4Cvil
+        vTe201J+kNbKMytuvngMR0Esd/O3MJbzHP0HnsIme5tHM67fBq0B+vcR7t6+5kDXDixVe1BXqRlxumjs
+        v8dV0xh6s43L5eWM1J8kNHyU8HgeXtVeIjnRyPVaBfia4pnI34y7NI77pVvp+zKOpgqFCJ7kI5UNqW4C
+        accE+y9bKG+zoVYrcLd9TNiVhUeVsgGgu4Up6S48JW/gVx8j6Kgk5FRwXZnJNz1WkmRamk1u7ow9wDnu
+        o+HWJPHSVrTqOm4o0gga0vBc3EckJxq5XqsTzFa+zsNrJ1j+oR78RdRWyTE7vSSpBml5ADrfMu3CGtEn
+        1Y2LKQZoupIn1iTBW5v+Oya4sBWfOoOQQ0GwT8ZXirOYe/qIV/RSPTCLxu5F4/Cu9PElFlQ1LVQXivfS
+        lcL9ssMbTDDQibvwADOlL+FvySM8WSFWlE9TdSYOx20SlUaUo360nkU6hBWij79g4OvWToyXPiFk/RyP
+        WG0kJxq5XnMmLdNndzEtHtv3DZkiXEnAlMW3zZ9Sc0WJ0ewksaibg+W3+PCSkW357TRqDJTlZjNUtpOg
+        8QiTKgmRnGjkeq0CvCVx+OuzxC+imGBvqoAcx9F8CFWxDFuPCaPBjk5nw3D9JkWSdIbPv4Uj7WnmapM3
+        BkQ0WPAuw0c34dfkE3SpCI2eXvOs/iSdlZ9xs0yOtqKAjqrDOEv348p+lvnG13DnbsJybvfjV7SqgZJD
+        jBW/z8JsP4seK0teC0szZgKzJtGbWLjXxeKkgcWpXhbcBlx1p3Cde4ElfQIjkmeY0NdtDIjI0dWAVZ4s
+        nBL14/qfz+0FyYxkPc/CUDJm2Ta+G+16MuSPSn+1AnthLDZ5HC5dzd8PiGhIdw1bR+M/E/4vKSbmJ2q1
+        UwCSxHllAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>48</value>
+  </metadata>
+</root>

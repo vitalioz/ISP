@@ -1,0 +1,31 @@
+﻿@model ISPDBO.Models.WebUsers
+@{
+    Layout = "_MainLayout";
+
+    int iUser_ID = Model.ID;
+    string sUserName = Model.Surname;
+}
+<section class="page">
+    <div class="container">
+        <form id="form" action="/" method="post">
+            <div class="col-lg-4" id="div_del">
+                <span id="user_name">@Model.Surname&nbsp;@Model.Firstname</span><input type="text" id="user_id" value="@Model.ID" hidden>
+                <button id="delete_button" type="submit" class="btn btn-danger btn-sm" onclick="DeleteAccount();">Διαγραφή</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function DeleteAccount() {
+        $.ajax(
+            {
+                url: "Home/DeleteAccount",
+                async: false,
+                data: { id: document.getElementById("user_id").value },
+                type: "POST"
+            }
+        );
+    }
+</script>
+

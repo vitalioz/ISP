@@ -1,0 +1,10 @@
+localhost:8091/webusers/GetWebUser_ID/{'email': 'gundatsev@gmail.ru'}
+localhost:8091/webusers/GetWebUser_ID/{'email': 'gundatsev@gmail.ru', 'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'email': 'vitaly@otenet.gr', 'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_Data/{'mobile': '6972288803'}
+localhost:8091/webusers/GetWebUser_ID/{'afm': '059518919'}
+
+http://10.0.4.7:8091/webusers/GetWebUser_ID/{'email': 'gundartsev@gmail.com'}
+http://10.0.4.7:8091/webusers/getwebuser_id/{'mobile': '6972288803', 'afm': '059518919'}
+http://10.0.4.7:8091/webusers/GetWebUser_Data/{'mobile': '6972288803'}

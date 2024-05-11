@@ -1,0 +1,1947 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<?fr-application created="FastReport"?>
+<?fr-application homesite="http://www.fast-report.com"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Title>Λίστα Πελατών</Title>
+<Author></Author>
+<Created>07/05/2021 00:00:00T21:52:23.2816484Z</Created>
+<Version></Version>
+</DocumentProperties>
+<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+<ProtectStructure>False</ProtectStructure>
+<ProtectWindows>False</ProtectWindows>
+</ExcelWorkbook>
+<Styles>
+<Style ss:ID="s0">
+<Font ss:FontName="Tahoma" ss:Size="14.25" ss:Color="#000000" ss:Bold="1" />
+
+<Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s1">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#FFFFFF" />
+
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+<Border ss:Position="Bottom" 
+ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#696969"/>
+</Borders>
+</Style>
+<Style ss:ID="s2">
+<Font ss:FontName="Tahoma" ss:Size="8.25" ss:Color="#000000" ss:Bold="1" />
+
+<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s3">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000" ss:Underline="Single" />
+
+<Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s4">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#000000" />
+
+<Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s5">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#808080" />
+
+<Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+<Style ss:ID="s6">
+<Font ss:FontName="Tahoma" ss:Size="8" ss:Color="#FFFFFF" />
+
+<Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+<Borders>
+</Borders>
+</Style>
+</Styles>
+<Worksheet ss:Name="mainpageCustomersList">
+<Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="414" x:FullColumns="1" x:FullRows="1">
+<Column ss:AutoFitWidth="0" ss:Width="65.41"/>
+<Column ss:AutoFitWidth="0" ss:Width="174.42"/>
+<Column ss:AutoFitWidth="0" ss:Width="58.14"/>
+<Column ss:AutoFitWidth="0" ss:Width="72.67"/>
+<Column ss:AutoFitWidth="0" ss:Width="22.19"/>
+<Column ss:AutoFitWidth="0" ss:Width="97.72"/>
+<Column ss:AutoFitWidth="0" ss:Width="31.4"/>
+<Row ss:Height="20.35">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="28.36">
+<Cell ss:Index="1" ss:MergeAcross="6" ss:StyleID="s0">
+<Data ss:Type="String">Λίστα Πελατών</Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="25.51">
+<Cell ss:Index="1" ss:StyleID="s2">
+<Data ss:Type="String">Κωδικός</Data></Cell><Cell ss:Index="2" ss:StyleID="s2">
+<Data ss:Type="String">Όνομα</Data></Cell><Cell ss:Index="3" ss:StyleID="s2">
+<Data ss:Type="String">Α.Φ.Μ</Data></Cell><Cell ss:Index="4" ss:StyleID="s2">
+<Data ss:Type="String">Διακριτικός Τίτλος</Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s2">
+<Data ss:Type="String">Επάγγελμα</Data></Cell><Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="s1">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1" ss:MergeAcross="5" ss:StyleID="s1">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000001</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΕΛΑΤΗΣ ΛΙΑΝΙΚΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000002</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΕΣΤ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">000000000</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000003</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">EOLFI ΑΝΕΜΟΣ ΕΛΛΑΣ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998381163</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΡ.ΕΜΠ.ΗΛ.ΕΝΕΡΓΕ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000004</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΑΡΑΦΙΔΗΣ ΔΗΜΗΤΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">045141086</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΠΟΛΙΤΙΚΟΣ ΜΗΧΑΝΙΚ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000005</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΨΙΩΧΑΣ Γ.ΑΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094171790</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΟΔΙΚΗ ΒΟΗΘΕΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000006</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΓΟΤΕΚ ΤΕΡΤΣΗΣ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082659073</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΤΕΧΝΙΚΗ ΕΤΑΙΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000007</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΥΛΑΚΙΩΤΟΥ ΕΛΕΝΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">040681391</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΜΕΤΑΛ.ΚΑΤΑΣΚΕΥΕΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000008</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΡΕΝΩ ΜΕΣΟΓΕΙΩΝ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094394280</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΟΤΕΧΝΙΚΗ ΑΥΤ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000009</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΙΩΛΚΟΣ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094295135</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΥΤ/ΤΑ-ΑΝΤΑΛ/ΚΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000010</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΜΑΡΙΔΗΣ Α.Β.Ε.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094314928</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΙΣΑΓΩΓΗ-ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000011</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΛΕΞΙΟΥ ΒΑΣΙΛΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">039078119</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000012</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΑΤΑΒΑΝΗ ΧΑΡ.ΑΦΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999201234</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΙΣΑΓΩΓΗ-ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000013</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΑΜΠΟΥΡΗ ΠΑΝ.ΑΦΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082364836</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΙΣΑΓΩΓΗ-ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000014</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΑΒΙΤΣΑΣ Ε.ΗΛΙΑΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">070414889</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΙΣΑΓΩΓΗ-ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000015</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΙΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094255266</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡ.ΟΙΚΟΔΟΜΙΚΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000016</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">SAFE ENERGY ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998534196</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΝΑΝ.ΠΗΓΕΣ ΕΝΕΡΓΕΙΑΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000017</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΛΙΑΠΑΣ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094378137</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΒΕΕ ΞΥΛΟΥ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000018</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΡΕΝΤΑ ΑΧ.ΑΦΟΙ &amp; ΣΙΑ ΟΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998845318</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΙΣΑΓΩΓΗ-ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000019</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΕΛΗΒΑΝΗΣ ΝΙΚΟΛΑΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">018198349</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000020</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΟΥΓΚΟΣ ΘΕΟΔΩΡΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">047450106</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΥΤ/ΤΑ-ΑΝΤΑΛ/ΚΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000021</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΓΟΡΑΣΤΟΣ ΔΗΜΗΤΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">038067236</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡ.ΟΙΚΟΔΟΜΙΚΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000022</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΠΑΓΕΩΡΓΙΟΥ Ε.&amp; Α. ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094295043</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΤΡΟΦΟΔΟΣΙΑ ΠΛΟΙΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000023</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">NEPHROTECH Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">095552222</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΙΑΤΡΙΚΑ ΕΙΔΗ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000024</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΙΛΚΙΣ ΑΙΟΛΟΣ ΕΝΕΡΓΕΙΑ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999175064</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000025</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΕΡΝΙΚΙΑ ICA HELLAS Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094121527</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΡ.ΧΡΩΜΑΤΩΝ-ΒΕΡΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000026</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">KOSMOCAR Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094029054</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΒΕΕ ΑΥΤ/ΤΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000027</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ROLCO BIANIL ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094001893</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜ.ΑΠΟΡΡΥΠΑΝΤΙΚ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000028</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΜΑΝΛΗΣ ΓΙΩΡΓΟΣ &amp; ΣΙΑ ΕΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999122102</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΤΕΧΝ.ΕΛΕΓΧΟΣ ΜΗΧΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000029</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΕΤΡΟΠΟΥΛΟΣ ΠΕΤΡΟΣ ΑΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094043269</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΒΕΕ ΑΥΤ/ΤΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000030</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΟΚΤΩ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998687557</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΤ.ΕΠΕΞ.ΔΟΜ.ΜΕΤΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000031</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΑΚΟΥΜΑΓΚΟΣ Δ. Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094242406</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΛΑΤΟΜΕΙΟ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000032</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΕΛΤΕΜΙ ΚΑΣΤΡΙ Α.Β.Ε.Τ.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094459539</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000033</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΡΟΚΟΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094414036</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΡ.ΕΜΠ.ΕΙΔΩΝ ΧΑΡ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000034</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΟΑΕΔ ΚΠΑ-2</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">090010376</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000035</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΝΙΚΟΛΟΠΟΥΛΟΣ ΣΤΑΜΑΤΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">039598021</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΑΝΤΛ.ΣΚΥΡΟΔΕΜΑΤΟΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000036</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΑΚΟΛΑΣ Π.ΑΒΕΤΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094366730</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000037</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΡΟΜΟΤ Ε.Ι.ΛΑΙΝΟΠΟΥΛΟΣ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094077863</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000038</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΤΟΥΧΑΡ ΚΑΔΙΜΕ ΜΟΥΣΤΑΦΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">113916643</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡ.ΟΙΚΟΔΟΜΙΚΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000039</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΟΥΡΑΖΑΝΗΣ ΗΡΑΚΛΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">028539304</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000040</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΙΟΥΡΤ ΜΕΧΜΕΤ ΑΛΗ ΧΑΒΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">103592323</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="8.69">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.42">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s5">
+<Data ss:Type="String">Σελίδα 1 από 5</Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="20.35">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000041</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΖΗΣΗΣ ΛΑΜΠΡΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">046868709</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000042</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΡΒΑΝΙΤΙΔΗΣ ΔΗΜ &amp; ΑΡΒΑΝΙΤΙΔΟΥ ΣΩΤ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000043</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΛΕΡΙΔΗΣ ΜΙΧΑΛΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">119464694</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000044</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΟΥΜΙΝ ΟΓΛΟΥ ΤΣΕΜΙΛΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">133500456</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000045</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΑΣΕΚΗ ΑΧΜΕΤ ΑΛΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">053714618</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000046</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΜΜΟΕΤ EUROPE Β.V.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998267538</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000047</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΡΜΑΡΟΔΟΜΙΚΗ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999777616</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000048</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΓΟΝ ΑΤΤΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099597974</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000049</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">NESTLE WATERS DIRECT HELLAS</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099531531</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000050</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΑΠΗΣ ΔΗΜΗΤΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">029275027</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000051</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΜΑΞΟΠΟΥΛΟΣ Κ &amp; Δ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099490439</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000052</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΑΤΙΡΙΔΗΣ ΒΑΛΕΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">078830831</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000053</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΕΩΡΓΙΑΔΗΣ ΑΝΕΣΤΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">015146913</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000054</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΡΙΚΑΤ ΑΕΚΤΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099360934</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000055</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">VINCI CONSTRUCTIONS GRANDS PROTETS SAS</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">098063390</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000056</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">AL.VEK ΗΛΙΑΔΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082948528</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000057</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΝΙΧΑΤ ΟΡΧΑΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">038392021</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000058</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΙΣΜΑΗΛ ΑΜΕΤ ΕΡΟΛ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">043608605</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000059</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΒΑΛΑΡΗΣ ΑΠΟΣΤΟΛΟΣ ΗΛΙΑΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">034752525</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000060</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΦΡΑΓΚΟΠΑΝΑΓΙΩΤΗΣ Ν. ΑΕΚΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094135674</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000061</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">DRAGADOS S.Α.ΚΑΤΑΣΚΕΥΑΣΤΙΚΗ ΕΤΑΙΡΙΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998643536</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000062</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΡΟΥΣΑΚΗΣ ΝΙΚΟΛΑΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">043321618</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000063</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΛΙΑΠ ΑΤΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">093307430</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000064</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΝΤΕΛΚΟ ΑΒΕΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094478425</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000065</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΑΣΙΛΕΙΟΥ ΑΠΟΣΤΟΛΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">061971402</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000066</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΟΥΜΠΑΝ ΤΖΕΜΗΛ ΑΔΕΜ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044032646</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000067</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΦΡΑΙΜΙΔΗΣ ΝΙΚΟΛΑΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">035445130</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000068</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΟΝΤΕΛΛΗΣ ΠΑΥΛΟΣ Ι.Α.Ε.Β.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094007885</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000069</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΟΞΟΤΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094098428</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000070</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΟΜΑΔΑ ΚΑΤΑΣΚΕΥΩΝ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094133091</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000071</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΑΜΑΡ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094050408</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000072</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΙΟΥΤΖΕΛ ΜΟΥΣΤΑΦΑ ΚΑΙ ΣΙΑ Ε.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999227286</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000073</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΕΛΕΚΙΔΗ ΑΦΟΙ &amp; ΣΙΑ Ε.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998336407</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000074</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΥΔΡΩ ΙΩΑΝΝΙΝΩΝ ΘΕΣΠΡΩΤΙΑΣ ΣΥΝ-ΠΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">096081939</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000075</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΜΤΣΙΚΛΗ ΕΥΑΓΓΕΛΙΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">045596566</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000076</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΕΜΗΡΟΓΛΟΥ ΧΡΗΣΤΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">027185223</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000077</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΜΠΕΛΑΣ ΗΛΙΑΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">036229117</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000078</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΑΤΖΗΝΙΚΟΛΑΟΥ Ι.&amp; ΥΙΟΙ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099763170</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000079</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΕΧΝΙΚΟΜ ΑΤΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998181282</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000080</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΝΑΓΙΩΤΗΣ ΔΗΜΗΤΡΗΣ &amp; ΣΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">800184345</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000081</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΒΑΛΑΡΗ ΑΦΟΙ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998598757</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000082</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΡΑΛΟΓΛΟΥ ΝΟΥΡΑΙ ΧΟΥΣΕΙΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">114414991</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000083</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΠΤΟΥΡΑΧΜΑΝ ΓΚΙΟΥΛΣΟΥΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">131298752</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="15.29">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.42">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s5">
+<Data ss:Type="String">Σελίδα 2 από 5</Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="20.35">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000084</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΨΥΧΟΓΥΙΟΣ Δ.ΑΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099681766</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String">ΑΓΡΟΤΙΚΑ ΠΡΟΙΟΝΤΑ ΑΕΒΕ</Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000085</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">Κ/Ξ ΑΚΤΩΡ ΑΤΕ-ΑΘΗΝΑ ΑΤΕ-Ν&amp;Κ ΓΚΟΛΙΟΠΟΥΛΟ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998358589</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000086</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΠΑΙΩΑΝΝΟΥ Χ.&amp; Α.-ΠΑΠΑΓΕΩΡΓΙΟΥ Γ. Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082293187</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000087</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΕΓΕΚ ΚΑΤΑΣΚΕΥΑΣΤΙΚΗ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094533387</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000088</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΕΜΙΡΗΣ ΓΕΩΡΓΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">013744051</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000089</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΖΑΦΕΙΡΑΤΟΣ ΣΑΒΒΑΣ &amp; ΣΙΑ Ε.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999927205</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000090</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΡΟΔΙΑΚΗ ΑΣΒΕΣΤΟΠΟΙΙΑ Ν.ΔΟΥΚΕΡΗ&amp;ΣΙΑ Ε.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">092031620</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000091</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΠΑΧΡΗΣΤΟΣ ΓΕΩΡΓΙΟΣ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082877076</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000092</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΩΛΗΝΟΥΡΓΙΚΗ ΚΟΜΟΤΗΝΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094470697</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000093</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΟΝΤΟΛΙΑΣ ΙΩΑΝΝΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044222964</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000094</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΜΑΛΘΕΙΑ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094093630</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000095</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΥΔΑΤΩΡ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999376894</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000096</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΙΛΙΟΣ ΑΝΑΣΤΑΣΙΟΣ ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998820084</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000097</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΧΜΕΤ ΕΡΒΕΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">119827516</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000098</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΝΤΟΥΜΠΑΝ ΣΙΑΜΠΑΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">073954899</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000099</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΟΥΚΟΠΟΥΛΟΥ ΑΘΑΝΑΣΙΑ &amp; ΣΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082965906</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000100</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΓΙΑΝΝΗΣ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998833264</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000101</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΟΥΓΙΟΥΚ ΧΑΣΑΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">054456186</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000102</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΟΓΙΑΡ ΜΠΑΡΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">043388954</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000103</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΠΑΝΔΡΕΟΥ ΒΑΣΙΛΕΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">028867545</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000104</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΙΛΙΓΚΡΟΣ ΧΡΗΣΤΟΣ &amp; ΣΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998760673</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000105</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΟΤΣΙΚΑ ΣΑΛΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">028445730</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000106</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΥΛΟΣ ΠΕΡΙΚΛΗΣ &amp; ΥΙΟΣ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">084265854</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000107</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΟΛΛΑ ΑΧΜΕΤ ΜΕΧΜΕΤ &amp; ΣΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">092884235</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000108</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΗΛΕΚΤΡΑΝΤΛΗΤΙΚΗ ΚΙΑΓΙΑΣ ΕΜΜΑΝΟΥΗΛ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">061374066</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΟ &amp; ΕΠΙΣΚΕΥΗ ΜΗΧΑΝΗΜΑΤΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000109</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΑΤΖΗΜΠΕΚΗΡ ΧΑΙΡΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044485819</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000110</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΟΥΣΕΙΝ ΟΓΛΟΥ ΣΟΥΝΑΙ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">077684087</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000111</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΝΤΟΥΡΑΛΗ ΧΑΣΑΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">054292384</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000112</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΝΑΛΜΠΑΝΤΗΣ ΙΩΑΝΝΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044686734</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000113</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΕΛΕΠΙΔΗΣ ΓΕΩΡΓΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">047947169</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000114</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΥΛΙΩΤΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998780555</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000115</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΡΕΝΟΣ Α.ΠΑΠΑΔΟΠΟΥΛΟΣ Κ. Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999974102</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000116</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΤΩΠΟΔΗΣ ΔΗΜΗΤΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">047464368</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000117</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΘΕΟΔΩΡΟΥ Δ. ΣΚΕΤΖΑ ΒΑΣΙΛΙΚΗ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998425188</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000118</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΘΝΙΚΕΣ ΜΕΤΑΦΟΡΕΣ Γ.ΒΟΥΤΑΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094431402</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000119</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΛΥΡΟΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999636611</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000120</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΕΤΑΛΛΟΝ ΑΤΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999227700</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000121</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΖΙ ΓΟΥΙΝΤ ΛΑΜΠΟΡΑΤΟΡΙΕΣ Μ.Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998028078</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000122</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΟΦΤΑ ΤΖΕΜΑΛΗ ΧΟΥΣΕΙΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044223113</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000123</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΟΦΤΑ ΡΑΣΗΜ ΧΟΥΣΕΙΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">054968585</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000124</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΡΚΙΔΗΣ ΔΗΜΗΤΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">019978628</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000125</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΑΛΗΛ ΑΛΗ ΤΑΣΙΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">045313558</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000126</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΟΛΛΑ ΝΑΣΟΥΦ ΝΙΖΑΝΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">028563052</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="15.29">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.42">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s5">
+<Data ss:Type="String">Σελίδα 3 από 5</Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="20.35">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000127</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΟΛΥΤΕΧΝΙΚΗ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082832901</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000128</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΜΗΣ ΑΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094167807</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΜΗΣ ΑΕΒΕ</Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΚΚΟΚΚΙΣΤΗΡΙΑ-ΣΠΟΡΕΛΑΙΟΥΡΓΕΙΟ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000129</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΤΕΚΑ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999642967</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000130</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΙΑΜΚΑΣ ΕΒΗΕΚ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094171114</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000131</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΑΚ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094419020</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000132</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">Μ.ΚΑΡΡΑΣ ΝΕΟΤΕΧ ΡΟΔΟΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">095293047</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000133</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΦΟΙ ΝΙΚΟΛΑΟΥ ΚΕΛΑΪΔΗ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">091324824</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000134</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΗΜ.Α.ΓΥΦΤΑΚΗΣ-ΚΩΝ/ΝΟΣ Α.ΓΥΦΤΑΚΗΣ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">081424409</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000135</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΤΑΦΥΛΟΠΑΤΗΣ Ν. Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094186705</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000136</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΟΚΚΗΣ Φ. ΕΛΕΥΘΕΡΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">067965222</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΚΜ/ΣΗ ΑΝΥΨΩΤΙΚΩΝ ΜΗΧΑΝΗΜΑΤΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000137</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΛΛΗΣ ΑΝ.Χ.-ΚΑΛΛΗΣ ΑΝ.Δ. Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998374240</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000138</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΞΥΛΟΕΠΕΝΔΥΤΙΚΗ ΑΒΕΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094359971</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000139</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΚΑΡΑΣ ΝΙΚΟΛΑΟΣ &amp; ΥΙΟΣ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000140</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΟΥΦΟΣ ΧΡΗΣΤΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">071893913</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000141</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΑΚΕΛΛΑΡΗΣ ΤΕΧΝΙΚΗ ΕΤΑΙΡΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082671260</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000142</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΤΑΚΙΑΡΑΣ ΔΗΜΗΤΡΙΟΣ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999376925</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000143</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΕΡ ΑΤΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094378291</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000144</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΥΡΩΧΑΡΤΙΚΗ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094392783</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000145</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΨΑΡΡΟΣ ΙΩΑΝΝΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">023822434</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000146</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΡΙΒΑ ΠΛΑΣΤ ΑΒΕΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">084028768</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000147</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΣΤΟΡΟΥ Μ.Σ.&amp; ΣΙΑ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099046734</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000148</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΟΛΥΧΡΟΝΟΠΟΥΛΟΣ ΧΑΡΑΛΑΜΠΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">043473294</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000149</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΓΙΑΝΝΙΔΗΣ ΠΑΥΛΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">027666400</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000150</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΖΙΜΑΣ ΜΠΕΤΟΝ ΑΤΕΒΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">997906392</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000151</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜΑΛ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094102876</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜΗΧΑΝΙΑ ΑΛΟΥΜΙΝΙΟΥ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000152</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΕΤΑΛΛΟΒΙΟΜΗΧΑΝΙΑ Ν.ΠΕΤΣΙΟΣ &amp; ΥΙΟΙ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094035780</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000153</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΚΑΤΣΑΝΗΣ ΣΤΑΜΑΤΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044905425</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000154</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΡΚΟΥΔΗΣ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998633101</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000155</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΑΣΙΛΟΠΟΥΛΟΣ ΣΠΥΡΙΔΩΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">034009360</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000156</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΑΝΑΡΑΣ ΛΑΜΠΡΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044958191</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000157</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΤΣΑΝΟΥΛΗΣ ΑΘΑΝΑΣΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">017859933</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000158</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΟΥΔΟΥΡ ΣΑΛΗ Ν.&amp; Τ. Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998735652</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000159</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΘΑΝΑΣΙΑΔΗΣ ΖΗΝΩΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094200894</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000160</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΑΟΥΣΗΣ ΑΡΙΣΤΕΙΔΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">122397420</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000161</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΙΤΜΕΤ ΕΜΙΝ ΡΕΤΖΕΠ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">043391288</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000162</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΤΡΙΚΙΟΣ ΝΙΚΟΛΑΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">051258858</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000163</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΡΑΝΙΚΟΛΑΣ ΤΖΙΤΖΙΟΥ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094247727</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000164</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΠΑΝΔΡΕΟΥ ΒΑΣΙΛΕΙΟΣ ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998945631</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000165</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΞΥΛΕΙΑ ΚΡΑΣΝΙΔΗ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">091374772</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΟ ΞΥΛΕΙΑΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000166</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΞΑΝΘΟΠΟΥΛΟΣ ΠΑΝΤΕΛΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">103558225</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000167</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΦΩΤΙΑΔΟΥ ΕΥΘΑΛΙΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">066673553</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000168</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΕΡΡΑΙΟΣ ΕΥΣΤΡΑΤΙΟΣ ΚΑΙ ΥΙΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">081790723</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000169</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΓΕΩΡΓΑΝΤΟΠΟΥΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">041793522</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="15.29">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.42">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s5">
+<Data ss:Type="String">Σελίδα 4 από 5</Data></Cell><Cell ss:Index="8"/></Row>
+<Row ss:Height="20.35">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000170</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΑΒΒΑ ΕΛΙΣΑΒΕΤ ΚΑΙ ΣΙΑ Ε.Ε.΄</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998716557</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000171</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΠΟΥΚΟΥΒΑΛΑΣ ΓΕΩΡΓΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044154557</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000172</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΔΙΕΘΝΗΣ ΜΕΤΑΦΟΡΙΚΗ Κ.Χ. Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094393429</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000173</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΝΤΕ ΓΙΟΥΝΟΥΖ ΧΟΥΣΕΙΝ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">028654299</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΓΟΛΑΒΟΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000174</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ISOLINE ΞΑΝΘΗΣ ΕΠΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">997654018</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΜΟΝΩΤΙΚΑ ΥΛΙΚΑ&amp;ΕΦΑΡΜΟΓΕΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000175</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΠΟΥΛΙΟΣ ΑΣΗΜΑΚΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094121657</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΠΕΞΕΡΓΑΣΙΑ ΜΑΡΜΑΡΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000176</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΚΑΝΔΑΛΗΣ Ι. &amp; ΥΙΟΙ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099805050</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΠΕΞΕΡΓΑΣΙΑ ΜΑΡΜΑΡΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000177</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΑΛΛΙΓΑΣ Χ.&amp; ΣΙΑ ΕΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">093367383</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡ.ΟΙΚΟΔ.ΥΛΙΚΩΝ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000178</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΑΡΔΑΛΗΣ ΠΡΟΔΡΟΜΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">039314305</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠ.ΜΗΧ.ΕΡΓΩΝ &amp;ΕΙΣΑΓΩΓΕΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000179</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΟΤΡΩΤΣΙΟΣ ΒΑΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">056609768</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΓΕΩΡΓΙΚΑ ΕΦΟΔΙΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000180</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">Α.ΠΗΓΗ ΥΔΡΑΥΛΙΚΩΝ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999973559</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΟ ΕΙΔ.ΥΓΙΕΙΝΗΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000181</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΟΥΚΟΣ ΧΑΡ.ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094218283</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΕΜΠΟΡΙΟ ΣΙΔΗΡΟΥ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000182</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΡΤΣΑ ΕΥΑΝΘΙΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">045389172</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΟΙΚΟΔΟΜΙΚΑ ΥΛΙΚΑ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000183</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΕΡΓΟΜΠΕΤΟΝ ΑΒΕΤΕΘ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094470544</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΠΑΡ.ΣΚΥΡΟΔΕΜΑΤΟΣ-ΠΡΟΙΟΝΤΑ ΤΣΙΜΕΝΤΟΥ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000184</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜΕΚ ΑΕ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094358231</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">ΜΕΤΑΛΛΙΚΕΣ ΚΑΤΑΣΚ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000185</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΑΣΙΛΟΠΟΥΛΟΙ ΑΦΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999404848</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000186</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜΠΕΤΟΝ Γ.Ν.ΕΥΑΓΓΕΛΟΥ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099863722</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000187</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΒΙΟΜΠΕΤΟΝ ΑΓΡΙΝΙΟΥ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094108936</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000188</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΑΝΤΟΡΙΝΑΙΟΥ Χ.Ρ. ΥΙΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">082697852</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000189</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΟΥΙΣΠΟΡΤ ΑΒΙΑΡΕΠΣ ΕΛΛΑΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">099779708</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000190</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΕΟΛΟΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">094383922</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String">Α.Ε. ΕΠΕΝΔ ΑΙΟΛΙΚΗΣ ΕΝΕΡΓΕΙΑΣ</Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000191</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΚΡΥΓΙΑΝΝΑΚΗ ΜΑΡΙΑ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">036195693</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000192</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΚΡΥΓΙΑΝΝΑΚΗ ΑΦΟΙ Ο.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">999186122</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000193</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΜΑΚΡΥΓΙΑΝΝΑΚΗΣ ΓΕΩΡΓΙΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">061954386</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000194</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΑΓΓΕΛΑΤΟΣ ΖΗΣΗΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">075195407</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000195</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΣΤΑΓΑΚΗΣ Π.ΜΟΝΟΠΡΟΣΩΠΗ Ε.Π.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">095658145</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000196</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΚΛΙΑΡΗΣ ΕΥΑΓΓΕΛΟΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">044388939</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000197</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΧΡΙΣΤΟΠΟΥΛΟΣ ΑΝΤΡΕΑΣ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">047791287</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000198</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΤΣΟΜΠΑΝ ΤΖΕΜΑΛΗ</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">055151512</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000199</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">ΛΑΜΙΑΚΗ ΒΙΟΜΗΧΑΝΙΑ ΕΜΦΙΑΛΩΣΗΣ Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998917632</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="4.5">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.75">
+<Cell ss:Index="1" ss:StyleID="s3">
+<Data ss:Type="String">ΠΕΛΑ-00000200</Data></Cell><Cell ss:Index="2" ss:StyleID="s4">
+<Data ss:Type="String">MEGA PARK Α.Ε.</Data></Cell><Cell ss:Index="3" ss:StyleID="s4">
+<Data ss:Type="String">998301364</Data></Cell><Cell ss:Index="4" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="5" ss:MergeAcross="1" ss:StyleID="s4">
+<Data ss:Type="String"></Data></Cell><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="222.34">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6"/><Cell ss:Index="7"/><Cell ss:Index="8"/></Row>
+<Row ss:Height="12.42">
+<Cell ss:Index="1"/><Cell ss:Index="2"/><Cell ss:Index="3"/><Cell ss:Index="4"/><Cell ss:Index="5"/><Cell ss:Index="6" ss:MergeAcross="1" ss:StyleID="s5">
+<Data ss:Type="String">Σελίδα 5 από 5</Data></Cell><Cell ss:Index="8"/></Row>
+</Table>
+<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+<PageSetup>
+<PageMargins x:Bottom="0.39" x:Left="0.39" x:Right="0.39" x:Top="0.39"/>
+</PageSetup>
+<Print>
+<ValidPrinterInfo/>
+<PaperSizeIndex>9</PaperSizeIndex>
+</Print>
+</WorksheetOptions>
+<PageBreaks xmlns="urn:schemas-microsoft-com:office:excel">
+<RowBreaks>
+<RowBreak>
+<Row>85</Row>
+</RowBreak>
+<RowBreak>
+<Row>173</Row>
+</RowBreak>
+<RowBreak>
+<Row>261</Row>
+</RowBreak>
+<RowBreak>
+<Row>349</Row>
+</RowBreak>
+<RowBreak>
+<Row>413</Row>
+</RowBreak>
+</RowBreaks>
+</PageBreaks>
+</Worksheet>
+</Workbook>

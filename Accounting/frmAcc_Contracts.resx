@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolCustodyFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>190, 10</value>
+  </metadata>
+  <data name="fgCustodyFees.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:70;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:80;Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:80;Caption:"Τελική Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:24;Caption:"ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	</value>
+  </data>
+  <metadata name="toolAccounts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>339, 10</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbAddAccounts.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgAccounts.ColumnInfo" xml:space="preserve">
+    <value>7,0,0,0,0,85,Columns:0{Width:200;Caption:"Αρ.Λογαριασμού";Style:"TextAlign:LeftCenter;";}	1{Width:100;Caption:"Τράπεζα";}	2{Width:80;Caption:"Αρχ.Υπόλοιπο";}	3{Width:62;Caption:"Νόμισμα";}	4{Width:64;Caption:"Κοινός";}	5{Width:255;Caption:"Συνδικαιούχοι";}	6{Width:30;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgCashAccounts.ColumnInfo" xml:space="preserve">
+    <value>7,0,0,0,0,85,Columns:0{Width:165;Caption:"Portfolio";Style:"TextAlign:LeftCenter;";}	1{Width:200;Caption:"Account Number";Style:"TextAlign:LeftCenter;";}	2{Width:200;Caption:"Account Number 2";Style:"TextAlign:LeftCenter;";}	3{Width:200;Caption:"IBAN";Style:"TextAlign:LeftCenter;";}	4{Width:62;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";}	5{Width:30;Caption:"ID";}	6{Caption:"Contract_ID";}	</value>
+  </data>
+  <metadata name="toolFXFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>579, 10</value>
+  </metadata>
+  <data name="btnFXFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIYAAAAAAOTi3cDI0IB40CBIsFBQULC4wBA4oPPy8FBgwEA4cMDI4FBIkLCo/zMzZpCI
+        4O7s6d/c1lBQsP///6Co8HB4kEBAoHBo0JCQ8CAwQODo8GBogPD4/zBAQICI8EBIsDA4oNnWz+ro5MC4
+        /9DY8JmZ/1BYwFBYcPDw8N7e3mZmzLy31NvY0YB44HB44EA4gLCo8GBYsEBQwOzq5iBAoDBIsKCg8GBg
+        wObk33B40ODg8FBQoLC48KCY4EBIkDA4cLC4/2B4gJmZ/4CA4EBAgHBw0JSU3lBYsMDA0DBQsFBgcMDA
+        /9Dg8DBAoJSU77Cw8GBowMDQ4LCw/3CAkJmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAABACwAAAAAFAAUAAAI3AADCBxIsKDBgwgTKkTIg8eTJzBs9DBi5MGQATmKGHyypMSEjyAncDARI8bG
+        JRhCfuQQQIaDIwYpLBmikqWGJC12GLSxxEVImyRqFNFZsMeSIiCBRqGhgihBI0tUrAyggUSUBQduMDD4
+        YAQQFQlMyEhSg0ZWEz4MDpEipQQGD0NaFLlww4SEtAUHNHB7ou8JJRvsfiBiMIdbDycAdCDBJMiHDxYI
+        FyxSAu6JDhV0aJjSxEKTFwYvYBhCIIMBA0gEFGjSBIQCgyugHNlBm4EPH0RevFDwY6Hv38B/BwQAOw==
+</value>
+  </data>
+  <data name="fgFXFees.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:80;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Αμοιβή";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:80;Name:"FXFees_Discount";Caption:"% Εκπτωσης";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:80;Name:"FinishFXFee";Caption:"Τελική Αμοιβή";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:80;Name:"ID";Caption:"ID";StyleFixed:"TextAlign:CenterCenter;";}	8{Name:"SPFF_ID";Caption:"SPFF_ID";}	</value>
+  </data>
+  <metadata name="toolSettlementFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>696, 10</value>
+  </metadata>
+  <data name="fgSettlementsFees.ColumnInfo" xml:space="preserve">
+    <value>25,0,0,0,0,85,Columns:0{Width:75;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:150;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:85;Caption:"Αποθετήριο";}	3{Width:50;Caption:"Κλιμακα απο";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Caption:"Κλιμακα εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"Προμήθεια (%)";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:50;Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:60;Caption:"Ticket Fees Buy";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:60;Caption:"Ticket Fees Sell";}	9{Width:40;Caption:"Ticket Fees Curr";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:55;Caption:"Minimum Fees";}	11{Width:40;Caption:"Min.Fees Curr";}	12{Width:65;Caption:"Ημερ.από";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:65;Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:40;Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:40;Caption:"% Ticket Fees";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	16{Width:50;Caption:"Προμ.Αγορας";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	17{Width:50;Caption:"Προμ.Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	18{Width:50;Caption:"Τελικο Ticket Fees Bu";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	19{Width:50;Caption:"Τελικο Ticket Fees Bu";Style:"BackColor:LightGreen;";}	20{Width:32;Caption:"ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	21{Width:62;Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	22{Width:51;Caption:"ProductCategory_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	23{Width:56;Caption:"SPSF_ID";Visible:False;}	24{Caption:"StockExchange_ID";Visible:False;}	</value>
+  </data>
+  <data name="fgAdminFees.ColumnInfo" xml:space="preserve">
+    <value>14,0,0,0,0,85,Columns:0{Width:70;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Name:"AdminFees";Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:80;Name:"AdminFees_Discount";Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:80;Name:"FinishAdminFee";Caption:"Τελική Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:24;Name:"ID";Caption:"ID";StyleFixed:"TextAlign:CenterCenter;";}	8{Name:"SPAF_ID";Caption:"SPAF_ID";}	9{Name:"AdminFees";Caption:"AdminFees";}	10{Name:"MinimumFees_Discount";Caption:"MinimumFees_Discount";}	11{Name:"MinimumFees";Caption:"MinimumFees";}	12{Name:"MonthMinCurr";Caption:"MonthMinCurr";}	13{Name:"AllManFees";Caption:"AllManFees";}	</value>
+  </data>
+  <data name="btnBrokerageFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIYAAAAAAOTi3cDI0IB40CBIsFBQULC4wBA4oPPy8FBgwEA4cMDI4FBIkLCo/zMzZpCI
+        4O7s6d/c1lBQsP///6Co8HB4kEBAoHBo0JCQ8CAwQODo8GBogPD4/zBAQICI8EBIsDA4oNnWz+ro5MC4
+        /9DY8JmZ/1BYwFBYcPDw8N7e3mZmzLy31NvY0YB44HB44EA4gLCo8GBYsEBQwOzq5iBAoDBIsKCg8GBg
+        wObk33B40ODg8FBQoLC48KCY4EBIkDA4cLC4/2B4gJmZ/4CA4EBAgHBw0JSU3lBYsMDA0DBQsFBgcMDA
+        /9Dg8DBAoJSU77Cw8GBowMDQ4LCw/3CAkJmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAABACwAAAAAFAAUAAAI3AADCBxIsKDBgwgTKkTIg8eTJzBs9DBi5MGQATmKGHyypMSEjyAncDARI8bG
+        JRhCfuQQQIaDIwYpLBmikqWGJC12GLSxxEVImyRqFNFZsMeSIiCBRqGhgihBI0tUrAyggUSUBQduMDD4
+        YAQQFQlMyEhSg0ZWEz4MDpEipQQGD0NaFLlww4SEtAUHNHB7ou8JJRvsfiBiMIdbDycAdCDBJMiHDxYI
+        FyxSAu6JDhV0aJjSxEKTFwYvYBhCIIMBA0gEFGjSBIQCgyugHNlBm4EPH0RevFDwY6Hv38B/BwQAOw==
+</value>
+  </data>
+  <data name="fgBrokerageFees.ColumnInfo" xml:space="preserve">
+    <value>25,0,0,0,0,85,Columns:0{Width:70;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:150;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Χρηματηστίριο";}	3{Width:50;Caption:"Κλιμακα απο";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Caption:"Κλιμακα εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"Προμήθεια (%)";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:60;Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:60;Caption:"Ticket Fees Buy";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:65;Caption:"Ticket Fees Sell";}	9{Width:50;Caption:"Ticket Fees Curr";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:60;Caption:"Minimum Fees";}	11{Width:50;Caption:"Min.Fees Curr";}	12{Width:80;Caption:"Ημερ.από";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:80;Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:50;Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:50;Caption:"% Ticket Fees";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	16{Width:60;Caption:"Προμ.Αγορας";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	17{Width:60;Caption:"Προμ.Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	18{Width:60;Caption:"Τελικο Ticket Fees Buy";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	19{Width:60;Caption:"Τελικο Ticket Fees Sell";Style:"BackColor:LightGreen;";}	20{Name:"ID";Caption:"ID";Visible:False;}	21{Width:80;Name:"SPBF_ID";Caption:"SPBF_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	22{Width:62;Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	23{Width:51;Caption:"ProductCategory_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	24{Caption:"StockExchange_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolBrokerageFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>853, 10</value>
+  </metadata>
+  <data name="fgRTOFees.ColumnInfo" xml:space="preserve">
+    <value>27,0,0,0,0,85,Columns:0{Width:70;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:140;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Χρηματηστίριο";}	3{Width:50;Caption:"Κλιμακα απο";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Caption:"Κλιμακα εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"Προμήθεια (%)";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:60;Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:60;Caption:"Ticket Fees Buy";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:60;Caption:"Ticket Fees Sell";}	9{Width:50;Caption:"Ticket Fees Curr";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:60;Caption:"Minimum Fees";}	11{Width:50;Caption:"Min.Fees Curr";}	12{Width:70;Caption:"Ημερ.από";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:70;Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;TextAlign:GeneralCenter;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:40;Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:40;Caption:"% Ticket Fees";Style:"BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	16{Width:40;Caption:"MinimumFees";Style:"BackColor:NavajoWhite;TextAlign:RightCenter;";}	17{Width:50;Caption:"Προμ.Αγορας";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	18{Width:50;Caption:"Προμ.Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	19{Width:50;Caption:"Τελικο Ticket Fees Buy";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	20{Width:50;Caption:"Τελικο Ticket Fees Sell";Style:"BackColor:LightGreen;TextAlign:RightCenter;";}	21{Width:50;Caption:"Τελικο Min.Fees";Style:"BackColor:LightGreen;TextAlign:RightCenter;";}	22{Width:32;Name:"ID";Caption:"ID";Visible:False;}	23{Width:80;Name:"SPBF_ID";Caption:"SPBF_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	24{Width:62;Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	25{Width:51;Caption:"ProductCategory_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	26{Caption:"StockExchange_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolRTOFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1006, 10</value>
+  </metadata>
+  <metadata name="toolAdminFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>21, 47</value>
+  </metadata>
+  <metadata name="toolAdvisoryFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>154, 47</value>
+  </metadata>
+  <data name="fgAdvisoryFees.ColumnInfo" xml:space="preserve">
+    <value>14,0,0,0,0,85,Columns:0{Width:80;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:70;Name:"AdvisoryFees";Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:60;Name:"AdvisoryFees_Discount";Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:70;Name:"FinishAdvisoryFee";Caption:"Τελική Αμοιβή";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:35;Name:"ID";Caption:"ID";}	8{Width:35;Name:"SPAF_ID";Caption:"SPAF_ID";}	9{Name:"MonthMinAmount";Caption:"MonthMinAmount";}	10{Name:"MinimumFees_Discount";Caption:"MinimumFees_Discount";}	11{Name:"MinimumFees";Caption:"MinimumFees";}	12{Name:"MonthMinCurr";Caption:"MonthMinCurr";}	13{Name:"AllManFees";Caption:"AllManFees";}	</value>
+  </data>
+  <metadata name="toolDiscretFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>298, 47</value>
+  </metadata>
+  <data name="fgDiscretFees.ColumnInfo" xml:space="preserve">
+    <value>14,0,0,0,0,85,Columns:0{Width:80;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:70;Name:"DiscretFees";Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:80;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:60;Name:"DiscretFees_Discount";Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:70;Name:"FinishDiscretFee";Caption:"Τελική Προμήθεια";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:24;Name:"ID";Caption:"ID";StyleFixed:"TextAlign:CenterCenter;";}	8{Name:"SPDF_ID";Caption:"SPDF_ID";}	9{Name:"MonthMinAmount";Caption:"MonthMinAmount";}	10{Name:"MinimumFees_Discount";Caption:"MinimumFees_Discount";}	11{Name:"MinimumFees";Caption:"MinimumFees";}	12{Name:"MonthMinCurr";Caption:"MonthMinCurr";}	13{Name:"AllManFees";Caption:"AllManFees";}	</value>
+  </data>
+  <data name="btnDiscretFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIYAAAAAAOTi3cDI0IB40CBIsFBQULC4wBA4oPPy8FBgwEA4cMDI4FBIkLCo/zMzZpCI
+        4O7s6d/c1lBQsP///6Co8HB4kEBAoHBo0JCQ8CAwQODo8GBogPD4/zBAQICI8EBIsDA4oNnWz+ro5MC4
+        /9DY8JmZ/1BYwFBYcPDw8N7e3mZmzLy31NvY0YB44HB44EA4gLCo8GBYsEBQwOzq5iBAoDBIsKCg8GBg
+        wObk33B40ODg8FBQoLC48KCY4EBIkDA4cLC4/2B4gJmZ/4CA4EBAgHBw0JSU3lBYsMDA0DBQsFBgcMDA
+        /9Dg8DBAoJSU77Cw8GBowMDQ4LCw/3CAkJmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAABACwAAAAAFAAUAAAI3AADCBxIsKDBgwgTKkTIg8eTJzBs9DBi5MGQATmKGHyypMSEjyAncDARI8bG
+        JRhCfuQQQIaDIwYpLBmikqWGJC12GLSxxEVImyRqFNFZsMeSIiCBRqGhgihBI0tUrAyggUSUBQduMDD4
+        YAQQFQlMyEhSg0ZWEz4MDpEipQQGD0NaFLlww4SEtAUHNHB7ou8JJRvsfiBiMIdbDycAdCDBJMiHDxYI
+        FyxSAu6JDhV0aJjSxEKTFwYvYBhCIIMBA0gEFGjSBIQCgyugHNlBm4EPH0RevFDwY6Hv38B/BwQAOw==
+</value>
+  </data>
+  <metadata name="toolDealAdvisoryFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>433, 47</value>
+  </metadata>
+  <data name="fgDealAdvisoryFees.ColumnInfo" xml:space="preserve">
+    <value>9,0,0,0,0,85,Columns:0{Width:70;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:60;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:70;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:70;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:60;Name:"DealAdvisoryFees_Discount";Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:60;Name:"FinishDealAdvisoryFee";Caption:"Τελική Αμοιβή";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:24;Name:"ID";Caption:"ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	8{Name:"SPDAF_ID";Caption:"SPDAF_ID";Visible:False;}	</value>
+  </data>
+  <data name="fgSuccessFees.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:70;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:60;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:70;Caption:"Ημερ.από";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:70;Caption:"Ημερ.εώς";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:60;Caption:"Τελική Αμοιβή";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	7{Name:"ID";Caption:"ID";}	</value>
+  </data>
+  <data name="fgLombardFees.ColumnInfo" xml:space="preserve">
+    <value>2,0,0,0,0,85,Columns:0{Width:80;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:32;Caption:"ID";Visible:False;Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	</value>
+  </data>
+  <data name="fgCurrencies_Cash.ColumnInfo" xml:space="preserve">
+    <value>2,0,0,0,0,85,Columns:0{Width:25;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:80;Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	</value>
+  </data>
+  <metadata name="toolCashAccounts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>602, 47</value>
+  </metadata>
+  <data name="tsbAddCash.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tsbAddMultiCash.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVDhPtZGxDoAgDET5dkdHR+Pk6Ojoz2nvCgZLUYnx
+        JRdC4a5Fwy/sDvHoHXRsskCrbqdxSiFYk3zogBFaioBn6KgHlBPwhgVGaPaPo1VhJX9z6gyNUUNULxJg
+        U7fAijWiM1QJuHwTVmoBuRHqRAJs6hZYseSdHby/klL1hj+ylQ8dfsAtZzIxb26fwNA0QYO+EsIBugGQ
+        plqlG5sAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="fgServices.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:21;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:200;Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	2{Width:54;Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="mnuContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>26, 14</value>
+  </metadata>
+  <data name="fgHistory.ColumnInfo" xml:space="preserve">
+    <value>11,0,0,0,0,85,Columns:0{Width:80;Name:"DiscountDateFrom";Caption:"Ημερ.από";Style:"BackColor:Control;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Name:"DiscountDateTo";Caption:"Ημερ.εώς";Style:"BackColor:Control;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:80;Name:"AmountTo";Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:70;Name:"AdvisoryFees";Caption:"Αμοιβή";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:60;Name:"AdvisoryFees_Discount";Caption:"% Έκπτωσης";Style:"BackColor:PeachPuff;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:70;Name:"FinishAdvisoryFee";Caption:"Τελική Αμοιβή";Style:"BackColor:PeachPuff;ForeColor:Black;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:80;Name:"MonthMinAmount";Caption:"MonthMinAmount";Style:"BackColor:PaleGreen;";}	8{Width:60;Name:"MinimumFees_Discount";Caption:"MinimumFees_Discount";Style:"BackColor:PaleGreen;";}	9{Width:80;Name:"MinimumFees";Caption:"MinimumFees";Style:"BackColor:PaleGreen;";}	10{Width:35;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>52,0,0,0,0,85,Columns:0{Width:30;Name:"AA";Caption:"AA";Style:"DataType:System.Int16;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:200;Name:"ContractTitle";Caption:"Σύμβαση";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Name:"ProviderTitle";Caption:"Πάροχος";}	3{Width:100;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:100;Name:"Portfolio";Caption:"Portfolio";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:45;Name:"Currency";Caption:"Νόμισμα";}	6{Width:60;Name:"DateFrom";Caption:"Από";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:60;Name:"DateTo";Caption:"Εώς";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"Days";Caption:"Ημέρες";}	9{Width:160;Name:"Package";Caption:"Πακέτο";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:80;Name:"ServiceTitle";Caption:"Υπηρεσία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:100;Name:"InvestmentProfile";Caption:"Επενδυτικό Profile";Style:"TextAlign:LeftCenter;";}	12{Width:100;Name:"InvestPolicy";Caption:"Επενδυτική Πολιτική";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:75;Name:"AUM";Caption:"AUM";Style:"Format:""N2"";DataType:System.Single;BackColor:LightSalmon;TextAlign:RightCenter;";}	14{Width:65;Name:"MF_AmoiviPro";Caption:"% προ έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:55;Name:"MF_Discount_Percent";Caption:"% έκπτωση";Style:"Format:""N2"";DataType:System.Single;BackColor:PeachPuff;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	16{Width:65;Name:"MF_AmoiviAfter";Caption:"% μετά την έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:PeachPuff;TextAlign:RightCenter;";}	17{Name:"MF_Discount_DateTo";Caption:"Ημερ.εκπτώσης εώς";}	18{Width:80;Name:"MF_Climakas";Caption:"Κλίμακας";Style:"BackColor:PeachPuff;";}	19{Width:65;Name:"MF_MinAmoivi";Caption:"Minimum προ έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:Tan;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	20{Width:55;Name:"MF_MinAmoivi_Percent";Caption:"% Έκπτωση Minimum";Style:"Format:""N2"";DataType:System.Single;BackColor:Tan;TextAlign:RightCenter;";}	21{Width:65;Name:"MF_MinFinish";Caption:"Minimum τελική αμοιβή";Style:"Format:""N3"";DataType:System.Single;BackColor:Tan;TextAlign:RightCenter;";}	22{Width:65;Name:"AF_AmoiviPro";Caption:"% προ έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:SpringGreen;TextAlign:RightCenter;";}	23{Width:55;Name:"AF_Discount_Percent";Caption:"% έκπτωση";Style:"Format:""N2"";DataType:System.Single;BackColor:SpringGreen;TextAlign:RightCenter;";}	24{Width:65;Name:"AF_AmoiviAfter";Caption:"% μετά την έκπτωσης";Style:"Format:""N3"";DataType:System.Single;BackColor:SpringGreen;TextAlign:RightCenter;";}	25{Width:65;Name:"AF_MinAmoivi";Caption:"Minimum προ έκπτωσης";Style:"Format:""N2"";DataType:System.Single;BackColor:Thistle;TextAlign:RightCenter;";}	26{Width:55;Name:"AF_MinAmoivi_Percent";Caption:"% Έκπτωση Minimum";Style:"Format:""N2"";DataType:System.Single;BackColor:Thistle;TextAlign:RightCenter;";}	27{Width:65;Name:"AF_MinFinish";Caption:"Minimum μετά την έκπτωσης";Style:"Format:""N3"";DataType:System.Single;BackColor:Thistle;TextAlign:RightCenter;";}	28{Width:120;Name:"AdvisorName";Caption:"Advisor";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	29{Width:120;Name:"RMName";Caption:"RM";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	30{Width:120;Name:"IntroName";Caption:"Introducer";Style:"TextAlign:LeftCenter;";}	31{Width:120;Name:"DiaxName";Caption:"Διαχειριστής";Style:"TextAlign:LeftCenter;";}	32{Width:120;Name:"User1Name";Caption:"1ος Δικαιούχος";Style:"TextAlign:LeftCenter;";}	33{Name:"ID";Caption:"ID (Contract_ID)";StyleFixed:"TextAlign:CenterCenter;";}	34{Name:"Contract_Details_ID";Caption:"Contract_Details_ID";}	35{Width:104;Name:"Contract_Packages_ID";Caption:"Contract_Packages_ID";}	36{Name:"CFP_ID";Caption:"CFP_ID";}	37{Name:"Client_ID";Caption:"Client_ID";StyleFixed:"TextAlign:CenterCenter;";}	38{Name:"Service_ID";Caption:"Service_ID";}	39{Name:"ClientType";Caption:"ClientType";StyleFixed:"TextAlign:CenterCenter;";}	40{Name:"VAT_Percent";Caption:"VAT_Percent";StyleFixed:"TextAlign:CenterCenter;";}	41{Name:"Status";Caption:"Status";}	42{Name:"Description";Caption:"Description";}	43{Name:"User1_ID";Caption:"User1_ID";}	44{Caption:"User2_ID";}	45{Caption:"User3_ID";}	46{Caption:"User4_ID";}	47{Name:"BrokerageServiceProvider_ID";Caption:"BrokerageServiceProvider_ID";}	48{Name:"AdvisorProvider_ID";Caption:"AdvisorProvider_ID";}	49{Name:"DiscretProvider_ID";Caption:"DiscretProvider_ID";}	50{Name:"DealAdvisorProvider_ID";Caption:"DealAdvisorProvider_ID";}	51{Name:"AdminFeesProvider_ID";Caption:"AdminFeesProvider_ID";}	</value>
+  </data>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>870, 47</value>
+  </metadata>
+  <data name="tsbHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPtVJNaxNRFM1PyE+Yn1AUXLjK0uWgDWQZwUUX
+        KsGFBEEcCkIwqBEpGiydsSo2kupsasdo7Yi2toh0sFZjG5JpiZo20/TpVOmH5njvm8BYahEXHji8+968
+        c+55l4n8F0zM+rhVWkHmdg29A/PoK1Yw8uIjOp/3xpvqBgrjLeilZbjNLXxZ34bwt6jexMVCGRndQenl
+        0p+NWHzPXoP3rQ3bAbQhQM0E5Np2BKprbZzrm8TIs8puE+68+r0NwwZiacCwALEBCVcAqet8JlAjk1PZ
+        JzsNJt6u4+FMS3ZmMV9mmFNAMhesbBZLC6oFdOsd8oVXocmdx018Ej9k1FgqiJ0zgS6qlR6BVI4iEFRN
+        IJlxMF/1cfTMcGiQvbskB6ZqgairJ6BCTJKYu9tlAUW1oSRsNDwfB+JXQ4PzN6s07W0ZPxDS5aSgJEFn
+        06Y9CaOqSauJRvMr9qmXQ4P8/RoWvU16eyBUEq5kbigwiKoOMTBQ0zbKlTq6TxihwejkZ1iOJwfEwmiC
+        BQ49yaW50J7Fh0xJw3IxbM3hwo2x0ICRHZzFgveTunYERK5lgo5YMxx8WPFw5Li+U8wYm66jNz+Naov+
+        Beqiao58N5NrPluoryJO0QeKU7sNGKPPazh9aRzGo/eYmVvEMk270fTlmzl2N3XW9xL/jv7iaxw7+wAH
+        E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>71</value>
+  </metadata>
+</root>

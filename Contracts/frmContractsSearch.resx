@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fgList.ColumnInfo" xml:space="preserve">
+    <value>40,0,0,0,0,85,Columns:0{Width:24;Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	1{Width:40;Caption:"ΑΑ";Style:"DataType:System.Int32;TextAlign:RightCenter;";}	2{Width:240;Name:"ClientFullName";Caption:"Ονοματεπώνυμο";Style:"TextAlign:LeftCenter;";}	3{Width:200;Caption:"Σύμβαση";Style:"TextAlign:LeftCenter;";}	4{Width:100;Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	5{Width:100;Caption:"Portfolio";Style:"TextAlign:LeftCenter;";}	6{Width:100;Caption:"Ημερ.Έναρξης";Style:"TextAlign:LeftCenter;";}	7{Width:100;Caption:"Ημερ.Λήξης";Style:"TextAlign:LeftCenter;";}	8{Width:100;Caption:"Πακέτο";Style:"TextAlign:LeftCenter;";}	9{Width:100;Caption:"Υπηρεσία";Style:"TextAlign:LeftCenter;";}	10{Width:100;Caption:"Κατηγορία προσώπου";Style:"TextAlign:LeftCenter;";}	11{Width:100;Caption:"Κατηγορία MiFiD";Style:"TextAlign:LeftCenter;";}	12{Width:100;Caption:"Πάροχος";Style:"TextAlign:LeftCenter;";}	13{Width:100;Caption:"Επενδ.Profile";Style:"TextAlign:LeftCenter;";}	14{Width:100;Caption:"Επενδ.πολιτική";Style:"TextAlign:LeftCenter;";}	15{Width:100;Caption:"Advisor";Style:"TextAlign:LeftCenter;";}	16{Width:100;Caption:"RM";Style:"TextAlign:LeftCenter;";}	17{Width:100;Caption:"Introducer";Style:"TextAlign:LeftCenter;";}	18{Width:100;Caption:"Διαχειριστής";Style:"TextAlign:LeftCenter;";}	19{Width:65;Name:"Master";Caption:"Master";}	20{Caption:"Ονοματεπώνυμο του Master";Style:"TextAlign:LeftCenter;";}	21{Width:100;Caption:"e-mail";Style:"TextAlign:LeftCenter;";}	22{Width:100;Caption:"Κινητό";Style:"TextAlign:LeftCenter;";}	23{Width:100;Caption:"Τηλέφωνο";Style:"TextAlign:LeftCenter;";}	24{Width:100;Caption:"Fax";Style:"TextAlign:LeftCenter;";}	25{Width:100;Caption:"Διεύθυνση";Style:"TextAlign:LeftCenter;";}	26{Width:100;Caption:"ΤΚ";Style:"TextAlign:LeftCenter;";}	27{Width:100;Caption:"Πόλη";Style:"TextAlign:LeftCenter;";}	28{Width:100;Caption:"Χώρα";Style:"TextAlign:LeftCenter;";}	29{Width:100;Caption:"Επάγγελμα";Style:"TextAlign:LeftCenter;";}	30{Width:100;Caption:"Ειδική Κατηγορία";Style:"TextAlign:LeftCenter;";}	31{Width:100;Caption:"Κίνδυνος AML";Style:"TextAlign:LeftCenter;";}	32{Width:100;Caption:"Υπηκοότητα";Style:"TextAlign:LeftCenter;";}	33{Width:100;Caption:"Χώρα φορολόγησης";Style:"TextAlign:LeftCenter;";}	34{Width:100;Caption:"Χώρα κατοικίας";Style:"TextAlign:LeftCenter;";}	35{Width:100;Caption:"Κατάστημα";Style:"TextAlign:LeftCenter;";}	36{Width:50;Name:"ID";Caption:"ID";Visible:False;}	37{Name:"Client_ID";Caption:"Client_ID";Visible:False;}	38{Name:"Contracts_Details_ID";Caption:"Contracts_Details_ID";Visible:False;}	39{Name:"Contracts_Packages_ID";Caption:"Contracts_Packages_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="mnuContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>30, 15</value>
+  </metadata>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>149, 15</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbColsSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPlZNdTsJQEIXZi0twdyYi6jJMFOFRCxieVCiu
+        ROUn1gClLYVS29LDnHtveWlqwpdM5s6cmXPbpK0VvPT7ntXr4bnTwdM/QZ1znDerGqvbxSlw3qxq6Ew+
+        v74xGY8xnUwwllwEa/apE86bVQ0fj8ymM1y3Rrhtj/Dr/KDxaKvMmn3qhPNmVVMYOI6D1XIOz11guZjD
+        lWBmzT51UjawLCUsZPimZasbfW+JRtNWmTX71AnnzaqmMFi5LrZrH1EYIPQ9hIGEZNbsUyeVBkHgy3sP
+        5X1tRJs16g8DlVmzT51UGmzCEOkuQhpHiKPtMVizT51UGsS7La6aA3n3IfZJjMv7d5VZs0+dVBokyR+Q
+        Z3LKJCXI96nKrNlXulBpkGep3PqGutwM7HFx96oya/apk7KB+Q7EwmTCcxEF+lz6DviDnALnzaqm1W5/
+        8AehMx+vMkTnHOfN6pEzifMTQuZrtQPeUrG4B+eeFAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="fgCols.ColumnInfo" xml:space="preserve">
+    <value>3,0,0,0,0,85,Columns:0{Width:30;Name:"AA";Caption:"AA";}	1{Width:300;Name:"Cols";Caption:"Στήλη";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:LeftCenter;";}	2{Width:39;Name:"Flags";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
+</root>

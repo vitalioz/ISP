@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D932364-FA0B-444C-8503-D30EA6933646}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Options</RootNamespace>
+    <AssemblyName>Options</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20073.357, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Core">
+      <HintPath>..\Core\bin\Debug\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>..\Accounting\obj\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.37.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.37\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsEntryPoint.cs" />
+    <Compile Include="frmComissionsCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComissionsCategories.Designer.cs">
+      <DependentUpon>frmComissionsCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMiscLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMiscLists.designer.cs">
+      <DependentUpon>frmMiscLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicePackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicePackages.Designer.cs">
+      <DependentUpon>frmServicePackages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceProviderFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceProviderFees.Designer.cs">
+      <DependentUpon>frmServiceProviderFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceProviderFees2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceProviderFees2.Designer.cs">
+      <DependentUpon>frmServiceProviderFees2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceProviderFees3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceProviderFees3.designer.cs">
+      <DependentUpon>frmServiceProviderFees3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceProviderFees4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceProviderFees4.Designer.cs">
+      <DependentUpon>frmServiceProviderFees4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceProviders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceProviders.Designer.cs">
+      <DependentUpon>frmServiceProviders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsersList.Designer.cs">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucCountriesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCountriesList.Designer.cs">
+      <DependentUpon>ucCountriesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCurrenciesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCurrenciesList.Designer.cs">
+      <DependentUpon>ucCurrenciesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDefaultList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDefaultList.designer.cs">
+      <DependentUpon>ucDefaultList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDepositories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDepositories.designer.cs">
+      <DependentUpon>ucDepositories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSectorsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSectorsList.Designer.cs">
+      <DependentUpon>ucSectorsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStockExchangesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStockExchangesList.Designer.cs">
+      <DependentUpon>ucStockExchangesList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmComissionsCategories.resx">
+      <DependentUpon>frmComissionsCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMiscLists.resx">
+      <DependentUpon>frmMiscLists.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicePackages.resx">
+      <DependentUpon>frmServicePackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceProviderFees.resx">
+      <DependentUpon>frmServiceProviderFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceProviderFees2.resx">
+      <DependentUpon>frmServiceProviderFees2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceProviderFees3.resx">
+      <DependentUpon>frmServiceProviderFees3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceProviderFees4.resx">
+      <DependentUpon>frmServiceProviderFees4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceProviders.resx">
+      <DependentUpon>frmServiceProviders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsersList.resx">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucCountriesList.resx">
+      <DependentUpon>ucCountriesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCurrenciesList.resx">
+      <DependentUpon>ucCurrenciesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDefaultList.resx">
+      <DependentUpon>ucDefaultList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDepositories.resx">
+      <DependentUpon>ucDepositories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSectorsList.resx">
+      <DependentUpon>ucSectorsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStockExchangesList.resx">
+      <DependentUpon>ucStockExchangesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindFolder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree_plus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree_minus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanup.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

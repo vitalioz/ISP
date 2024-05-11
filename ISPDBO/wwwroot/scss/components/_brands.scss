@@ -1,0 +1,30 @@
+.brands {
+  .section-title {
+    margin-bottom: 1.5rem;
+    @media (min-width: 992px) {
+      margin-bottom: 4rem;
+    }
+  }
+  .brands-item {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+    transition: all ease 0.3s;
+    justify-content: center;
+    @media (min-width: 992px) {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      max-width: 140px;
+      @media (min-width: 992px) {
+        max-width: 200px;
+      }
+    }
+  }
+}

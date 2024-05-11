@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>WebUsersDevices POST methods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h1>POST method</h1>
+
+<h2>Update WU_ID</h2>
+<form action="http://localhost:8091/webusersdevices/Update" method="post">
+   <p><input type="text" name="id" value = "1" >
+   <p><input type="text" name="wu_id" value = "123" >
+   <p><input type="submit" value="Send">
+</form>
+
+<h2>Update Status</h2>
+<form action="http://localhost:8091/webusersdevices/UpdateStatus" method="post">
+   <p><input type="text" name="id" value = "1" >
+   <p><input type="text" name="unique_id" value = "pff08pz7ob2rq9182nb0k2751qa8hl45" >
+   <p><input type="text" name="status" value = "0" >
+   <p><input type="submit" value="Send">
+</form>
+
+ 
+<h2>Delete WebUsersDevices record</h2>
+<form action="http://localhost:8091/webusersdevices/Delete" method="post">
+   <p><input type="text" name="ID" value = "1" >
+   <p><input type="submit" value="Send">
+</form>
+
+</body>
+</html>

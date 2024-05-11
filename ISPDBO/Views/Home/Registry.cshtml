@@ -1,0 +1,465 @@
+﻿@{
+    Layout = "_RegistryLayout";
+}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    .modal-header {
+        height: 30px;
+        padding: 20px;
+        background-color: #18456b;
+        color: white;
+        text-align: center;
+    }
+
+    .modal-title {
+        margin-top: -10px;
+        font-size: 16px;
+    }
+
+    .modal-header .close {
+        margin-top: -10px;
+        color: #fff;
+    }
+
+    .modal-body {
+        background-color: red;
+    }
+
+    .modal-footer {
+        background-color: red;
+    }
+</style>
+
+<div id="registry_form">
+    <form data-toggle="validator" role="form" id="form" name="form" action="Login" method="post" class="needs-validation" style="padding-top: 80px;">
+        <div class="container-md col-md-2 col-md-offset-5">
+            <div class="row text-center">
+                <label>Είστε πελάτης της HellasFin;</label>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="btn_yes" type="button" class="btn btn-success" onclick="IsClient();">Ναί, είμαι  πελάτης</button>
+                </div>
+                <div class="col-md-6">
+                    <button id="btn_no" type="button" class="btn btn-warning" onclick="IsntClient();">Όχι, δεν είμαι</button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row col-sm-offset-1 col-sm-11" id="is_client" style="display: none; margin: 5px;">
+            <div class="row" id="div_afm">
+                <div class="container-md mt-3 col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="uname">Συμπληρώστε το ΑΦΜ σας:</label>
+                        <input type="text" class="form-control" id="afm" name="afm" style="width: 200px;">
+                    </div>
+                </div>
+                <div class="container-md col-md-4">
+                    <div class="form-group">
+                        <br />
+                        <span id="afm_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="div_afm">
+                <div class="container-md mt-3 col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="pwd">Συμπληρώστε την ημερομηνία γέννησής σας:</label>
+                        <input type="text" id="dob" class="form-control" style="width: 200px;" onblur="CheckClient();">
+                    </div>
+                </div>
+                <div class="container-md col-md-4">
+                    <div class="form-group">
+                        <br />
+                        <span id="dob_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-sm-offset-1 col-sm-11" id="email_div" style="display: none; margin: 5px;">
+            <div class="row" id="div_email1">
+                <div class="container-md col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label id="email_label" for="email">Συμπληρώστε το email που δηλώσατε στη συμβασή</label>
+                        <input type="text" class="form-control" id="email" name="email" oninput="document.getElementById('email_warning').innerHTML = '';" onblur="CheckEmail();" />
+                    </div>
+                </div>
+                <div class="container-md col-md-5">
+                    <div class="form-group">
+                        <br />
+                        <span id="email_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="div_email2" style="display: none;">
+                <div class="container-md col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="email2">Επαλήθευση του email</label>
+                        <input type="text" class="form-control" id="email2" name="email2" placeholder=""
+                               oninput="document.getElementById('email2_warning').innerHTML = '';" onblur="CheckEmail2();" style="width: 180px;" />
+                    </div>
+                </div>
+                <div class="container-md col-md-5">
+                    <div class="form-group">
+                        <br />
+                        <span id="email2_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row col-sm-offset-1 col-sm-11" id="mobile_div" style="display: none; margin: 5px;">
+            <div class="row" id="div_mobile1">
+                <div class="container-md col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label id="mobile_label" for="mobile">Συμπληρώστε το κινητό που δηλώσατε στη συμβασή</label>
+                        <input type="text" class="form-control" id="mobile" name="mobile" oninput="document.getElementById('mobile_warning').innerHTML = '';" onblur="CheckMobile();" />
+                    </div>
+                </div>
+                <div class="container-md col-md-5">
+                    <div class="form-group">
+                        <br />
+                        <span id="mobile_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="div_mobile2" style="display: none;">
+                <div class="container-md col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="mobile2">Επαλήθευση του κινητού</label>
+                        <input type="text" class="form-control" id="mobile2" name="mobile2" placeholder=""
+                               oninput="document.getElementById('mobile2_warning').innerHTML = '';" onblur="CheckMobile2();" style="width: 180px;" />
+                    </div>
+                </div>
+                <div class="container-md col-md-5">
+                    <div class="form-group">
+                        <br />
+                        <span id="mobile2_warning" style="color: red;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row col-sm-offset-1 col-sm-11" id="codes_div" style="display: none; margin: 5px;">
+            <div class="row container-md mt-3 col-md-3 col-md-offset-4">
+                <div class="form-group">
+                    <label for="password">Δημιουργήστε το συνθηματικό:</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-md mt-3 col-md-3 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="password2">Επιβεβαίωση:</label>
+                        <input type="password" class="form-control" id="password2" name="password2" onblur="CheckPassword();">
+                    </div>
+                </div>
+                <div class="container-md mt-3 col-md-3">
+                    <div class="row col-sm-offset-1 col-sm-11" id="wrong_password" style="display: none; margin: 5px;">
+                        <label>&nbsp;</label>
+                        <label class="text-danger" for="wrong_pwd">Λάθος συνθηματικό</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-sm-offset-1 col-sm-11" id="submit_btn" style="display: none; margin: 5px;">
+            <div class="container-md mt-3 col-md-3 col-md-offset-4">
+                <button type="submit" class="btn btn-primary">Συνέχεια</button>
+            </div>
+        </div>
+        <input type="hidden" id="Client_ID" name="Client_ID" value="0" />
+        <input type="hidden" id="email_code" value="" />
+        <input type="hidden" id="mobile_code" value="" />
+    </form>
+</div>
+
+<!--- modalBan window --->
+<form role="form" id="form_mdl" name="form_mdl" action="~/">
+    <div id="modalBan" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 id="modalAdd_title" class="modal-title">Ban</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <span id="ban_message"></span>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Συνέχεια</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</form>
+
+<script type="text/javascript">
+
+    var os = navigator.userAgent;
+    var video = JSON.stringify(getVideoCardInfo());
+    var attempt = 1;
+
+    $.ajax(
+        {
+            url: "Home/CheckWebUsersDevices",
+            async: false,
+            data: { dev_os: os, dev_video: video },
+            type: "POST",
+            success:
+                function (wud_status) {
+                    if (wud_status == 2) {
+                        document.getElementById("registry_form").style.display = 'none';
+                        document.getElementById("ban_message").innerHTML = "Αυτη συσκευη είναι μπλοκαρισμένη. Call HF Security department";
+                        $('#modalBan').modal('toggle');
+                    };
+                }
+        }
+    );
+
+    function getVideoCardInfo() {
+        const gl = document.createElement('canvas').getContext('webgl');
+        if (!gl) {
+            return {
+                error: "no webgl",
+            };
+        }
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        return debugInfo ? {
+            vendor: gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL),
+            renderer: gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL),
+        } : {
+                error: "no WEBGL_debug_renderer_info",
+            };
+    }
+
+    function IsClient() {
+        document.getElementById("btn_no").disabled = true;
+        document.getElementById("afm").value = '';
+        document.getElementById("dob").value = '';
+        document.getElementById("email").value = '';
+        document.getElementById("email2").value = '';
+        document.getElementById("mobile").value = '';
+        document.getElementById("mobile2").value = '';
+        document.getElementById("password").value = '';
+        document.getElementById("password2").value = '';
+
+        document.getElementById("is_client").style.display = 'block';
+        document.getElementById("email_div").style.display = 'none';
+        document.getElementById("mobile_div").style.display = 'none';
+        document.getElementById("codes_div").style.display = 'none';
+        document.getElementById("email_label").innerHTML = 'Συμπληρώστε το email που δηλώσατε στη συμβασή';
+        document.getElementById("mobile_label").innerHTML = 'Συμπληρώστε το κινητό που δηλώσατε στη συμβασή';
+    }
+    function IsntClient() {
+        document.getElementById("btn_yes").disabled = true;
+        document.getElementById("afm").value = '';
+        document.getElementById("dob").value = '';
+        document.getElementById("email").value = '';
+        document.getElementById("email2").value = '';
+        document.getElementById("mobile").value = '';
+        document.getElementById("mobile2").value = '';
+        document.getElementById("password").value = '';
+        document.getElementById("password2").value = '';
+
+        document.getElementById("is_client").style.display = 'none';
+        document.getElementById("email_div").style.display = 'block';
+        document.getElementById("mobile_div").style.display = 'none';
+        document.getElementById("codes_div").style.display = 'none';
+        document.getElementById("email_label").innerHTML = 'Για την εγγραφή σας, συμπληρώστε το email σας';
+        document.getElementById("mobile_label").innerHTML = 'Καταχωρήστε τον αριθμό του κινητού σας τηλεφώνου';
+    }
+
+    function CheckClient() {
+        $(document).ready(function () {
+            if ($("#afm").val() != "" && $("#dob").val() != "") {
+                $.ajax({
+                    type: "POST",
+                    url: "Home/CheckClient",
+                    data: { AFM: $("#afm").val(), DoB: $("#dob").val() },
+                    dataType: "text",
+                    success:
+                        function (id) {
+                            if (id != 0) {
+                                document.getElementById("dob_warning").innerHTML = "";
+                                document.getElementById("Client_ID").value = id;
+                                ShowEmail();
+                            }
+                            else {
+                                document.getElementById("dob_warning").innerHTML = "Συνδιασμός ΑΦΜ και Ημερομ.Γεννησεως δεν υπάρχει";
+                            }
+                        },
+                    error:
+                        function (id) {
+                            result = null;
+                        }
+                });
+            }
+        });
+    }
+
+    function ShowEmail() {
+        attempt = 1;
+        document.getElementById("email").value = "";
+        document.getElementById("email2").value = "";
+        document.getElementById("email_div").style.display = 'block';
+        document.getElementById("mobile_div").style.display = 'none';
+        document.getElementById("codes_div").style.display = 'none';
+    }
+    function CheckEmail() {
+        //if (!validateEmail(document.getElementById("email").value)) {
+        //    document.getElementById("email_warning").innerHTML = 'email is invalid';
+        //}
+        //else {
+            var code = "";
+            for (var i = 0; i < 6; i++) {
+                code = code + Math.floor(Math.random() * 9);
+            }
+            document.getElementById("email_code").value = code;
+
+            $.ajax(
+                {
+                    url: "Home/CheckIfEmailExists",
+                    async: false,
+                    data: { email: document.getElementById("email").value, code: code },
+                    type: "POST",
+                    success: function (iExists) {
+                        if (iExists == 0) {
+                            document.getElementById("email_warning").innerHTML = '';
+                            document.getElementById("div_email2").style.display = 'block';
+                            document.getElementById("email2").focus();
+                            attempt = 1;
+                        }
+                        else {
+                            if (attempt < 3) {
+                                attempt = attempt + 1;
+                                document.getElementById("email_warning").innerHTML = 'This email exists. Try again. Attempt ' + attempt;
+                                document.getElementById("email").focus();
+                            }
+                            else {
+                                document.getElementById("ban_message").innerHTML = "Παραβίαση 3 δοκιμών στην εισαγωγή e-mail. Call HF Security department";
+                                $('#modalBan').modal('toggle');
+                            }
+                        }
+                    }
+                }
+            );
+        //}
+    }
+
+    function CheckEmail2() {
+        if (document.getElementById("email2").value != "") {
+            if (document.getElementById("email_code").value == document.getElementById("email2").value) {
+                document.getElementById("div_email2").style.display = 'none';
+                ShowMobile();
+            }
+            else {
+                if (attempt < 3) {
+                    attempt = attempt + 1;
+                    document.getElementById("email2_warning").innerHTML = 'Wrong code. Try again. Attempt ' + attempt;
+                }
+                else {
+                    document.getElementById("ban_message").innerHTML = "Παραβίαση 3 δοκιμών στην εισαγωγή κωδικού. Call HF Security department";
+                    $('#modalBan').modal('toggle');
+                }
+            }
+        }
+    }
+    function ShowMobile() {
+        attempt = 1;
+        document.getElementById("mobile").value = "";
+        document.getElementById("mobile2").value = "";
+        document.getElementById("mobile_div").style.display = 'block';
+        document.getElementById("codes_div").style.display = 'none';
+    }
+    function CheckMobile() {
+        //if (!validateMobile(document.getElementById("mobile").value)) {
+        //    document.getElementById("mobile_warning").innerHTML = 'Mobile is invalid';
+        //}
+        //else {
+            var code = "";
+            for (var i = 0; i < 6; i++) {
+                code = code + Math.floor(Math.random() * 9);
+            }
+            document.getElementById("mobile_code").value = code;
+            $.ajax(
+                {
+                    url: "Home/CheckIfMobileExists",
+                    async: false,
+                    data: { mobile: document.getElementById("mobile").value, code: code },
+                    type: "POST",
+                    success: function (iExists) {
+                        if (iExists == 0) {
+                            document.getElementById("mobile_warning").innerHTML = '';
+                            document.getElementById("div_mobile2").style.display = 'block';
+                            document.getElementById("mobile2").focus();
+                            attempt = 1;
+                        }
+                        else {
+                            if (attempt < 3) {
+                                attempt = attempt + 1;
+                                document.getElementById("mobile_warning").innerHTML = 'This mobile exists. Try again. Attempt ' + attempt;
+                                document.getElementById("mobile").focus();
+                            }
+                            else {
+                                document.getElementById("ban_message").innerHTML = "Παραβίαση 3 δοκιμών στην εισαγωγή e-mail. Call HF Security department";
+                                $('#modalBan').modal('toggle');
+                            }
+                        }
+                    }
+                }
+            );
+        //}
+    }
+    function CheckMobile2() {
+        if (document.getElementById("mobile2").value != "") {
+            if (document.getElementById("mobile_code").value == document.getElementById("mobile2").value) {
+                document.getElementById("div_mobile2").style.display = 'none';
+                ShowCodes();
+            }
+            else {
+                if (attempt < 3) {
+                    attempt = attempt + 1;
+                    document.getElementById("mobile2_warning").innerHTML = 'Wrong code. Try again. Attempt ' + attempt;
+                }
+                else {
+                    document.getElementById("ban_message").innerHTML = "Παραβίαση 3 δοκιμών στην εισαγωγή κωδικού. Call HF Security department";
+                    $('#modalBan').modal('toggle');
+                }
+            }
+        }
+    }
+    function ShowCodes() {
+        document.getElementById("password").value = "";
+        document.getElementById("password2").value = "";
+        document.getElementById("codes_div").style.display = 'block';
+    }
+    function CheckPassword() {
+        if (document.getElementById("password").value == document.getElementById("password2").value) {
+            document.getElementById("wrong_password").style.display = 'none';
+            document.getElementById("submit_btn").style.display = 'block';
+        }
+        else {
+            document.getElementById("wrong_password").style.display = 'block';
+            document.getElementById("submit_btn").style.display = 'none';
+        }
+    }
+    $(function () {
+        $("#dob").datepicker();
+    });
+</script>
+<script>$('#dob').datepicker({ dateFormat: 'dd/mm/yyyy' }).val();</script>
+

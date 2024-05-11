@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolRight.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1015, 307</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIySURBVDhPrZLfS5NRGMfff6H7boIuuq2pMZyL1eAt11CW
+        DcOKsB9vpFmaLtNExco0av6CbIVLJ61Wk3BSkT/AFCkRZSpZmrmiJQ41xSaCwdfznL15XEUX0Reem5f3
+        8znnec4j/Zc8fxYGla91CS3eRTx0z6OpMYS7jmnU1X6B/VYA18snUVoyjsKCt8jLHcH5c36ouCQR2NUJ
+        1Nas4G9ZXlmFKbULh1Kf8lJxSfI+WeCCyopv6q+/h+DQ/DJ2WV5Ao1FgPegRAveDOS4oLfmq/h6dn/DH
+        4AJizD4UXJrCAUuzEDgbZrjgou2DiohshIcnQtgme5GTPYbkJKcQ1N8OckHW2REVi+RXuM8fxGaDG4oy
+        ALPZIQQ11Z+5QDk1oKJ/hjv7P2FTfCMOH3mFxMQ6IbhROYWOdrCnBI4dfwPr0V4+bRoY9UzXppMjcDdS
+        rC8hy3YhuFI2gTYf2A4Aza4f7N2/o/zaLB8qDYx6zszwr8P7k1thNFYIweXCMXgeAfedq2xxwjClZUeV
+        Jd2GtDNFETiJwfs8MBjKhMCWN8pgoLoqzE8miH1GjE7G4PsZjE7OQsm9ij2mFg7rdrug1xcJAa2l4w7W
+        r00Cgk/n38S7wBwC04u4UGxHrMHF4CbEJtyDLj5fCDIzhljfSxzeavRgyw4Zj9t64GvvQ0d3P3pfD2Kv
+        2QqNvgFxDN6urYdWmyMElJMnevh60obRktA701PRtGlg1DOdSkXwzrisaMG/RZLWAE60OMW5fNhvAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="toolBrokerageOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 229</value>
+  </metadata>
+  <data name="tsbAddBrokerageOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="toolBrokerageFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>189, 229</value>
+  </metadata>
+  <data name="tsbAddBrokerageFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgBrokerageOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Option Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:20;Name:"MonthMinAmount";}	4{Width:20;Name:"MonthMinCurr";}	5{Width:25;Name:"OpenAmount";}	6{Width:20;Name:"OpenCurr";}	7{Width:20;Name:"ServiceAmount";}	8{Width:20;Name:"ServiceCurr";}	9{Width:20;Name:"MinAmount";}	10{Width:20;Name:"MinCurr";}	11{Width:32;Name:"ID";Caption:"ID";}	</value>
+  </data>
+  <data name="fgBrokerageFees.ColumnInfo" xml:space="preserve">
+    <value>22,0,0,0,0,85,Columns:0{Width:150;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:300;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:180;Caption:"Χρηματηστίριο";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"AmountFrom";Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Name:"AmountTo";Caption:"Εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Name:"BuyFeesPercent";Caption:"Προμήθεια Αγοράς";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:50;Name:"SellFeesPercent";Caption:"Προμήθεια Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:50;Name:"TicketFeesBuyAmount";Caption:"Ticket Fees buy";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:50;Name:"TicketFeesSellAmount";Caption:"Ticket Fees sell";Style:"BackColor:LightGreen;";}	9{Width:50;Name:"TicketFeesCurr";Caption:"TicketFeesCurr";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:50;Name:"MinimumFeesAmount";Caption:"Minimum Fees";Style:"BackColor:LightGreen;";}	11{Width:50;Name:"MinimumFeesCurr";Caption:"Minimum Fees Curr";Style:"BackColor:LightGreen;";}	12{Width:140;Caption:"Τρόπος κατανομής";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:50;Name:"RetrosessionProvider";Caption:"Πάροχος";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:50;Name:"RetrosessionCompany";Caption:"Εταρεία";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:150;Caption:"Settlement Provider";}	16{Width:32;Name:"ID";Caption:"ID";Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	17{Width:62;Name:"Product_ID";Caption:"Product_ID";StyleFixed:"TextAlign:CenterCenter;";}	18{Width:51;Name:"Category_ID";Caption:"Category_ID";StyleFixed:"TextAlign:CenterCenter;";}	19{Name:"RetrosessionMethod";Caption:"Retro_Method";}	20{Name:"StockExchange_ID";Caption:"StockExchange_ID";}	21{Name:"SettlementProvider_ID";Caption:"SettlementProvider_ID";}	</value>
+  </data>
+  <data name="fgRTOOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Option Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:20;Name:"MonthMinAmount";Visible:False;}	4{Width:20;Name:"MonthMinCurr";Visible:False;}	5{Width:20;Name:"OpenAmount";Visible:False;}	6{Width:20;Name:"OpenCurr";Visible:False;}	7{Width:20;Name:"ServiceAmount";Visible:False;}	8{Width:20;Name:"ServiceCurr";Visible:False;}	9{Width:20;Name:"MinAmount";Visible:False;}	10{Width:20;Name:"MinCurr";Visible:False;}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolRTOOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>342, 229</value>
+  </metadata>
+  <data name="tsbAddRTOOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="toolRTOFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>482, 229</value>
+  </metadata>
+  <data name="tsbAddRTOFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgRTOFees.ColumnInfo" xml:space="preserve">
+    <value>22,0,0,0,0,85,Columns:0{Width:150;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:300;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Caption:"Χρηματηστίριο";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Caption:"Εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"Προμήθεια Αγοράς";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:50;Caption:"Προμήθεια Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:50;Caption:"Ticket Fees buy";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:50;Caption:"Ticket Fees sell";Style:"BackColor:LightGreen;";}	9{Width:50;Caption:"TicketFeesCurr";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:50;Caption:"Minimum Fees";Style:"BackColor:LightGreen;";}	11{Width:50;Caption:"Minimum Fees Curr";Style:"BackColor:LightGreen;";}	12{Width:115;Caption:"Τρόπος κατανομής";Visible:False;Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:50;Caption:"Πάροχος";Visible:False;Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:50;Caption:"Εταρεία";Visible:False;Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:90;Caption:"Settlement Provider";Visible:False;}	16{Width:32;Name:"ID";Caption:"ID";Visible:False;Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	17{Width:62;Name:"Product_ID";Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	18{Width:51;Name:"Category_ID";Caption:"Category_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	19{Name:"Retro_Method";Caption:"Retro_Method";Visible:False;}	20{Name:"StockExchange_ID";Caption:"StockExchange_ID";Visible:False;}	21{Name:"SettlementProvider_ID";Caption:"SettlementProvider_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolFXOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>603, 229</value>
+  </metadata>
+  <data name="tsbAddFXOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="toolFXFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>733, 229</value>
+  </metadata>
+  <data name="tsbFXAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgFXOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Option Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:20;Name:"MonthMinAmount";Visible:False;}	4{Width:20;Name:"MonthMinCurr";Visible:False;}	5{Width:20;Name:"OpenAmount";Visible:False;}	6{Width:20;Name:"OpenCurr";Visible:False;}	7{Width:20;Name:"ServiceAmount";Visible:False;}	8{Width:20;Name:"ServiceCurr";Visible:False;}	9{Width:20;Name:"MinAmount";Visible:False;}	10{Width:20;Name:"MinCurr";Visible:False;}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgFXFees.ColumnInfo" xml:space="preserve">
+    <value>10,0,0,0,0,85,Columns:0{Width:70;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:70;Caption:"Εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:70;Caption:"Αμοιβή";Style:"TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:150;Caption:"Τρόπος κατανομής";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:60;Caption:"Πάροχος";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:60;Caption:"Εταρεία";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:32;Name:"ID";Caption:"ID";Visible:False;Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:62;Name:"Product_ID";Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	8{Width:51;Name:"Category_ID";Caption:"Category_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	9{Name:"Distrib_Method";Caption:"Distrib_Method";Visible:False;}	</value>
+  </data>
+  <metadata name="toolSafekeepingOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>844, 229</value>
+  </metadata>
+  <data name="tsbAddSafekeepingOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgSafekeepingOptions.ColumnInfo" xml:space="preserve">
+    <value>15,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"MonthMinAmount";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;Name:"MonthMinCurr";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;Name:"OpenAmount";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;Name:"OpenCurr";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;Name:"ServiceAmount";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"ServiceCurr";StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;Name:"MinAmount";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;Name:"MinCurr";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:30;Name:"CalcAUM";Caption:"chkAUM";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	12{Width:30;Name:"CalcSecurities";Caption:"chkSecurities";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	13{Width:30;Name:"CalcCash";Caption:"chkCash";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	14{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolSafekeepingFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1027, 229</value>
+  </metadata>
+  <data name="tsbSafekeepingAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgSafekeepingFees.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:80;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:150;Caption:"Τρόπος κατανομής";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:70;Caption:"Πάροχος";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:70;Caption:"Εταρεία";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:32;Name:"ID";Caption:"ID";Visible:False;}	7{Name:"Retro_Method";Caption:"Retro_Method";Visible:False;}	</value>
+  </data>
+  <metadata name="toolAdministrationOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1191, 229</value>
+  </metadata>
+  <data name="tsbAddAdministrationOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgAdministrationOptions.ColumnInfo" xml:space="preserve">
+    <value>15,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"MonthMinAmount";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;Name:"MonthMinCurr";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;Name:"OpenAmount";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;Name:"OpenCurr";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;Name:"ServiceAmount";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"ServiceCurr";StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;Name:"MinAmount";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;Name:"MinCurr";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:30;Name:"CalcAUM";Caption:"chkAUM";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	12{Width:30;Name:"CalcSecurities";Caption:"chkSecurities";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	13{Width:30;Name:"CalcCash";Caption:"chkCash";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	14{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolAdministrationFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 268</value>
+  </metadata>
+  <data name="tsbAdministrationAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgAdministrationFees.ColumnInfo" xml:space="preserve">
+    <value>8,0,0,0,0,85,Columns:0{Width:80;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:80;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:80;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:150;Caption:"Τρόπος κατανομής";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:70;Caption:"Πάροχος";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:70;Caption:"Εταρεία";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:32;Name:"ID";Caption:"ID";Visible:False;}	7{Name:"Retro_Method";Caption:"Retro_Method";Visible:False;}	</value>
+  </data>
+  <metadata name="toolSettlementsOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>195, 268</value>
+  </metadata>
+  <data name="tsbAddSettlementsOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="toolSettlementsFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>376, 268</value>
+  </metadata>
+  <data name="tsbAddSettlementsFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgSettlementsOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Option Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:20;Name:"MonthMinAmount";Visible:False;}	4{Width:20;Name:"MonthMinCurr";Visible:False;}	5{Width:20;Name:"OpenAmount";Visible:False;}	6{Width:20;Name:"OpenCurr";Visible:False;}	7{Width:20;Name:"ServiceAmount";Visible:False;}	8{Width:20;Name:"ServiceCurr";Visible:False;}	9{Width:20;Name:"MinAmount";Visible:False;}	10{Width:20;Name:"MinCurr";Visible:False;}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <data name="fgSettlementsFees.ColumnInfo" xml:space="preserve">
+    <value>20,0,0,0,0,85,Columns:0{Width:150;Caption:"Προϊον";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:300;Caption:"Κατηγορία";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:150;Caption:"Αποθετήριο";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:65;Caption:"Εως";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:50;Caption:"Προμήθεια Αγοράς";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:50;Caption:"Προμήθεια Πωλησης";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:50;Caption:"Ticket Fees buy";Style:"BackColor:LightGreen;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:50;Caption:"Ticket Fees sell";Style:"BackColor:LightGreen;";}	9{Width:50;Caption:"TicketFeesCurr";Style:"BackColor:LightGreen;";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:50;Caption:"Minimum Fees";Style:"BackColor:LightGreen;";}	11{Width:50;Caption:"Minimum Fees Curr";Style:"BackColor:LightGreen;";}	12{Width:150;Caption:"Τρόπος κατανομής";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	13{Width:60;Caption:"Πάροχος";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	14{Width:60;Caption:"Εταρεία";Style:"BackColor:LightPink;";StyleFixed:"TextAlign:CenterCenter;";}	15{Width:32;Name:"ID";Caption:"ID";Visible:False;Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	16{Width:62;Name:"Product_ID";Caption:"Product_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	17{Width:51;Name:"Category_ID";Caption:"Category_ID";Visible:False;StyleFixed:"TextAlign:CenterCenter;";}	18{Name:"Retro_Method";Caption:"Retro_Method";Visible:False;}	19{Name:"StockExchange_ID";Caption:"StockExchange_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolAdvisoryOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>538, 268</value>
+  </metadata>
+  <data name="tsbAddAdvisoryOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgAdvisoryOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"MonthMinAmount";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;Name:"MonthMinCurr";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;Name:"OpenAmount";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;Name:"OpenCurr";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;Name:"ServiceAmount";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"ServiceCurr";StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;Name:"MinAmount";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;Name:"MinCurr";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolAdvisoryFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>701, 268</value>
+  </metadata>
+  <data name="tsbAdvisoryAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgAdvisoryFees.ColumnInfo" xml:space="preserve">
+    <value>11,0,0,0,0,85,Columns:0{Width:250;Caption:"Επενδυτικό Προφίλ";}	1{Width:300;Caption:"Επενδυτικη Πολιτική";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:75;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:75;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:75;Caption:"Αμοιβή Υπεραπόδοσης";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:100;Caption:"Μεταβλητή 1 ";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:75;Caption:"Μεταβλητή 2";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:32;Name:"ID";Caption:"ID";Visible:False;}	9{Name:"InvestProfile_ID";Caption:"InvestProfile_ID";Visible:False;}	10{Name:"InvestPolicy_ID";Caption:"InvestPolicy_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolDiscretOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>845, 268</value>
+  </metadata>
+  <data name="tsbAddDiscretOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgDiscretOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"MonthMinAmount";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;Name:"MonthMinCurr";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;Name:"OpenAmount";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;Name:"OpenCurr";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;Name:"ServiceAmount";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"ServiceCurr";StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;Name:"MinAmount";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;Name:"MinCurr";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolDiscretFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>999, 268</value>
+  </metadata>
+  <data name="tsbDiscretAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgDiscretFees.ColumnInfo" xml:space="preserve">
+    <value>11,0,0,0,0,85,Columns:0{Width:250;Caption:"Επενδυτικό Προφιλ";}	1{Width:300;Caption:"Επενδυτικη Πολιτική";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:75;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:75;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:75;Caption:"Αμοιβή Υπεραπόδοσης";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:100;Caption:"Μεταβλητή 1 ";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:75;Caption:"Μεταβλητή 2 (%)";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:32;Name:"ID";Caption:"ID";Visible:False;}	9{Name:"InvestProfile_ID";Caption:"InvestProfile_ID";Visible:False;}	10{Name:"InvestPolicy_ID";Caption:"InvestPolicy_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolDealAdvisoryOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1134, 268</value>
+  </metadata>
+  <data name="tsbAddDealAdvisoryOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgDealAdvisoryOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;Name:"MonthMinAmount";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;Name:"MonthMinCurr";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;Name:"OpenAmount";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;Name:"OpenCurr";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;Name:"ServiceAmount";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;Name:"ServiceCurr";StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;Name:"MinAmount";StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;Name:"MinCurr";StyleFixed:"TextAlign:CenterCenter;";}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolDealAdvisoryFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 307</value>
+  </metadata>
+  <data name="tsbDealAdvisoryAddFees.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgDealAdvisoryFees.ColumnInfo" xml:space="preserve">
+    <value>10,0,0,0,0,85,Columns:0{Width:300;Caption:"Χρηματοπιστωτικά μέσα ";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:72;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:72;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:70;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:50;Caption:"Νόμισμα";}	5{Width:80;Caption:"Αμοιβή Υπεραπόδοσης";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:150;Caption:"Μεταβλητή 1 ";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:80;Caption:"Μεταβλητή 2";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:32;Name:"ID";Caption:"ID";Visible:False;}	9{Name:"InvestPolicy_ID";Caption:"InvestPolicy_ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolPerformOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>186, 307</value>
+  </metadata>
+  <data name="tsbAddPerformOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgPerformOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Τίτλος";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:75;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:65;StyleFixed:"TextAlign:CenterCenter;";}	4{Width:40;StyleFixed:"TextAlign:CenterCenter;";}	5{Width:65;StyleFixed:"TextAlign:CenterCenter;";}	6{Width:40;StyleFixed:"TextAlign:CenterCenter;";}	7{Width:65;StyleFixed:"TextAlign:CenterCenter;";}	8{Width:40;StyleFixed:"TextAlign:CenterCenter;";}	9{Width:65;StyleFixed:"TextAlign:CenterCenter;";}	10{Width:40;StyleFixed:"TextAlign:CenterCenter;";}	11{Width:32;Name:"ID";Caption:"ID";}	</value>
+  </data>
+  <metadata name="toolPerformFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>346, 307</value>
+  </metadata>
+  <data name="ToolStripButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgPerformFees.ColumnInfo" xml:space="preserve">
+    <value>13,0,0,0,0,85,Columns:0{Width:250;Caption:"Επενδυτικό Προφίλ";}	1{Width:300;Caption:"Επενδυτικη Πολιτική";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:75;Caption:"Από";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:75;Caption:"Εώς";Style:"Format:""N0"";DataType:System.Single;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	4{Width:75;Caption:"Αμοιβή";StyleFixed:"TextAlign:CenterCenter;";}	5{Width:75;Caption:"Αμοιβή Υπεραπόδοσης";StyleFixed:"TextAlign:CenterCenter;";}	6{Width:100;Caption:"Μεταβλητή 1 ";StyleFixed:"TextAlign:CenterCenter;";}	7{Width:75;Caption:"Μεταβλητή 2";StyleFixed:"TextAlign:CenterCenter;";}	8{Width:32;Name:"ID";Caption:"ID";}	9{Name:"InvestProfile_ID";Caption:"InvestProfile_ID";}	10{Name:"InvestPolicy_ID";Caption:"InvestPolicy_ID";}	11{Name:"Status";Caption:"Status";}	12{Name:"Pseudo_ID";Caption:"Pseudo_ID";}	</value>
+  </data>
+  <metadata name="toolLombardFees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>487, 307</value>
+  </metadata>
+  <data name="tsbAddLombardData.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgLombardFees.ColumnInfo" xml:space="preserve">
+    <value>2,0,0,0,0,85,Columns:0{Width:80;Name:"Currency";Caption:"Νόμισμα";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:32;Name:"ID";Caption:"ID";Visible:False;Style:"DataType:System.Int32;TextAlign:RightCenter;";StyleFixed:"TextAlign:CenterCenter;";}	</value>
+  </data>
+  <metadata name="toolLombardOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>633, 307</value>
+  </metadata>
+  <data name="tsbAddLombardOption.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgLombardOptions.ColumnInfo" xml:space="preserve">
+    <value>12,0,0,0,0,85,Columns:0{Width:300;Name:"Title";Caption:"Option";Style:"TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	1{Width:90;Name:"DateStart";Caption:"Έναρξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	2{Width:90;Name:"DateFinish";Caption:"Λήξη";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";StyleFixed:"TextAlign:CenterCenter;";}	3{Width:90;Name:"MonthMinAmount";Caption:"Add.Margin Rate";}	4{Width:20;Name:"MonthMinCurr";Visible:False;}	5{Width:20;Name:"OpenAmount";Visible:False;}	6{Width:20;Name:"OpenCurr";Visible:False;}	7{Width:20;Name:"ServiceAmount";Visible:False;}	8{Width:20;Name:"ServiceCurr";Visible:False;}	9{Width:20;Name:"MinAmount";Visible:False;}	10{Width:20;Name:"MinCurr";Visible:False;}	11{Width:32;Name:"ID";Caption:"ID";Visible:False;}	</value>
+  </data>
+  <metadata name="toolPackages.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>798, 307</value>
+  </metadata>
+  <data name="tsbAddPackage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="fgPackages.ColumnInfo" xml:space="preserve">
+    <value>6,0,0,0,0,85,Columns:0{Width:150;Name:"Code";Caption:"Κωδικός";Style:"TextAlign:LeftCenter;";}	1{Width:150;Name:"Portfolio";Caption:"Portfolio";Style:"TextAlign:LeftCenter;";}	2{Width:68;Name:"Contract_ID";Caption:"Contract_ID";}	3{Name:"Contract_Details_ID";Caption:"Contract_Details_ID";}	4{Name:"Contract_Packages_ID";Caption:"Contract_Packages_ID";}	</value>
+  </data>
+  <data name="btnCancel_Package.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEgAQAIcAAAAAAP///9cAFdQAFuAAG9QAHNEeN8ixtN8AIdsAIM4HJ+cKLNASLtQUMMwVMMsc
+        N9MiPOrd3+MAKd8AJ9UAJdEAJdoCKtkCKdwDKtkDK8UDJuIGLukIL9EKLd8MM8gLLOEONOQPNs4NL9EO
+        LuARN+YUO88WN+YbQcEYN9UeQNYgQsogPbIfOu0sUMklQ+AuT+YwUcMtSbwsRuQ3V8ExS+tDYs06VMA7
+        U8w/WOZNaY0xQqdRYe55jrlebtV6i35JUotRW3NMU/Spt7iDjHFgY+fM0c8fQc8jROoxVMUwTO9AY/BG
+        ZsZCW/Jng8VVatBmem08Rr5pee6UpfOeruWVpNCJl51ocsWDkM6LmfSltOqgrtGQnc6RncydptGkrY92
+        e3lpbMCws/ZHbtCOnMyYpNSgrNGeqW9dYdSdq93c3e7///X29u7v77y9vbO0tH6KiaOzsef29IGJiODo
+        5+r++52ko15wbYyYln2Ihuv9+ufz8eHt6+Lt6+rw72mDfnmIhd7y7un9+Xd8e6Gmpdfb2re9u66xsO7z
+        8cvt3MjKycThxIWFhNDKysPCwvz8/Pv7+/n5+fT09PPz8/Ly8u3t7ezs7Ovr6+np6ejo6N/f39HR0cnJ
+        yb+/v729vZqampeXl3x8fHZ2dv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAACiACwAAAAAEgAQAAAI4wBFgSChZY6ogwgTJvQgwUgXQAoj
+        HqSiQkCSAxKRwFgT4GCAMg8GMGGUkEeLFz0KsXF0EBEaCAWcEDqYZUmKHYsGUWIpSlEAMwYoRCky5cQR
+        K3jqpOGJUI0XExZwZLDx5Y0hTI8kHtqSYIILMHI4TWIaMQcCDBeAtJGYsMYGGlA0KLjSh60oJSFknBE0
+        pEMDLHokiuGAgsifRHy4jGBQJY7CJgs+/PDTyFKAPGMciPARAaGQEgR02HETySMdMisqPNlzUMoMFkHu
+        VOroMVCYGzHgSBIFaROoUJ3IHsyk6ZOnSwEBADs=
+</value>
+  </data>
+  <data name="btnSave_Package.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIYAAAAAAOTi3cDI0IB40CBIsFBQULC4wBA4oPPy8FBgwEA4cMDI4FBIkLCo/zMzZpCI
+        4O7s6d/c1lBQsP///6Co8HB4kEBAoHBo0JCQ8CAwQODo8GBogPD4/zBAQICI8EBIsDA4oNnWz+ro5MC4
+        /9DY8JmZ/1BYwFBYcPDw8N7e3mZmzLy31NvY0YB44HB44EA4gLCo8GBYsEBQwOzq5iBAoDBIsKCg8GBg
+        wObk33B40ODg8FBQoLC48KCY4EBIkDA4cLC4/2B4gJmZ/4CA4EBAgHBw0JSU3lBYsMDA0DBQsFBgcMDA
+        /9Dg8DBAoJSU77Cw8GBowMDQ4LCw/3CAkJmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAABACwAAAAAFAAUAAAI3AADCBxIsKDBgwgTKkTIg8eTJzBs9DBi5MGQATmKGHyypMSEjyAncDARI8bG
+        JRhCfuQQQIaDIwYpLBmikqWGJC12GLSxxEVImyRqFNFZsMeSIiCBRqGhgihBI0tUrAyggUSUBQduMDD4
+        YAQQFQlMyEhSg0ZWEz4MDpEipQQGD0NaFLlww4SEtAUHNHB7ou8JJRvsfiBiMIdbDycAdCDBJMiHDxYI
+        FyxSAu6JDhV0aJjSxEKTFwYvYBhCIIMBA0gEFGjSBIQCgyugHNlBm4EPH0RevFDwY6Hv38B/BwQAOw==
+</value>
+  </data>
+  <metadata name="toolLeft.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>921, 307</value>
+  </metadata>
+  <data name="tsbAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhPvZC7CoAwDEX77Y6OjsXJ0dHRn9Pc2xRqGqzi
+        48BBTLxJa/iEzUFb12BilQdc0usYx+tDmEAQzn8M4BcWBOHktzWaYKW8c94MozqovSgcTsSKDWIzfDyg
+        DMJOFOoBlnKzQ/VTUcgS58hWjdYw4QzQdhsmzu7cggnDrQEg37NUW28Swg7eTpU3bZek6gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>
